@@ -1,0 +1,1863 @@
+
+/* Class = "UIButton"; normalTitle = "100K"; ObjectID = "00g-r3-yt7"; */
+"00g-r3-yt7.normalTitle" = "100K";
+
+/* Class = "UILabel"; text = "Category"; ObjectID = "07y-CQ-Hfd"; */
+"07y-CQ-Hfd.text" = "Category";
+
+/* Class = "UILabel"; text = "E-commerce"; ObjectID = "0Lv-SV-H4c"; */
+"0Lv-SV-H4c.text" = "E-commerce";
+
+/* Class = "UILabel"; text = "tagline goes here"; ObjectID = "0Th-Td-Yoh"; */
+"0Th-Td-Yoh.text" = "tagline goes here";
+
+/* Class = "UIButton"; normalTitle = "same"; ObjectID = "0hx-5B-uo6"; */
+"0hx-5B-uo6.normalTitle" = "same";
+
+/* Class = "UILabel"; text = "Price"; ObjectID = "0kC-kA-OAW"; */
+"0kC-kA-OAW.text" = "Price";
+
+/* Class = "UILabel"; text = "McManners & Sons"; ObjectID = "0vV-MA-eW9"; */
+"0vV-MA-eW9.text" = "McManners & Sons";
+
+/* Class = "UIBarButtonItem"; title = "Back"; ObjectID = "14C-7F-0g3"; */
+"14C-7F-0g3.title" = "Back";
+
+/* Class = "UILabel"; text = "Thursday"; ObjectID = "1Hg-nt-0H8"; */
+"1Hg-nt-0H8.text" = "Thursday";
+
+/* Class = "UILabel"; text = "20%"; ObjectID = "1Ol-JZ-Ua2"; */
+"1Ol-JZ-Ua2.text" = "20%";
+
+/* Class = "UILabel"; text = "Category"; ObjectID = "1Ov-WC-IQd"; */
+"1Ov-WC-IQd.text" = "Category";
+
+/* Class = "UITextView"; text = "End-User License Agreement (\"Agreement\")\nLast updated: July 05, 2018\nPlease read this End-User License Agreement (\"Agreement\") carefully before clicking the \"I Agree\" button, downloading or using Honcho\n 2.0 (\"Application\").\nBy clicking the \"I Agree\" button, downloading or using the Application, you are agreeing to be bound by the terms and conditions of this Agreement.\nThis Agreement is a legal agreement between you (either an individual or a single entity) and Honcho 2.0 and it governs your use of the Application made available to you by Honcho 2.0.\n\n If you do not agree to the terms of this Agreement, do not click on the \"I Agree\" button and do not download or use the Application.\nThe Application is licensed, not sold, to you by Honcho 2.0 for use strictly in accordance with the terms of this Agreement. This EULA for Honcho 2.0 is powered by TermsFeed.\nLicense\n \n Honcho 2.0 grants you a revocable, non-exclusive, non-transferable, limited license to download, install and use the Application solely for your personal, non- commercial purposes strictly in accordance with the terms of this Agreement.\nThird-Party Services\nThe Application may display, include or make available\n\n third-party content (including data, information, applications and other products services) or provide links to third-party websites or services (\"Third- Party Services\").\nYou acknowledge and agree that Honcho 2.0 shall not be responsible for any Third- Party Services, including their accuracy, completeness, timeliness, validity, copyright compliance, legality, decency, quality or any other aspect thereof. Honcho 2.0 does not\n\n assume and shall not have any liability or responsibility to you or any other person or entity for any Third-Party Services.\nThird-Party Services and links thereto are provided solely as a convenience to you and you access and use them entirely at your own risk and subject to such third parties' terms and conditions.\nTerm and\n\n Termination\nThis Agreement shall remain in effect until terminated by you or Honcho 2.0.\nHoncho 2.0 may, in its sole discretion, at any time and for any or no reason, suspend or terminate this Agreement with or without prior notice.\nThis Agreement will terminate immediately, without prior notice from Honcho 2.0, in the event that you fail to comply\n\n with any provision of this Agreement. You may also terminate this Agreement by deleting the Application and all copies thereof from your mobile device or from your computer.\nUpon termination of this Agreement, you shall cease all use of the Application and delete all copies of the Application from your mobile device or from your computer.\nTermination of this Agreement\n\n will not limit any of Honcho 2.0's rights or remedies at law or in equity in case of breach by you (during the term of this Agreement) of any of your obligations under the present Agreement.\nAmendments to this Agreement\nHoncho 2.0 reserves the right, at its sole discretion, to modify or replace this Agreement at any time. If a revision is\n\n material we will provide at least 30 days' notice prior to any new terms taking effect. What constitutes a material change will be determined at our sole discretion.\nBy continuing to access or use our Application after any revisions become effective, you agree to be bound by the revised terms. If you do not agree to the new terms, you are no longer authorized to use the Application.\n\n Governing Law\nThe laws of New Zealand, excluding its conflicts of law rules, shall govern this Agreement and your use of the Application. Your use of the Application may also be subject to other local, state, national, or international laws.\nContact Information\n\n If you have any questions about this Agreement, please contact us.\nEntire Agreement\nThe Agreement constitutes the entire agreement between you and Honcho 2.0 regarding your use of the Application and supersedes all prior and contemporaneous written or oral agreements between you and Honcho 2.0.\n\nYou may be subject to additional terms and conditions that apply when you use or purchase other Honcho 2.0's services, which Honcho 2.0 will provide to you at the time of such use or purchase."; ObjectID = "1Q4-d9-pym"; */
+"1Q4-d9-pym.text" = "End-User License Agreement (\"Agreement\")\nLast updated: July 05, 2018\nPlease read this End-User License Agreement (\"Agreement\") carefully before clicking the \"I Agree\" button, downloading or using Honcho\n 2.0 (\"Application\").\nBy clicking the \"I Agree\" button, downloading or using the Application, you are agreeing to be bound by the terms and conditions of this Agreement.\nThis Agreement is a legal agreement between you (either an individual or a single entity) and Honcho 2.0 and it governs your use of the Application made available to you by Honcho 2.0.\n\n If you do not agree to the terms of this Agreement, do not click on the \"I Agree\" button and do not download or use the Application.\nThe Application is licensed, not sold, to you by Honcho 2.0 for use strictly in accordance with the terms of this Agreement. This EULA for Honcho 2.0 is powered by TermsFeed.\nLicense\n \n Honcho 2.0 grants you a revocable, non-exclusive, non-transferable, limited license to download, install and use the Application solely for your personal, non- commercial purposes strictly in accordance with the terms of this Agreement.\nThird-Party Services\nThe Application may display, include or make available\n\n third-party content (including data, information, applications and other products services) or provide links to third-party websites or services (\"Third- Party Services\").\nYou acknowledge and agree that Honcho 2.0 shall not be responsible for any Third- Party Services, including their accuracy, completeness, timeliness, validity, copyright compliance, legality, decency, quality or any other aspect thereof. Honcho 2.0 does not\n\n assume and shall not have any liability or responsibility to you or any other person or entity for any Third-Party Services.\nThird-Party Services and links thereto are provided solely as a convenience to you and you access and use them entirely at your own risk and subject to such third parties' terms and conditions.\nTerm and\n\n Termination\nThis Agreement shall remain in effect until terminated by you or Honcho 2.0.\nHoncho 2.0 may, in its sole discretion, at any time and for any or no reason, suspend or terminate this Agreement with or without prior notice.\nThis Agreement will terminate immediately, without prior notice from Honcho 2.0, in the event that you fail to comply\n\n with any provision of this Agreement. You may also terminate this Agreement by deleting the Application and all copies thereof from your mobile device or from your computer.\nUpon termination of this Agreement, you shall cease all use of the Application and delete all copies of the Application from your mobile device or from your computer.\nTermination of this Agreement\n\n will not limit any of Honcho 2.0's rights or remedies at law or in equity in case of breach by you (during the term of this Agreement) of any of your obligations under the present Agreement.\nAmendments to this Agreement\nHoncho 2.0 reserves the right, at its sole discretion, to modify or replace this Agreement at any time. If a revision is\n\n material we will provide at least 30 days' notice prior to any new terms taking effect. What constitutes a material change will be determined at our sole discretion.\nBy continuing to access or use our Application after any revisions become effective, you agree to be bound by the revised terms. If you do not agree to the new terms, you are no longer authorized to use the Application.\n\n Governing Law\nThe laws of New Zealand, excluding its conflicts of law rules, shall govern this Agreement and your use of the Application. Your use of the Application may also be subject to other local, state, national, or international laws.\nContact Information\n\n If you have any questions about this Agreement, please contact us.\nEntire Agreement\nThe Agreement constitutes the entire agreement between you and Honcho 2.0 regarding your use of the Application and supersedes all prior and contemporaneous written or oral agreements between you and Honcho 2.0.\n\nYou may be subject to additional terms and conditions that apply when you use or purchase other Honcho 2.0's services, which Honcho 2.0 will provide to you at the time of such use or purchase.";
+
+/* Class = "UILabel"; text = "times"; ObjectID = "1fm-xw-PQu"; */
+"1fm-xw-PQu.text" = "times";
+
+/* Class = "UILabel"; text = "tagline goes here"; ObjectID = "1mt-aw-YMx"; */
+"1mt-aw-YMx.text" = "tagline goes here";
+
+/* Class = "UIViewController"; title = "Add Product"; ObjectID = "1nO-Af-lup"; */
+"1nO-Af-lup.title" = "Add Product";
+
+/* Class = "UINavigationItem"; title = "Order product"; ObjectID = "26k-1f-cwd"; */
+"26k-1f-cwd.title" = "Order product";
+
+/* Class = "UIButton"; normalTitle = "round"; ObjectID = "291-fl-QAc"; */
+"291-fl-QAc.normalTitle" = "round";
+
+/* Class = "UILabel"; text = "IDR 0"; ObjectID = "2IM-tz-yAJ"; */
+"2IM-tz-yAJ.text" = "IDR 0";
+
+/* Class = "UILabel"; text = "Whats app number"; ObjectID = "2Ya-iX-xLA"; */
+"2Ya-iX-xLA.text" = "Whats app number";
+
+/* Class = "UITextField"; text = "General"; ObjectID = "33B-lH-YY0"; */
+"33B-lH-YY0.text" = "General";
+
+/* Class = "UITextField"; text = "Total sales"; ObjectID = "3Dw-wL-gSI"; */
+"3Dw-wL-gSI.text" = "Total sales";
+
+/* Class = "UILabel"; text = "tagline goes here"; ObjectID = "3Lx-sO-57r"; */
+"3Lx-sO-57r.text" = "tagline goes here";
+
+/* Class = "UIButton"; normalTitle = "Cash out"; ObjectID = "3Si-3V-Kc9"; */
+"3Si-3V-Kc9.normalTitle" = "Cash out";
+
+/* Class = "UILabel"; text = "Amount"; ObjectID = "3WV-pH-s5R"; */
+"3WV-pH-s5R.text" = "Amount";
+
+/* Class = "UINavigationItem"; title = "Product Management"; ObjectID = "3h5-hb-B9L"; */
+"3h5-hb-B9L.title" = "Product Management";
+
+/* Class = "UILabel"; text = "06/07/2018"; ObjectID = "3ha-Ae-6hr"; */
+"3ha-Ae-6hr.text" = "06/07/2018";
+
+/* Class = "UILabel"; text = "Sunday"; ObjectID = "3kJ-kv-Kve"; */
+"3kJ-kv-Kve.text" = "Sunday";
+
+/* Class = "UILabel"; text = "Success"; ObjectID = "3mA-Gm-M1n"; */
+"3mA-Gm-M1n.text" = "Success";
+
+/* Class = "UILabel"; text = "Rp 5,500"; ObjectID = "3pc-Cp-Ypy"; */
+"3pc-Cp-Ypy.text" = "Rp 5,500";
+
+/* Class = "UIBarButtonItem"; title = "Item"; ObjectID = "3qz-ZX-39A"; */
+"3qz-ZX-39A.title" = "Item";
+
+/* Class = "UILabel"; text = "Product Name"; ObjectID = "41V-3p-A6s"; */
+"41V-3p-A6s.text" = "Product Name";
+
+/* Class = "UILabel"; text = "Product name"; ObjectID = "49F-zt-u3E"; */
+"49F-zt-u3E.text" = "Product name";
+
+/* Class = "UILabel"; text = "times"; ObjectID = "49l-qn-PZ7"; */
+"49l-qn-PZ7.text" = "times";
+
+/* Class = "UILabel"; text = "Success"; ObjectID = "4Ew-OY-EJA"; */
+"4Ew-OY-EJA.text" = "Success";
+
+/* Class = "UITableViewSection"; headerTitle = "  "; ObjectID = "4H7-gX-iMN"; */
+"4H7-gX-iMN.headerTitle" = "  ";
+
+/* Class = "UILabel"; text = "Change Due"; ObjectID = "4Ou-Gd-zSj"; */
+"4Ou-Gd-zSj.text" = "Change Due";
+
+/* Class = "UILabel"; text = "tagline goes here"; ObjectID = "4Z3-cB-YIM"; */
+"4Z3-cB-YIM.text" = "tagline goes here";
+
+/* Class = "UILabel"; text = "Inventory"; ObjectID = "4eM-ab-eWp"; */
+"4eM-ab-eWp.text" = "Inventory";
+
+/* Class = "UILabel"; text = "Scan QR code for payment"; ObjectID = "4lm-Zr-Qu6"; */
+"4lm-Zr-Qu6.text" = "Scan QR code for payment";
+
+/* Class = "UIButton"; normalTitle = "Confirm"; ObjectID = "516-fI-Mng"; */
+"516-fI-Mng.normalTitle" = "Confirm";
+
+/* Class = "UILabel"; text = "32 - 34 Mahuhu Crescent\nAuckland, 1010"; ObjectID = "5PP-li-hin"; */
+"5PP-li-hin.text" = "32 - 34 Mahuhu Crescent\nAuckland, 1010";
+
+/* Class = "UILabel"; text = "Description"; ObjectID = "5an-1r-CGB"; */
+"5an-1r-CGB.text" = "Description";
+
+/* Class = "UITextField"; text = "My printed QRs"; ObjectID = "5gq-fH-jw4"; */
+"5gq-fH-jw4.text" = "My printed QRs";
+
+/* Class = "UIButton"; normalTitle = "100K"; ObjectID = "5jM-Bs-LtC"; */
+"5jM-Bs-LtC.normalTitle" = "100K";
+
+/* Class = "UILabel"; text = "Supplier Name"; ObjectID = "5mt-PH-5yC"; */
+"5mt-PH-5yC.text" = "Supplier Name";
+
+/* Class = "UIButton"; normalTitle = "1K"; ObjectID = "60L-oG-wmU"; */
+"60L-oG-wmU.normalTitle" = "1K";
+
+/* Class = "UITextField"; placeholder = "Rp 0.000"; ObjectID = "60c-zC-Tvq"; */
+"60c-zC-Tvq.placeholder" = "Rp 0.000";
+
+/* Class = "UILabel"; text = "Barcode"; ObjectID = "65B-eB-Cp1"; */
+"65B-eB-Cp1.text" = "Barcode";
+
+/* Class = "UITextField"; placeholder = "Description"; ObjectID = "67Y-xg-2nu"; */
+"67Y-xg-2nu.placeholder" = "Description";
+
+/* Class = "UILabel"; text = "Amount"; ObjectID = "6E5-r6-LnF"; */
+"6E5-r6-LnF.text" = "Amount";
+
+/* Class = "UILabel"; text = "Phone Number"; ObjectID = "6Hq-x0-bW6"; */
+"6Hq-x0-bW6.text" = "Phone Number";
+
+/* Class = "UILabel"; text = "Available balance"; ObjectID = "6J3-WB-kQy"; */
+"6J3-WB-kQy.text" = "Available balance";
+
+/* Class = "UITextField"; text = "16-8545-05125-1245-00"; ObjectID = "6Jl-gG-m0j"; */
+"6Jl-gG-m0j.text" = "16-8545-05125-1245-00";
+
+/* Class = "UILabel"; text = "Inventory"; ObjectID = "6x5-SP-Sw8"; */
+"6x5-SP-Sw8.text" = "Inventory";
+
+/* Class = "UITextField"; placeholder = "Barcode"; ObjectID = "7Di-Kh-Wud"; */
+"7Di-Kh-Wud.placeholder" = "Barcode";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "7Fg-6G-RHg"; */
+"7Fg-6G-RHg.text" = "Label";
+
+/* Class = "UILabel"; text = "Product name"; ObjectID = "7Ip-5J-XSR"; */
+"7Ip-5J-XSR.text" = "Product name";
+
+/* Class = "UIButton"; normalTitle = "Add to my products"; ObjectID = "7My-C1-7yG"; */
+"7My-C1-7yG.normalTitle" = "Add to my products";
+
+/* Class = "UILabel"; text = "Address"; ObjectID = "7Rn-CN-l06"; */
+"7Rn-CN-l06.text" = "Address";
+
+/* Class = "UIButton"; normalTitle = "Update product"; ObjectID = "7Xe-7w-ULD"; */
+"7Xe-7w-ULD.normalTitle" = "Update product";
+
+/* Class = "UILabel"; text = "Email address"; ObjectID = "7bs-ha-M7G"; */
+"7bs-ha-M7G.text" = "Email address";
+
+/* Class = "UIButton"; normalTitle = "50K"; ObjectID = "7d0-uK-rgj"; */
+"7d0-uK-rgj.normalTitle" = "50K";
+
+/* Class = "UIButton"; normalTitle = "Checkout"; ObjectID = "7gN-yJ-ZF7"; */
+"7gN-yJ-ZF7.normalTitle" = "Checkout";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "7v6-BW-Yok"; */
+"7v6-BW-Yok.text" = "Label";
+
+/* Class = "UILabel"; text = "Barcode"; ObjectID = "7w3-8x-XxK"; */
+"7w3-8x-XxK.text" = "Barcode";
+
+/* Class = "UITableViewSection"; headerTitle = " "; ObjectID = "80f-GF-pMY"; */
+"80f-GF-pMY.headerTitle" = " ";
+
+/* Class = "UILabel"; text = "Phone number"; ObjectID = "82a-wM-ZnF"; */
+"82a-wM-ZnF.text" = "Phone number";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "83m-nI-acl"; */
+"83m-nI-acl.text" = "Label";
+
+/* Class = "UILabel"; text = "Insurance"; ObjectID = "8D8-Oi-d3c"; */
+"8D8-Oi-d3c.text" = "Insurance";
+
+/* Class = "UILabel"; text = "Inventory"; ObjectID = "8Gz-dh-N5e"; */
+"8Gz-dh-N5e.text" = "Inventory";
+
+/* Class = "UIButton"; normalTitle = "9"; ObjectID = "8Hy-pq-dvs"; */
+"8Hy-pq-dvs.normalTitle" = "9";
+
+/* Class = "UILabel"; text = "Description"; ObjectID = "8I6-Tw-3UR"; */
+"8I6-Tw-3UR.text" = "Description";
+
+/* Class = "UIButton"; normalTitle = "Pay"; ObjectID = "8R6-Ju-CmC"; */
+"8R6-Ju-CmC.normalTitle" = "Pay";
+
+/* Class = "UIButton"; normalTitle = "Place order"; ObjectID = "8Y9-kn-jb6"; */
+"8Y9-kn-jb6.normalTitle" = "Place order";
+
+/* Class = "UILabel"; text = "0"; ObjectID = "8hw-jQ-t1w"; */
+"8hw-jQ-t1w.text" = "0";
+
+/* Class = "UITextField"; text = "Bank details"; ObjectID = "8nf-x6-vfd"; */
+"8nf-x6-vfd.text" = "Bank details";
+
+/* Class = "UILabel"; text = "Success"; ObjectID = "8oa-oI-e7R"; */
+"8oa-oI-e7R.text" = "Success";
+
+/* Class = "UILabel"; text = "Current Price"; ObjectID = "8so-yf-KPT"; */
+"8so-yf-KPT.text" = "Current Price";
+
+/* Class = "UITextField"; text = "Saving goals"; ObjectID = "94J-5t-LWG"; */
+"94J-5t-LWG.text" = "Saving goals";
+
+/* Class = "UILabel"; text = "Today"; ObjectID = "96V-ls-sPp"; */
+"96V-ls-sPp.text" = "Today";
+
+/* Class = "UILabel"; text = "Rp 5,500"; ObjectID = "995-BM-c1W"; */
+"995-BM-c1W.text" = "Rp 5,500";
+
+/* Class = "UILabel"; text = "Rp 0.000"; ObjectID = "9Lu-O5-pE5"; */
+"9Lu-O5-pE5.text" = "Rp 0.000";
+
+/* Class = "UINavigationItem"; title = "Add Product"; ObjectID = "9NQ-id-pR5"; */
+"9NQ-id-pR5.title" = "Add Product";
+
+/* Class = "UIButton"; normalTitle = "Log in with Google"; ObjectID = "9Vv-sL-9Wh"; */
+"9Vv-sL-9Wh.normalTitle" = "Log in with Google";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "9WB-D6-d02"; */
+"9WB-D6-d02.text" = "Label";
+
+/* Class = "UILabel"; text = "x 10"; ObjectID = "9YB-dr-hD7"; */
+"9YB-dr-hD7.text" = "x 10";
+
+/* Class = "UILabel"; text = "Latitude"; ObjectID = "9jY-Ea-Wh0"; */
+"9jY-Ea-Wh0.text" = "Latitude";
+
+/* Class = "UILabel"; text = "IDR 0"; ObjectID = "9kS-g8-OgC"; */
+"9kS-g8-OgC.text" = "IDR 0";
+
+/* Class = "UINavigationItem"; title = "Edit product"; ObjectID = "9nn-D7-XrL"; */
+"9nn-D7-XrL.title" = "Edit product";
+
+/* Class = "UITextField"; text = "Logo or business photo"; ObjectID = "9oq-Bv-2mv"; */
+"9oq-Bv-2mv.text" = "Logo or business photo";
+
+/* Class = "UILabel"; text = "Rp 150,000"; ObjectID = "9vu-nY-U9c"; */
+"9vu-nY-U9c.text" = "Rp 150,000";
+
+/* Class = "UILabel"; text = "Amount"; ObjectID = "9xS-6O-5G7"; */
+"9xS-6O-5G7.text" = "Amount";
+
+/* Class = "UILabel"; text = "Website"; ObjectID = "A5v-mf-POL"; */
+"A5v-mf-POL.text" = "Website";
+
+/* Class = "UILabel"; text = "Product name"; ObjectID = "A9z-gZ-eu1"; */
+"A9z-gZ-eu1.text" = "Product name";
+
+/* Class = "UILabel"; text = "Date:"; ObjectID = "AA0-9X-u1D"; */
+"AA0-9X-u1D.text" = "Date:";
+
+/* Class = "UITabBarItem"; title = "Banking"; ObjectID = "ADq-C7-I27"; */
+"ADq-C7-I27.title" = "Banking";
+
+/* Class = "UILabel"; text = "Airtime"; ObjectID = "AF9-jZ-6Ki"; */
+"AF9-jZ-6Ki.text" = "Airtime";
+
+/* Class = "UIButton"; normalTitle = "+"; ObjectID = "AJ9-FH-yYP"; */
+"AJ9-FH-yYP.normalTitle" = "+";
+
+/* Class = "UILabel"; text = "40%"; ObjectID = "AX5-Ud-Wio"; */
+"AX5-Ud-Wio.text" = "40%";
+
+/* Class = "UILabel"; text = "Category"; ObjectID = "AcU-Eo-4XS"; */
+"AcU-Eo-4XS.text" = "Category";
+
+/* Class = "UILabel"; text = "Website"; ObjectID = "AfZ-Af-W7n"; */
+"AfZ-Af-W7n.text" = "Website";
+
+/* Class = "UIBarButtonItem"; title = "Back"; ObjectID = "AmB-bz-UHS"; */
+"AmB-bz-UHS.title" = "Back";
+
+/* Class = "UILabel"; text = "Rp 45,000"; ObjectID = "Avn-HF-CJF"; */
+"Avn-HF-CJF.text" = "Rp 45,000";
+
+/* Class = "UIBarButtonItem"; title = "Item"; ObjectID = "BTE-9X-4Rq"; */
+"BTE-9X-4Rq.title" = "Item";
+
+/* Class = "UITextField"; placeholder = "Product name"; ObjectID = "BZu-TA-6dl"; */
+"BZu-TA-6dl.placeholder" = "Product name";
+
+/* Class = "UILabel"; text = "Customer name"; ObjectID = "Bcj-WA-foE"; */
+"Bcj-WA-foE.text" = "Customer name";
+
+/* Class = "UILabel"; text = "Description"; ObjectID = "Bgh-6y-ta7"; */
+"Bgh-6y-ta7.text" = "Description";
+
+/* Class = "UILabel"; text = "Barcode"; ObjectID = "BrI-Oh-JG8"; */
+"BrI-Oh-JG8.text" = "Barcode";
+
+/* Class = "UILabel"; text = "Supplier name"; ObjectID = "By3-w0-142"; */
+"By3-w0-142.text" = "Supplier name";
+
+/* Class = "UIViewController"; title = "Add Product"; ObjectID = "C0R-Wc-awq"; */
+"C0R-Wc-awq.title" = "Add Product";
+
+/* Class = "UILabel"; text = "Whats app number"; ObjectID = "C2j-aZ-S9V"; */
+"C2j-aZ-S9V.text" = "Whats app number";
+
+/* Class = "UILabel"; text = "Success"; ObjectID = "CHh-nJ-Tqa"; */
+"CHh-nJ-Tqa.text" = "Success";
+
+/* Class = "UIButton"; normalTitle = "00"; ObjectID = "CKk-5j-O3Q"; */
+"CKk-5j-O3Q.normalTitle" = "00";
+
+/* Class = "UILabel"; text = "x 10"; ObjectID = "CQn-05-u4V"; */
+"CQn-05-u4V.text" = "x 10";
+
+/* Class = "UIViewController"; title = "Confirmation"; ObjectID = "CTR-wp-FuE"; */
+"CTR-wp-FuE.title" = "Confirmation";
+
+/* Class = "UILabel"; text = "Rp"; ObjectID = "CjY-1d-apA"; */
+"CjY-1d-apA.text" = "Rp";
+
+/* Class = "UIBarButtonItem"; title = " "; ObjectID = "CmZ-pR-jUL"; */
+"CmZ-pR-jUL.title" = " ";
+
+/* Class = "UIBarButtonItem"; title = " "; ObjectID = "Ctu-ox-ZY9"; */
+"Ctu-ox-ZY9.title" = " ";
+
+/* Class = "UITextField"; placeholder = "Descriprion"; ObjectID = "DBj-rB-Onk"; */
+"DBj-rB-Onk.placeholder" = "Descriprion";
+
+/* Class = "UITextField"; text = "Manage ads"; ObjectID = "DDY-PJ-oJX"; */
+"DDY-PJ-oJX.text" = "Manage ads";
+
+/* Class = "UILabel"; text = "View spend"; ObjectID = "DQY-J1-i7L"; */
+"DQY-J1-i7L.text" = "View spend";
+
+/* Class = "UITextField"; text = "IDR 400,000"; ObjectID = "DZJ-fB-Wud"; */
+"DZJ-fB-Wud.text" = "IDR 400,000";
+
+/* Class = "UINavigationItem"; title = "Scan Item"; ObjectID = "Dgf-d0-lIw"; */
+"Dgf-d0-lIw.title" = "Scan Item";
+
+/* Class = "UILabel"; text = "Monday"; ObjectID = "Dix-e4-uiG"; */
+"Dix-e4-uiG.text" = "Monday";
+
+/* Class = "UILabel"; text = "Rp"; ObjectID = "Drl-HM-aTF"; */
+"Drl-HM-aTF.text" = "Rp";
+
+/* Class = "UILabel"; text = "Rp 0.000"; ObjectID = "ECf-N7-iRH"; */
+"ECf-N7-iRH.text" = "Rp 0.000";
+
+/* Class = "UITextField"; placeholder = "Category"; ObjectID = "EG4-Rn-IRR"; */
+"EG4-Rn-IRR.placeholder" = "Category";
+
+/* Class = "UILabel"; text = "Price"; ObjectID = "EKJ-a3-qlT"; */
+"EKJ-a3-qlT.text" = "Price";
+
+/* Class = "UITabBarItem"; title = "Orders"; ObjectID = "EMf-gh-32J"; */
+"EMf-gh-32J.title" = "Orders";
+
+/* Class = "UIButton"; normalTitle = "Checkout"; ObjectID = "ENe-a7-XQK"; */
+"ENe-a7-XQK.normalTitle" = "Checkout";
+
+/* Class = "UILabel"; text = "Description"; ObjectID = "Ege-b7-vcL"; */
+"Ege-b7-vcL.text" = "Description";
+
+/* Class = "UILabel"; text = "times"; ObjectID = "ElB-ch-EBS"; */
+"ElB-ch-EBS.text" = "times";
+
+/* Class = "UILabel"; text = "Category"; ObjectID = "En5-lj-gki"; */
+"En5-lj-gki.text" = "Category";
+
+/* Class = "UITextField"; text = "Terms & conditions"; ObjectID = "Esk-0i-jdu"; */
+"Esk-0i-jdu.text" = "Terms & conditions";
+
+/* Class = "UILabel"; text = "06/07/2018"; ObjectID = "Eva-QU-rRw"; */
+"Eva-QU-rRw.text" = "06/07/2018";
+
+/* Class = "UILabel"; text = "View spend"; ObjectID = "F6S-lI-A48"; */
+"F6S-lI-A48.text" = "View spend";
+
+/* Class = "UILabel"; text = "Product Date"; ObjectID = "FFy-iR-ZvT"; */
+"FFy-iR-ZvT.text" = "Product Date";
+
+/* Class = "UIViewController"; title = "Add Product"; ObjectID = "FJY-XR-Loa"; */
+"FJY-XR-Loa.title" = "Add Product";
+
+/* Class = "UIButton"; normalTitle = "Send"; ObjectID = "FKX-48-UmH"; */
+"FKX-48-UmH.normalTitle" = "Send";
+
+/* Class = "UIButton"; normalTitle = "1K"; ObjectID = "FKu-cJ-ybO"; */
+"FKu-cJ-ybO.normalTitle" = "1K";
+
+/* Class = "UILabel"; text = "100.000"; ObjectID = "FLl-9g-Jmx"; */
+"FLl-9g-Jmx.text" = "100.000";
+
+/* Class = "UITextField"; placeholder = "Price"; ObjectID = "FR5-H8-BNf"; */
+"FR5-H8-BNf.placeholder" = "Price";
+
+/* Class = "UIViewController"; title = "Customer tab"; ObjectID = "FRQ-v3-UUS"; */
+"FRQ-v3-UUS.title" = "Customer tab";
+
+/* Class = "UILabel"; text = "Category"; ObjectID = "FXJ-Ca-U1W"; */
+"FXJ-Ca-U1W.text" = "Category";
+
+/* Class = "UILabel"; text = "Product name"; ObjectID = "Fc9-NX-yfM"; */
+"Fc9-NX-yfM.text" = "Product name";
+
+/* Class = "UIBarButtonItem"; title = " "; ObjectID = "FlR-A3-7AG"; */
+"FlR-A3-7AG.title" = " ";
+
+/* Class = "UILabel"; text = "Product Name"; ObjectID = "Fp5-Nq-Ee6"; */
+"Fp5-Nq-Ee6.text" = "Product Name";
+
+/* Class = "UIViewController"; title = "Scan products"; ObjectID = "Fsq-Qk-Myu"; */
+"Fsq-Qk-Myu.title" = "Scan products";
+
+/* Class = "UITableViewController"; title = "banking"; ObjectID = "Fto-UA-jNm"; */
+"Fto-UA-jNm.title" = "banking";
+
+/* Class = "UITextField"; placeholder = "Enter new price"; ObjectID = "G49-nx-xjT"; */
+"G49-nx-xjT.placeholder" = "Enter new price";
+
+/* Class = "UILabel"; text = "4.5 km"; ObjectID = "G6l-g6-enV"; */
+"G6l-g6-enV.text" = "4.5 km";
+
+/* Class = "UILabel"; text = "Inventory"; ObjectID = "G8H-hI-qQO"; */
+"G8H-hI-qQO.text" = "Inventory";
+
+/* Class = "UILabel"; text = "Price"; ObjectID = "G8K-K1-ngW"; */
+"G8K-K1-ngW.text" = "Price";
+
+/* Class = "UILabel"; text = "Description"; ObjectID = "GDh-kN-Xc0"; */
+"GDh-kN-Xc0.text" = "Description";
+
+/* Class = "UILabel"; text = "12 items"; ObjectID = "GDt-10-HoK"; */
+"GDt-10-HoK.text" = "12 items";
+
+/* Class = "UIButton"; normalTitle = "Add to tab"; ObjectID = "GNw-fS-sVg"; */
+"GNw-fS-sVg.normalTitle" = "Add to tab";
+
+/* Class = "UIButton"; normalTitle = "10K"; ObjectID = "GTG-XA-Y2X"; */
+"GTG-XA-Y2X.normalTitle" = "10K";
+
+/* Class = "UILabel"; text = "Supplier name"; ObjectID = "GU7-nj-6o3"; */
+"GU7-nj-6o3.text" = "Supplier name";
+
+/* Class = "UIBarButtonItem"; title = " "; ObjectID = "GUh-7t-ddS"; */
+"GUh-7t-ddS.title" = " ";
+
+/* Class = "UIButton"; normalTitle = "same"; ObjectID = "GVO-2a-HPN"; */
+"GVO-2a-HPN.normalTitle" = "same";
+
+/* Class = "UILabel"; text = "USD"; ObjectID = "GVx-Aw-hDr"; */
+"GVx-Aw-hDr.text" = "USD";
+
+/* Class = "UILabel"; text = "Total"; ObjectID = "GXW-Qc-btl"; */
+"GXW-Qc-btl.text" = "Total";
+
+/* Class = "UILabel"; text = "Loans"; ObjectID = "Gaa-L6-9Uf"; */
+"Gaa-L6-9Uf.text" = "Loans";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "GmH-iC-4xH"; */
+"GmH-iC-4xH.text" = "Label";
+
+/* Class = "UILabel"; text = "My name is Honcho and I am your personal assistant"; ObjectID = "Gqc-xy-KIO"; */
+"Gqc-xy-KIO.text" = "My name is Honcho and I am your personal assistant";
+
+/* Class = "UILabel"; text = "Details"; ObjectID = "H0b-Zf-fRS"; */
+"H0b-Zf-fRS.text" = "Details";
+
+/* Class = "UINavigationItem"; title = "Calculate change"; ObjectID = "H3j-oC-dcl"; */
+"H3j-oC-dcl.title" = "Calculate change";
+
+/* Class = "UILabel"; text = "Product name"; ObjectID = "HIt-LD-o9x"; */
+"HIt-LD-o9x.text" = "Product name";
+
+/* Class = "UINavigationItem"; title = "Add customer"; ObjectID = "HJA-HF-1wH"; */
+"HJA-HF-1wH.title" = "Add tab";
+
+/* Class = "UILabel"; text = "Suggested retal price per item"; ObjectID = "HRp-sg-bL5"; */
+"HRp-sg-bL5.text" = "Suggested retail price per item";
+
+/* Class = "UILabel"; text = "Thursday"; ObjectID = "HXQ-Uc-v7o"; */
+"HXQ-Uc-v7o.text" = "Thursday";
+
+/* Class = "UIButton"; normalTitle = "Take payment"; ObjectID = "HYl-xH-Dtd"; */
+"HYl-xH-Dtd.normalTitle" = "Take payment";
+
+/* Class = "UILabel"; text = "14:47:06"; ObjectID = "Hbo-WY-BaY"; */
+"Hbo-WY-BaY.text" = "14:47:06";
+
+/* Class = "UILabel"; text = "Rp 450,000"; ObjectID = "Hdv-D4-6lO"; */
+"Hdv-D4-6lO.text" = "Rp 450,000";
+
+/* Class = "UITextField"; text = "Last Transaction"; ObjectID = "Hn7-lg-1cn"; */
+"Hn7-lg-1cn.text" = "Last Transaction";
+
+/* Class = "UILabel"; text = "times"; ObjectID = "Huu-9Y-HVg"; */
+"Huu-9Y-HVg.text" = "times";
+
+/* Class = "UILabel"; text = "Current date"; ObjectID = "Hvp-Ga-Gju"; */
+"Hvp-Ga-Gju.text" = "Current date";
+
+/* Class = "UILabel"; text = "times"; ObjectID = "Hwp-1u-YYW"; */
+"Hwp-1u-YYW.text" = "times";
+
+/* Class = "UILabel"; text = "McManners & Sons"; ObjectID = "I89-y7-EjY"; */
+"I89-y7-EjY.text" = "McManners & Sons";
+
+/* Class = "UITextField"; text = "My spending"; ObjectID = "IAd-Gu-zyT"; */
+"IAd-Gu-zyT.text" = "My spending";
+
+/* Class = "UILabel"; text = "Wednesday"; ObjectID = "IKx-oX-ona"; */
+"IKx-oX-ona.text" = "Wednesday";
+
+/* Class = "UILabel"; text = "Change price"; ObjectID = "IQA-c8-zfk"; */
+"IQA-c8-zfk.text" = "Change price";
+
+/* Class = "UILabel"; text = "14:47:06"; ObjectID = "IYu-Za-Pvn"; */
+"IYu-Za-Pvn.text" = "14:47:06";
+
+/* Class = "UILabel"; text = "Cash"; ObjectID = "IaU-I1-ufh"; */
+"IaU-I1-ufh.text" = "Cash";
+
+/* Class = "UILabel"; text = "Price"; ObjectID = "IbJ-Nt-jBi"; */
+"IbJ-Nt-jBi.text" = "Price";
+
+/* Class = "UIViewController"; title = "Add Product"; ObjectID = "Ijd-Qd-3ih"; */
+"Ijd-Qd-3ih.title" = "Add Product";
+
+/* Class = "UILabel"; text = "Honcho McManners"; ObjectID = "Ima-Ez-Bjw"; */
+"Ima-Ez-Bjw.text" = "Honcho McManners";
+
+/* Class = "UILabel"; text = "Rp 9,400"; ObjectID = "Ium-9c-K86"; */
+"Ium-9c-K86.text" = "Rp 9,400";
+
+/* Class = "UILabel"; text = "IDR Total"; ObjectID = "J6N-4R-uJY"; */
+"J6N-4R-uJY.text" = "IDR Total";
+
+/* Class = "UILabel"; text = "55"; ObjectID = "JDH-iO-cNC"; */
+"JDH-iO-cNC.text" = "55";
+
+/* Class = "UILabel"; text = "50%"; ObjectID = "JFZ-QU-aqT"; */
+"JFZ-QU-aqT.text" = "50%";
+
+/* Class = "UILabel"; text = "Longitude"; ObjectID = "JVu-KX-NDB"; */
+"JVu-KX-NDB.text" = "Longitude";
+
+/* Class = "UIButton"; normalTitle = "0"; ObjectID = "Jcd-v4-g3G"; */
+"Jcd-v4-g3G.normalTitle" = "0";
+
+/* Class = "UILabel"; text = "IDR 0"; ObjectID = "Jdo-Kn-tq4"; */
+"Jdo-Kn-tq4.text" = "IDR 0";
+
+/* Class = "UILabel"; text = "Enter PIN to confirm payment"; ObjectID = "JoQ-1H-hWm"; */
+"JoQ-1H-hWm.text" = "Enter PIN to confirm payment";
+
+/* Class = "UILabel"; text = "Enter product price"; ObjectID = "JxT-Jp-kKK"; */
+"JxT-Jp-kKK.text" = "Enter product price";
+
+/* Class = "UILabel"; text = "Rp 435,000"; ObjectID = "K3b-JF-xrO"; */
+"K3b-JF-xrO.text" = "Rp 435,000";
+
+/* Class = "UITextField"; text = "41235342341234"; ObjectID = "K4x-vS-Mfk"; */
+"K4x-vS-Mfk.text" = "41235342341234";
+
+/* Class = "UITextField"; placeholder = "Product name"; ObjectID = "KQt-7G-wbq"; */
+"KQt-7G-wbq.placeholder" = "Product name";
+
+/* Class = "UILabel"; text = "Select paymeny method"; ObjectID = "KbL-UN-jkx"; */
+"KbL-UN-jkx.text" = "Select paymeny method";
+
+/* Class = "UITableViewController"; title = "F.A.Q"; ObjectID = "Kcr-vF-P0B"; */
+"Kcr-vF-P0B.title" = "F.A.Q";
+
+/* Class = "UITextField"; placeholder = "Enter new price"; ObjectID = "Kpc-dP-rOR"; */
+"Kpc-dP-rOR.placeholder" = "Enter new price";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "Ksy-P0-aj8"; */
+"Ksy-P0-aj8.text" = "Label";
+
+/* Class = "UITextField"; text = "My profile"; ObjectID = "Kut-2z-Te4"; */
+"Kut-2z-Te4.text" = "My profile";
+
+/* Class = "UILabel"; text = "tagline goes here"; ObjectID = "L4d-Iy-hXh"; */
+"L4d-Iy-hXh.text" = "tagline goes here";
+
+/* Class = "UILabel"; text = "ID: 210881630"; ObjectID = "L82-Pd-hvz"; */
+"L82-Pd-hvz.text" = "ID: 210881630";
+
+/* Class = "UILabel"; text = "Sunday"; ObjectID = "L9k-J2-2Nk"; */
+"L9k-J2-2Nk.text" = "Sunday";
+
+/* Class = "UILabel"; text = "Tuesday"; ObjectID = "LJd-SX-IJA"; */
+"LJd-SX-IJA.text" = "Tuesday";
+
+/* Class = "UILabel"; text = "Barcode"; ObjectID = "LKd-ne-oJS"; */
+"LKd-ne-oJS.text" = "Barcode";
+
+/* Class = "UIButton"; normalTitle = "Add product"; ObjectID = "LNQ-AD-tx1"; */
+"LNQ-AD-tx1.normalTitle" = "Add product";
+
+/* Class = "UIViewController"; title = "Promotions"; ObjectID = "LQQ-1S-Sq9"; */
+"LQQ-1S-Sq9.title" = "Promotions";
+
+/* Class = "UILabel"; text = "IDR 500,000"; ObjectID = "LX3-Vf-S23"; */
+"LX3-Vf-S23.text" = "IDR 500,000";
+
+/* Class = "UILabel"; text = "Rp 45,000"; ObjectID = "LXQ-LT-XmS"; */
+"LXQ-LT-XmS.text" = "Rp 45,000";
+
+/* Class = "UITableViewSection"; headerTitle = " "; ObjectID = "LY3-EV-jpd"; */
+"LY3-EV-jpd.headerTitle" = " ";
+
+/* Class = "UIViewController"; title = "Edit Product"; ObjectID = "LZz-cx-lfT"; */
+"LZz-cx-lfT.title" = "Edit Product";
+
+/* Class = "UIButton"; normalTitle = "Cancel Order"; ObjectID = "Lay-sa-obc"; */
+"Lay-sa-obc.normalTitle" = "Cancel Order";
+
+/* Class = "UITextField"; text = "Parrot ads"; ObjectID = "Lhe-89-NG2"; */
+"Lhe-89-NG2.text" = "Parrot ads";
+
+/* Class = "UILabel"; text = "Success"; ObjectID = "Lhs-o6-sTu"; */
+"Lhs-o6-sTu.text" = "Success";
+
+/* Class = "UILabel"; text = "68,000"; ObjectID = "LrA-SM-mdo"; */
+"LrA-SM-mdo.text" = "68,000";
+
+/* Class = "UILabel"; text = "Suppliers name"; ObjectID = "LtU-Ua-aLk"; */
+"LtU-Ua-aLk.text" = "Suppliers name";
+
+/* Class = "UILabel"; text = "Suppliers name"; ObjectID = "M4d-xh-MPv"; */
+"M4d-xh-MPv.text" = "Suppliers name";
+
+/* Class = "UIButton"; normalTitle = "20K"; ObjectID = "MAs-gc-Tlv"; */
+"MAs-gc-Tlv.normalTitle" = "20K";
+
+/* Class = "UILabel"; text = "Description"; ObjectID = "MJo-zH-AMb"; */
+"MJo-zH-AMb.text" = "Description";
+
+/* Class = "UIBarButtonItem"; title = " "; ObjectID = "MME-YI-N17"; */
+"MME-YI-N17.title" = " ";
+
+/* Class = "UILabel"; text = "Single item price"; ObjectID = "MRH-li-Xfg"; */
+"MRH-li-Xfg.text" = "Single item price";
+
+/* Class = "UIButton"; normalTitle = "20K"; ObjectID = "MX3-yP-HxA"; */
+"MX3-yP-HxA.normalTitle" = "20K";
+
+/* Class = "UIViewController"; title = "Edit Product"; ObjectID = "MYg-48-s9l"; */
+"MYg-48-s9l.title" = "Edit Product";
+
+/* Class = "UILabel"; text = "times"; ObjectID = "MfH-wh-9vh"; */
+"MfH-wh-9vh.text" = "times";
+
+/* Class = "UILabel"; text = "Location:"; ObjectID = "Mgy-YU-9Pt"; */
+"Mgy-YU-9Pt.text" = "Location:";
+
+/* Class = "UILabel"; text = "Description"; ObjectID = "MjU-ob-Rj7"; */
+"MjU-ob-Rj7.text" = "Description";
+
+/* Class = "UIButton"; normalTitle = "Update product"; ObjectID = "MlH-9V-jgA"; */
+"MlH-9V-jgA.normalTitle" = "Update product";
+
+/* Class = "UILabel"; text = "Rp 150,000"; ObjectID = "MmK-x9-Vfp"; */
+"MmK-x9-Vfp.text" = "Rp 150,000";
+
+/* Class = "UILabel"; text = "times"; ObjectID = "Mnm-Sk-3kq"; */
+"Mnm-Sk-3kq.text" = "times";
+
+/* Class = "UILabel"; text = "Total revenue"; ObjectID = "MoJ-zI-sHT"; */
+"MoJ-zI-sHT.text" = "Total revenue";
+
+/* Class = "UILabel"; text = "Description"; ObjectID = "Mr6-gg-pMA"; */
+"Mr6-gg-pMA.text" = "Description";
+
+/* Class = "UILabel"; text = "10%"; ObjectID = "N8m-SV-Dd0"; */
+"N8m-SV-Dd0.text" = "10%";
+
+/* Class = "UITextField"; text = "IDR 145,000"; ObjectID = "NGD-hZ-yXw"; */
+"NGD-hZ-yXw.text" = "IDR 145,000";
+
+/* Class = "UIBarButtonItem"; title = "Cancel"; ObjectID = "NSH-2z-idD"; */
+"NSH-2z-idD.title" = "Cancel";
+
+/* Class = "UIButton"; normalTitle = "Add to my products"; ObjectID = "NUR-20-4RS"; */
+"NUR-20-4RS.normalTitle" = "Add to my products";
+
+/* Class = "UINavigationItem"; title = "Add Product"; ObjectID = "NZ2-ts-ZiP"; */
+"NZ2-ts-ZiP.title" = "Add Product";
+
+/* Class = "UITextField"; placeholder = "Enter new price"; ObjectID = "NZk-9f-Hv5"; */
+"NZk-9f-Hv5.placeholder" = "Enter new price";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "NcU-5B-beg"; */
+"NcU-5B-beg.text" = "Label";
+
+/* Class = "UILabel"; text = "Current savings"; ObjectID = "Nun-rY-tZ9"; */
+"Nun-rY-tZ9.text" = "Current savings";
+
+/* Class = "UILabel"; text = "Category | Size"; ObjectID = "Nyq-qv-guJ"; */
+"Nyq-qv-guJ.text" = "Category | Size";
+
+/* Class = "UIButton"; normalTitle = "Log out"; ObjectID = "OH0-zf-khG"; */
+"OH0-zf-khG.normalTitle" = "Log out";
+
+/* Class = "UIViewController"; title = "Purchase total"; ObjectID = "ObI-LW-0OY"; */
+"ObI-LW-0OY.title" = "Purchase total";
+
+/* Class = "UITextField"; text = "Products running low"; ObjectID = "Oey-Qq-KEX"; */
+"Oey-Qq-KEX.text" = "Products running low";
+
+/* Class = "UILabel"; text = "TRANSACTION TYPE"; ObjectID = "OgA-Kf-Knh"; */
+"OgA-Kf-Knh.text" = "TRANSACTION TYPE";
+
+/* Class = "UILabel"; text = "Electricity"; ObjectID = "Olf-YB-P3Y"; */
+"Olf-YB-P3Y.text" = "Electricity";
+
+/* Class = "UITextField"; text = "Contact"; ObjectID = "Oq0-IO-JFV"; */
+"Oq0-IO-JFV.text" = "Contact";
+
+/* Class = "UITextField"; text = "+64 210 252 0033"; ObjectID = "PIf-9V-YIj"; */
+"PIf-9V-YIj.text" = "+64 210 252 0033";
+
+/* Class = "UILabel"; text = "email address"; ObjectID = "PJq-B4-egR"; */
+"PJq-B4-egR.text" = "email address";
+
+/* Class = "UILabel"; text = "Date:"; ObjectID = "PQ3-wx-Z95"; */
+"PQ3-wx-Z95.text" = "Date:";
+
+/* Class = "UILabel"; text = "Rp 25000"; ObjectID = "PUc-BT-nou"; */
+"PUc-BT-nou.text" = "Rp 25000";
+
+/* Class = "UIButton"; normalTitle = "Pay"; ObjectID = "PXi-td-lAu"; */
+"PXi-td-lAu.normalTitle" = "Pay";
+
+/* Class = "UILabel"; text = "Category"; ObjectID = "Pa0-jW-Wva"; */
+"Pa0-jW-Wva.text" = "Category";
+
+/* Class = "UILabel"; text = "100.000"; ObjectID = "Pae-KL-ibD"; */
+"Pae-KL-ibD.text" = "100.000";
+
+/* Class = "UIButton"; normalTitle = "CASH"; ObjectID = "Pb7-wI-Wtf"; */
+"Pb7-wI-Wtf.normalTitle" = "CASH";
+
+/* Class = "UINavigationItem"; title = "Allan's Direct"; ObjectID = "PeJ-UR-9aI"; */
+"PeJ-UR-9aI.title" = "Allan's Direct";
+
+/* Class = "UILabel"; text = "100.000"; ObjectID = "Puh-c8-wcI"; */
+"Puh-c8-wcI.text" = "100.000";
+
+/* Class = "UILabel"; text = "25000"; ObjectID = "Q56-Yp-bPA"; */
+"Q56-Yp-bPA.text" = "25000";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "Q5n-MX-Ft1"; */
+"Q5n-MX-Ft1.text" = "Label";
+
+/* Class = "UILabel"; text = "Cash in"; ObjectID = "Q6B-fW-SI4"; */
+"Q6B-fW-SI4.text" = "Cash in";
+
+/* Class = "UILabel"; text = "phone number"; ObjectID = "QEN-NM-hna"; */
+"QEN-NM-hna.text" = "phone number";
+
+/* Class = "UIBarButtonItem"; title = " "; ObjectID = "QHc-is-T3A"; */
+"QHc-is-T3A.title" = " ";
+
+/* Class = "UILabel"; text = "Phone number"; ObjectID = "QL6-We-PJl"; */
+"QL6-We-PJl.text" = "Phone number";
+
+/* Class = "UILabel"; text = "How do I use the app?"; ObjectID = "QTH-Yp-q7p"; */
+"QTH-Yp-q7p.text" = "How do I use the app?";
+
+/* Class = "UINavigationItem"; title = "Suppliers"; ObjectID = "Qbm-vN-Tx6"; */
+"Qbm-vN-Tx6.title" = "Suppliers";
+
+/* Class = "UILabel"; text = "06/07/2018"; ObjectID = "Qbr-94-0rh"; */
+"Qbr-94-0rh.text" = "06/07/2018";
+
+/* Class = "UILabel"; text = "Product's name"; ObjectID = "Qg5-B8-gnx"; */
+"Qg5-B8-gnx.text" = "Product's name";
+
+/* Class = "UILabel"; text = "15%"; ObjectID = "Qi4-EU-XVf"; */
+"Qi4-EU-XVf.text" = "15%";
+
+/* Class = "UILabel"; text = "Barcode"; ObjectID = "Qvg-d1-fX8"; */
+"Qvg-d1-fX8.text" = "Barcode";
+
+/* Class = "UILabel"; text = "Category"; ObjectID = "R3r-cl-m7P"; */
+"R3r-cl-m7P.text" = "Category";
+
+/* Class = "UILabel"; text = "Data"; ObjectID = "R4v-hu-mzu"; */
+"R4v-hu-mzu.text" = "Data";
+
+/* Class = "UINavigationItem"; title = "Cash out"; ObjectID = "REc-U8-9Ew"; */
+"REc-U8-9Ew.title" = "Cash out";
+
+/* Class = "UILabel"; text = "25"; ObjectID = "RHE-kQ-0AX"; */
+"RHE-kQ-0AX.text" = "25";
+
+/* Class = "UILabel"; text = "IDR"; ObjectID = "RO7-z1-zsJ"; */
+"RO7-z1-zsJ.text" = "IDR";
+
+/* Class = "UILabel"; text = "Monday"; ObjectID = "RVz-bc-Fwt"; */
+"RVz-bc-Fwt.text" = "Monday";
+
+/* Class = "UILabel"; text = "25%"; ObjectID = "RYN-QP-2lz"; */
+"RYN-QP-2lz.text" = "25%";
+
+/* Class = "UILabel"; text = "Rp 65,000"; ObjectID = "S7p-HJ-eYN"; */
+"S7p-HJ-eYN.text" = "Rp 65,000";
+
+/* Class = "UIButton"; normalTitle = "Ok"; ObjectID = "SHd-ZX-d2p"; */
+"SHd-ZX-d2p.normalTitle" = "Ok";
+
+/* Class = "UIViewController"; title = "services"; ObjectID = "SJR-yD-wv4"; */
+"SJR-yD-wv4.title" = "services";
+
+/* Class = "UILabel"; text = "Success"; ObjectID = "SbW-pl-23L"; */
+"SbW-pl-23L.text" = "Success";
+
+/* Class = "UITextField"; placeholder = "IDR 0,000"; ObjectID = "ShU-eD-Djf"; */
+"ShU-eD-Djf.placeholder" = "IDR 0,000";
+
+/* Class = "UITextField"; placeholder = "Barcode"; ObjectID = "SsV-2m-Pic"; */
+"SsV-2m-Pic.placeholder" = "Barcode";
+
+/* Class = "UIViewController"; title = "Transactions"; ObjectID = "T8e-Uj-cdq"; */
+"T8e-Uj-cdq.title" = "Transactions";
+
+/* Class = "UIButton"; normalTitle = "3"; ObjectID = "TBB-UW-JSm"; */
+"TBB-UW-JSm.normalTitle" = "3";
+
+/* Class = "UILabel"; text = "Enter new product price"; ObjectID = "TEH-Yc-fAY"; */
+"TEH-Yc-fAY.text" = "Enter new product price";
+
+/* Class = "UILabel"; text = "Description"; ObjectID = "TFi-um-mAV"; */
+"TFi-um-mAV.text" = "Description";
+
+/* Class = "UIButton"; normalTitle = "Add product"; ObjectID = "TPV-l8-ysQ"; */
+"TPV-l8-ysQ.normalTitle" = "Add product";
+
+/* Class = "UILabel"; text = "Today"; ObjectID = "TgF-ri-01E"; */
+"TgF-ri-01E.text" = "Today";
+
+/* Class = "UITextField"; text = "Fixed costs"; ObjectID = "Tnh-zT-Xuf"; */
+"Tnh-zT-Xuf.text" = "Fixed costs";
+
+/* Class = "UITextField"; text = "sadfasdfasdf"; ObjectID = "Trn-YR-2Qf"; */
+"Trn-YR-2Qf.text" = "sadfasdfasdf";
+
+/* Class = "UILabel"; text = "Tuesday"; ObjectID = "Ts6-p9-yZn"; */
+"Ts6-p9-yZn.text" = "Tuesday";
+
+/* Class = "UITextField"; text = "Light theme"; ObjectID = "U0W-JB-pth"; */
+"U0W-JB-pth.text" = "Light theme";
+
+/* Class = "UILabel"; text = "Description"; ObjectID = "UTr-t9-aPT"; */
+"UTr-t9-aPT.text" = "Description";
+
+/* Class = "UILabel"; text = "TRANSACTION NAME"; ObjectID = "UUT-9r-t6Y"; */
+"UUT-9r-t6Y.text" = "TRANSACTION NAME";
+
+/* Class = "UILabel"; text = "tagline goes here"; ObjectID = "UeP-V2-uxK"; */
+"UeP-V2-uxK.text" = "tagline goes here";
+
+/* Class = "UINavigationItem"; title = "Confirm order"; ObjectID = "UqJ-qV-vW2"; */
+"UqJ-qV-vW2.title" = "Confirm order";
+
+/* Class = "UIButton"; normalTitle = "Ok"; ObjectID = "UuN-jX-z4m"; */
+"UuN-jX-z4m.normalTitle" = "Ok";
+
+/* Class = "UILabel"; text = "Description"; ObjectID = "UxP-ar-Kq7"; */
+"UxP-ar-Kq7.text" = "Description";
+
+/* Class = "UITextField"; placeholder = "Category"; ObjectID = "Uxm-hL-z2C"; */
+"Uxm-hL-z2C.placeholder" = "Category";
+
+/* Class = "UITextField"; text = "Contact information"; ObjectID = "V4L-ni-SlO"; */
+"V4L-ni-SlO.text" = "Contact information";
+
+/* Class = "UINavigationItem"; title = "Edit product"; ObjectID = "V6v-le-DO7"; */
+"V6v-le-DO7.title" = "Edit product";
+
+/* Class = "UILabel"; text = "times"; ObjectID = "VWN-3A-HpR"; */
+"VWN-3A-HpR.text" = "times";
+
+/* Class = "UILabel"; text = "30%"; ObjectID = "VXK-pN-6JJ"; */
+"VXK-pN-6JJ.text" = "30%";
+
+/* Class = "UILabel"; text = "Email"; ObjectID = "VXp-TY-PAN"; */
+"VXp-TY-PAN.text" = "Email";
+
+/* Class = "UILabel"; text = "IDR 1,500,000"; ObjectID = "VZW-87-Cdm"; */
+"VZW-87-Cdm.text" = "IDR 1,500,000";
+
+/* Class = "UIButton"; normalTitle = "6"; ObjectID = "VZd-zW-HfI"; */
+"VZd-zW-HfI.normalTitle" = "6";
+
+/* Class = "UINavigationItem"; title = "Order product"; ObjectID = "Vd9-fD-Uy6"; */
+"Vd9-fD-Uy6.title" = "Order product";
+
+/* Class = "UILabel"; text = "Transaction ID"; ObjectID = "Vl6-oT-hvB"; */
+"Vl6-oT-hvB.text" = "Transaction ID";
+
+/* Class = "UILabel"; text = "Amount Received"; ObjectID = "Vzv-V4-68T"; */
+"Vzv-V4-68T.text" = "Amount Received";
+
+/* Class = "UILabel"; text = "Phone number"; ObjectID = "W2h-Oy-A4w"; */
+"W2h-Oy-A4w.text" = "Phone number";
+
+/* Class = "UITextField"; text = "IDR 200,000"; ObjectID = "W3Y-Qt-Tc8"; */
+"W3Y-Qt-Tc8.text" = "IDR 200,000";
+
+/* Class = "UILabel"; text = "Payment Accepted"; ObjectID = "WHc-5I-zbZ"; */
+"WHc-5I-zbZ.text" = "Payment Accepted";
+
+/* Class = "UIBarButtonItem"; title = " "; ObjectID = "WHi-0e-tte"; */
+"WHi-0e-tte.title" = " ";
+
+/* Class = "UINavigationItem"; title = "Add Product"; ObjectID = "WKf-v1-mgO"; */
+"WKf-v1-mgO.title" = "Add Product";
+
+/* Class = "UINavigationItem"; title = "Add product"; ObjectID = "WQ9-bv-lSi"; */
+"WQ9-bv-lSi.title" = "Add product";
+
+/* Class = "UITextField"; text = "Purchases"; ObjectID = "WQF-lF-JCq"; */
+"WQF-lF-JCq.text" = "Purchases";
+
+/* Class = "UILabel"; text = "Discount"; ObjectID = "WVu-zB-Vtb"; */
+"WVu-zB-Vtb.text" = "Discount";
+
+/* Class = "UILabel"; text = "Rp 65,000"; ObjectID = "WZ4-Xn-Gg3"; */
+"WZ4-Xn-Gg3.text" = "Rp 65,000";
+
+/* Class = "UILabel"; text = "ID: 64220771549"; ObjectID = "WZ9-aN-ysC"; */
+"WZ9-aN-ysC.text" = "ID: 64220771549";
+
+/* Class = "UIBarButtonItem"; title = "Item"; ObjectID = "WZd-fB-KMx"; */
+"WZd-fB-KMx.title" = "Item";
+
+/* Class = "UILabel"; text = "14:47:06"; ObjectID = "Wis-2A-UdX"; */
+"Wis-2A-UdX.text" = "14:47:06";
+
+/* Class = "UILabel"; text = "Enter amount to pay"; ObjectID = "Wis-3r-amV"; */
+"Wis-3r-amV.text" = "Enter amount to pay";
+
+/* Class = "UITextField"; text = "Security"; ObjectID = "Wtc-EW-Nh8"; */
+"Wtc-EW-Nh8.text" = "Security";
+
+/* Class = "UITextField"; text = "Help"; ObjectID = "WyP-Bg-CeO"; */
+"WyP-Bg-CeO.text" = "Help";
+
+/* Class = "UILabel"; text = "Current time"; ObjectID = "X3z-eC-Bro"; */
+"X3z-eC-Bro.text" = "Current time";
+
+/* Class = "UILabel"; text = "Rp 45,000"; ObjectID = "X4S-Ia-GyK"; */
+"X4S-Ia-GyK.text" = "Rp 45,000";
+
+/* Class = "UIButton"; normalTitle = "Ok"; ObjectID = "XCA-Xg-ZNP"; */
+"XCA-Xg-ZNP.normalTitle" = "Ok";
+
+/* Class = "UILabel"; text = "4,543,000"; ObjectID = "XDI-Oi-UOt"; */
+"XDI-Oi-UOt.text" = "4,543,000";
+
+/* Class = "UIViewController"; title = "Add Product"; ObjectID = "XFD-Hu-Dm3"; */
+"XFD-Hu-Dm3.title" = "Add Product";
+
+/* Class = "UITextField"; text = "Session timeout"; ObjectID = "XGc-X2-2GR"; */
+"XGc-X2-2GR.text" = "Session timeout";
+
+/* Class = "UILabel"; text = "10%"; ObjectID = "XJI-RS-FKI"; */
+"XJI-RS-FKI.text" = "10%";
+
+/* Class = "UILabel"; text = "Unsettled revenue"; ObjectID = "XWR-No-af7"; */
+"XWR-No-af7.text" = "Unsettled revenue";
+
+/* Class = "UILabel"; text = "Time:"; ObjectID = "XYZ-eS-2KP"; */
+"XYZ-eS-2KP.text" = "Time:";
+
+/* Class = "UIBarButtonItem"; title = "Item"; ObjectID = "XYm-Ts-FnA"; */
+"XYm-Ts-FnA.title" = "Item";
+
+/* Class = "UIViewController"; title = "PIN Comfirmation"; ObjectID = "XnV-e5-K7X"; */
+"XnV-e5-K7X.title" = "PIN Comfirmation";
+
+/* Class = "UIButton"; normalTitle = "Add to my products"; ObjectID = "Xo2-R7-bTk"; */
+"Xo2-R7-bTk.normalTitle" = "Add to my products";
+
+/* Class = "UILabel"; text = "times"; ObjectID = "Xp0-uj-Jjy"; */
+"Xp0-uj-Jjy.text" = "times";
+
+/* Class = "UILabel"; text = "Time:"; ObjectID = "Xtg-r1-oMF"; */
+"Xtg-r1-oMF.text" = "Time:";
+
+/* Class = "UIBarButtonItem"; title = " "; ObjectID = "Xtx-li-Nyg"; */
+"Xtx-li-Nyg.title" = " ";
+
+/* Class = "UIBarButtonItem"; title = "Item"; ObjectID = "Xyu-OW-2Td"; */
+"Xyu-OW-2Td.title" = "Item";
+
+/* Class = "UILabel"; text = "Rp 65,000"; ObjectID = "YDt-g4-qb9"; */
+"YDt-g4-qb9.text" = "Rp 65,000";
+
+/* Class = "UIBarButtonItem"; title = "Item"; ObjectID = "YHe-mI-fi7"; */
+"YHe-mI-fi7.title" = "Item";
+
+/* Class = "UITableViewSection"; headerTitle = " "; ObjectID = "YNQ-ca-H4K"; */
+"YNQ-ca-H4K.headerTitle" = " ";
+
+/* Class = "UIButton"; normalTitle = "Cancel Order"; ObjectID = "YOj-jc-pDi"; */
+"YOj-jc-pDi.normalTitle" = "Cancel Order";
+
+/* Class = "UITabBarItem"; title = "Card payment"; ObjectID = "YTG-ev-poi"; */
+"YTG-ev-poi.title" = "Card payment";
+
+/* Class = "UITextField"; text = "65437545634563"; ObjectID = "Ygg-Id-cbf"; */
+"Ygg-Id-cbf.text" = "65437545634563";
+
+/* Class = "UILabel"; text = "Mahuhu Roasted Bean"; ObjectID = "YkG-5P-JaI"; */
+"YkG-5P-JaI.text" = "Mahuhu Roasted Bean";
+
+/* Class = "UILabel"; text = "Cash out"; ObjectID = "YoO-bU-A2A"; */
+"YoO-bU-A2A.text" = "Cash out";
+
+/* Class = "UILabel"; text = "IDR"; ObjectID = "YqR-do-EZl"; */
+"YqR-do-EZl.text" = "IDR";
+
+/* Class = "UILabel"; text = "Product name"; ObjectID = "Yvr-Io-B5D"; */
+"Yvr-Io-B5D.text" = "Product name";
+
+/* Class = "UILabel"; text = "Customer name"; ObjectID = "Z2M-ux-osZ"; */
+"Z2M-ux-osZ.text" = "Customer name";
+
+/* Class = "UITabBarItem"; title = "My Shop"; ObjectID = "Z5H-Zh-2uQ"; */
+"Z5H-Zh-2uQ.title" = "My Shop";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "Z8M-gG-Npr"; */
+"Z8M-gG-Npr.text" = "Label";
+
+/* Class = "UILabel"; text = "Rp 45,000"; ObjectID = "ZAf-jb-JHl"; */
+"ZAf-jb-JHl.text" = "Rp 45,000";
+
+/* Class = "UIButton"; normalTitle = "Clear"; ObjectID = "Za1-1j-oMj"; */
+"Za1-1j-oMj.normalTitle" = "Clear";
+
+/* Class = "UITextField"; text = "Expenses"; ObjectID = "ZcI-b4-MxC"; */
+"ZcI-b4-MxC.text" = "Expenses";
+
+/* Class = "UIBarButtonItem"; title = "Item"; ObjectID = "ZhA-0X-0Ph"; */
+"ZhA-0X-0Ph.title" = "Item";
+
+/* Class = "UILabel"; text = "USD"; ObjectID = "ZiC-GE-DLX"; */
+"ZiC-GE-DLX.text" = "USD";
+
+/* Class = "UITextField"; text = "English"; ObjectID = "Zl2-mr-VQW"; */
+"Zl2-mr-VQW.text" = "English";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "Zqc-vB-qTF"; */
+"Zqc-vB-qTF.text" = "Label";
+
+/* Class = "UIButton"; normalTitle = "Add new ad"; ObjectID = "Zr0-sO-KRm"; */
+"Zr0-sO-KRm.normalTitle" = "Add new ad";
+
+/* Class = "UILabel"; text = "Total"; ObjectID = "a0E-na-Ra2"; */
+"a0E-na-Ra2.text" = "Total";
+
+/* Class = "UILabel"; text = "Success"; ObjectID = "aDV-56-wM6"; */
+"aDV-56-wM6.text" = "Success";
+
+/* Class = "UILabel"; text = "times"; ObjectID = "aDi-Kd-nKO"; */
+"aDi-Kd-nKO.text" = "times";
+
+/* Class = "UIBarButtonItem"; title = "Manual"; ObjectID = "aNw-e0-aq6"; */
+"aNw-e0-aq6.title" = "Manual";
+
+/* Class = "UILabel"; text = "IDR 0"; ObjectID = "aVa-7R-KQ8"; */
+"aVa-7R-KQ8.text" = "IDR 0";
+
+/* Class = "UILabel"; text = "Emai address"; ObjectID = "aVf-yb-N2G"; */
+"aVf-yb-N2G.text" = "Emai address";
+
+/* Class = "UILabel"; text = "Supplier Name"; ObjectID = "aVk-Ht-v7A"; */
+"aVk-Ht-v7A.text" = "Supplier Name";
+
+/* Class = "UIButton"; normalTitle = "10K"; ObjectID = "aWi-Kc-tIH"; */
+"aWi-Kc-tIH.normalTitle" = "10K";
+
+/* Class = "UITextField"; text = "IDR 745,500"; ObjectID = "agO-iv-hBP"; */
+"agO-iv-hBP.text" = "IDR 745,500";
+
+/* Class = "UILabel"; text = "Success"; ObjectID = "ahr-A7-dDB"; */
+"ahr-A7-dDB.text" = "Success";
+
+/* Class = "UILabel"; text = "100.000"; ObjectID = "aiA-Lj-7HE"; */
+"aiA-Lj-7HE.text" = "100.000";
+
+/* Class = "UILabel"; text = "Paint the shop"; ObjectID = "aj2-Wy-bJr"; */
+"aj2-Wy-bJr.text" = "Paint the shop";
+
+/* Class = "UIBarButtonItem"; title = " "; ObjectID = "alP-t1-81X"; */
+"alP-t1-81X.title" = " ";
+
+/* Class = "UIButton"; normalTitle = "Checkout"; ObjectID = "amo-Qo-SqC"; */
+"amo-Qo-SqC.normalTitle" = "Checkout";
+
+/* Class = "UILabel"; text = "Single item price"; ObjectID = "awW-0f-oQ9"; */
+"awW-0f-oQ9.text" = "Single item price";
+
+/* Class = "UILabel"; text = "Business Today"; ObjectID = "b5l-Ne-Drf"; */
+"b5l-Ne-Drf.text" = "Business Today";
+
+/* Class = "UILabel"; text = "Honcho 2.0 is a very easy to use app, all you need to do is have a bit of common sense and you'll be on your way"; ObjectID = "b6D-FK-hFG"; */
+"b6D-FK-hFG.text" = "Honcho 2.0 is a very easy to use app, all you need to do is have a bit of common sense and you'll be on your way";
+
+/* Class = "UITextField"; text = "25 May 1990"; ObjectID = "bAK-o9-U78"; */
+"bAK-o9-U78.text" = "25 May 1990";
+
+/* Class = "UILabel"; text = "4,543,000"; ObjectID = "bKF-fV-Ldr"; */
+"bKF-fV-Ldr.text" = "4,543,000";
+
+/* Class = "UITextField"; placeholder = "Barcode"; ObjectID = "bOs-1A-dZe"; */
+"bOs-1A-dZe.placeholder" = "Barcode";
+
+/* Class = "UILabel"; text = "Change due"; ObjectID = "bRi-mh-ex1"; */
+"bRi-mh-ex1.text" = "Change due";
+
+/* Class = "UILabel"; text = "Customer's Cart"; ObjectID = "bSl-E3-3OH"; */
+"bSl-E3-3OH.text" = "Customer's Cart";
+
+/* Class = "UILabel"; text = "Inventory"; ObjectID = "bUN-8g-ZGZ"; */
+"bUN-8g-ZGZ.text" = "Inventory";
+
+/* Class = "UIButton"; normalTitle = "Calculate change   "; ObjectID = "bhI-RY-2kI"; */
+"bhI-RY-2kI.normalTitle" = "Calculate change   ";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "biy-gd-dIr"; */
+"biy-gd-dIr.text" = "Label";
+
+/* Class = "UINavigationItem"; title = "Confirmation"; ObjectID = "bth-IK-SRO"; */
+"bth-IK-SRO.title" = "Confirmation";
+
+/* Class = "UITextField"; placeholder = "IDR 0,000"; ObjectID = "bun-yc-NhP"; */
+"bun-yc-NhP.placeholder" = "IDR 0,000";
+
+/* Class = "UILabel"; text = "Transaction ID - #KR04J"; ObjectID = "buo-29-v5T"; */
+"buo-29-v5T.text" = "Transaction ID - #KR04J";
+
+/* Class = "UITableViewSection"; headerTitle = "  "; ObjectID = "c49-rn-Amh"; */
+"c49-rn-Amh.headerTitle" = "  ";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "c7V-Dx-Uhs"; */
+"c7V-Dx-Uhs.text" = "Label";
+
+/* Class = "UILabel"; text = "1"; ObjectID = "cDv-z6-0gh"; */
+"cDv-z6-0gh.text" = "1";
+
+/* Class = "UILabel"; text = "Customer Name"; ObjectID = "cJb-xq-wtw"; */
+"cJb-xq-wtw.text" = "Customer Name";
+
+/* Class = "UILabel"; text = "Rp 45,000"; ObjectID = "cRB-ve-m41"; */
+"cRB-ve-m41.text" = "Rp 45,000";
+
+/* Class = "UITextField"; placeholder = "Ask me anything"; ObjectID = "cRm-Bh-5rx"; */
+"cRm-Bh-5rx.placeholder" = "Ask me anything";
+
+/* Class = "UILabel"; text = "AUGUST"; ObjectID = "ciS-UM-FTH"; */
+"ciS-UM-FTH.text" = "AUGUST";
+
+/* Class = "UILabel"; text = "Description"; ObjectID = "csf-e3-CHv"; */
+"csf-e3-CHv.text" = "Description";
+
+/* Class = "UILabel"; text = "times"; ObjectID = "cu3-Pa-Jsm"; */
+"cu3-Pa-Jsm.text" = "times";
+
+/* Class = "UIViewController"; title = "Supplier Information"; ObjectID = "cxW-eB-PgH"; */
+"cxW-eB-PgH.title" = "Supplier Information";
+
+/* Class = "UIViewController"; title = "My Cart"; ObjectID = "dMu-cC-jf5"; */
+"dMu-cC-jf5.title" = "My Cart";
+
+/* Class = "UIBarButtonItem"; title = " "; ObjectID = "dO0-VL-sUl"; */
+"dO0-VL-sUl.title" = " ";
+
+/* Class = "UILabel"; text = "32 - 34 Mahuhu Crescent\nAuckland, 1010"; ObjectID = "dSV-Nl-GrE"; */
+"dSV-Nl-GrE.text" = "32 - 34 Mahuhu Crescent\nAuckland, 1010";
+
+/* Class = "UINavigationItem"; title = "Select a printer"; ObjectID = "dTU-uT-hX0"; */
+"dTU-uT-hX0.title" = "Select a printer";
+
+/* Class = "UINavigationItem"; title = "My Sales"; ObjectID = "dVS-ef-7HW"; */
+"dVS-ef-7HW.title" = "My Sales";
+
+/* Class = "UILabel"; text = "Price"; ObjectID = "dfY-WJ-wRy"; */
+"dfY-WJ-wRy.text" = "Price";
+
+/* Class = "UILabel"; text = "Transaction Type:"; ObjectID = "dp1-sJ-Id1"; */
+"dp1-sJ-Id1.text" = "Transaction Type:";
+
+/* Class = "UITableViewController"; title = "Promotions"; ObjectID = "dqd-Ir-1cW"; */
+"dqd-Ir-1cW.title" = "Promotions";
+
+/* Class = "UITextField"; placeholder = "Product name"; ObjectID = "du8-NZ-Kib"; */
+"du8-NZ-Kib.placeholder" = "Product name";
+
+/* Class = "UITextField"; text = "75 / 100"; ObjectID = "e12-bg-Bxa"; */
+"e12-bg-Bxa.text" = "75 / 100";
+
+/* Class = "UIViewController"; title = "Confirmation"; ObjectID = "e1y-JS-dQ2"; */
+"e1y-JS-dQ2.title" = "Confirmation";
+
+/* Class = "UILabel"; text = "Product Name"; ObjectID = "e4N-rX-Mjp"; */
+"e4N-rX-Mjp.text" = "Product Name";
+
+/* Class = "UIViewController"; title = "Contact Us"; ObjectID = "eB9-Wh-Tly"; */
+"eB9-Wh-Tly.title" = "Contact Us";
+
+/* Class = "UILabel"; text = "IDR 1,305,000"; ObjectID = "eFD-AP-1xO"; */
+"eFD-AP-1xO.text" = "IDR 1,305,000";
+
+/* Class = "UILabel"; text = "your order has been placed"; ObjectID = "eJF-DY-l8c"; */
+"eJF-DY-l8c.text" = "your order has been placed";
+
+/* Class = "UILabel"; text = "Wednesday"; ObjectID = "eVQ-JK-Zgt"; */
+"eVQ-JK-Zgt.text" = "Wednesday";
+
+/* Class = "UINavigationItem"; title = "Payments"; ObjectID = "ecD-Rf-XKM"; */
+"ecD-Rf-XKM.title" = "Payments";
+
+/* Class = "UILabel"; text = "55"; ObjectID = "eel-6u-Abe"; */
+"eel-6u-Abe.text" = "55";
+
+/* Class = "UILabel"; text = "Product name"; ObjectID = "enJ-VG-Xgm"; */
+"enJ-VG-Xgm.text" = "Product name";
+
+/* Class = "UILabel"; text = "Amount Due"; ObjectID = "eoc-Ed-WN5"; */
+"eoc-Ed-WN5.text" = "Amount Due";
+
+/* Class = "UILabel"; text = "Enter new product price"; ObjectID = "eux-OU-mdW"; */
+"eux-OU-mdW.text" = "Enter new product price";
+
+/* Class = "UILabel"; text = "times"; ObjectID = "ewE-xV-Plz"; */
+"ewE-xV-Plz.text" = "times";
+
+/* Class = "UITabBarItem"; title = "Dashboard"; ObjectID = "f1o-bb-5Cw"; */
+"f1o-bb-5Cw.title" = "Dashboard";
+
+/* Class = "UIButton"; normalTitle = "other"; ObjectID = "f9A-EE-uo4"; */
+"f9A-EE-uo4.normalTitle" = "other";
+
+/* Class = "UIButton"; normalTitle = "Add product"; ObjectID = "fHc-Cy-w1U"; */
+"fHc-Cy-w1U.normalTitle" = "Add product";
+
+/* Class = "UIButton"; normalTitle = "Add"; ObjectID = "faS-rM-kRl"; */
+"faS-rM-kRl.normalTitle" = "Add";
+
+/* Class = "UIButton"; normalTitle = "4"; ObjectID = "fk0-5C-dxQ"; */
+"fk0-5C-dxQ.normalTitle" = "4";
+
+/* Class = "UIButton"; normalTitle = "8"; ObjectID = "fpi-ql-Rva"; */
+"fpi-ql-Rva.normalTitle" = "8";
+
+/* Class = "UILabel"; text = "15%"; ObjectID = "fvH-HD-SWQ"; */
+"fvH-HD-SWQ.text" = "15%";
+
+/* Class = "UIBarButtonItem"; title = " "; ObjectID = "g0v-nX-cbc"; */
+"g0v-nX-cbc.title" = " ";
+
+/* Class = "UIViewController"; title = "Transactions"; ObjectID = "g5x-f1-fcS"; */
+"g5x-f1-fcS.title" = "Transactions";
+
+/* Class = "UILabel"; text = "Add a product to your inventory or swipe right to take a payment"; ObjectID = "g6e-rn-lPm"; */
+"g6e-rn-lPm.text" = "Add a product to your inventory or swipe right to take a payment";
+
+/* Class = "UILabel"; text = "Customer's Cart"; ObjectID = "gJ2-zE-rZs"; */
+"gJ2-zE-rZs.text" = "Customer's Cart";
+
+/* Class = "UITextField"; placeholder = "Description"; ObjectID = "gUw-jl-Yc8"; */
+"gUw-jl-Yc8.placeholder" = "Description";
+
+/* Class = "UILabel"; text = "Amount Received"; ObjectID = "gWc-e2-6pI"; */
+"gWc-e2-6pI.text" = "Amount Received";
+
+/* Class = "UITextField"; text = "My ads"; ObjectID = "gbB-wr-7YZ"; */
+"gbB-wr-7YZ.text" = "My ads";
+
+/* Class = "UILabel"; text = "Merchant ID: 210881630"; ObjectID = "gbF-WH-UVM"; */
+"gbF-WH-UVM.text" = "Merchant ID: 210881630";
+
+/* Class = "UIBarButtonItem"; title = "Cancel"; ObjectID = "gdN-sc-Rnb"; */
+"gdN-sc-Rnb.title" = "Cancel";
+
+/* Class = "UIButton"; normalTitle = "Add to cart"; ObjectID = "ggj-AX-oPh"; */
+"ggj-AX-oPh.normalTitle" = "Add to cart";
+
+/* Class = "UILabel"; text = "Amount due"; ObjectID = "ghX-M2-zJS"; */
+"ghX-M2-zJS.text" = "Amount due";
+
+/* Class = "UIViewController"; title = "Review order"; ObjectID = "gqa-A9-N6I"; */
+"gqa-A9-N6I.title" = "Review order";
+
+/* Class = "UITextField"; text = "thehonch@gmail.com"; ObjectID = "h3G-Q1-gwL"; */
+"h3G-Q1-gwL.text" = "thehonch@gmail.com";
+
+/* Class = "UIButton"; normalTitle = "Confirm"; ObjectID = "hAM-Yy-cdR"; */
+"hAM-Yy-cdR.normalTitle" = "Confirm";
+
+/* Class = "UIViewController"; title = "Confirmation"; ObjectID = "hCQ-3I-qyc"; */
+"hCQ-3I-qyc.title" = "Confirmation";
+
+/* Class = "UIButton"; normalTitle = "Add product"; ObjectID = "hDp-qr-cLT"; */
+"hDp-qr-cLT.normalTitle" = "Add product";
+
+/* Class = "UINavigationItem"; title = "Payments"; ObjectID = "hEc-Ex-jcG"; */
+"hEc-Ex-jcG.title" = "Payments";
+
+/* Class = "UILabel"; text = "Transaction ID"; ObjectID = "hG8-C4-feU"; */
+"hG8-C4-feU.text" = "Transaction ID";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "hRY-jH-ycR"; */
+"hRY-jH-ycR.text" = "Label";
+
+/* Class = "UILabel"; text = "Customer ID: ********5455"; ObjectID = "hVr-Ew-7ta"; */
+"hVr-Ew-7ta.text" = "Customer ID: ********5455";
+
+/* Class = "UILabel"; text = "Size"; ObjectID = "hZP-gn-YnG"; */
+"hZP-gn-YnG.text" = "Size";
+
+/* Class = "UINavigationItem"; title = "Add Product"; ObjectID = "hZf-z3-FZ4"; */
+"hZf-z3-FZ4.title" = "Add Product";
+
+/* Class = "UINavigationItem"; title = "Cash in"; ObjectID = "hay-aQ-q7C"; */
+"hay-aQ-q7C.title" = "Cash in";
+
+/* Class = "UILabel"; text = "IDR 26,138,000"; ObjectID = "hb8-rH-1b2"; */
+"hb8-rH-1b2.text" = "IDR 26,138,000";
+
+/* Class = "UILabel"; text = "Good"; ObjectID = "hc5-Hf-0jT"; */
+"hc5-Hf-0jT.text" = "Good";
+
+/* Class = "UILabel"; text = "50%"; ObjectID = "heG-o6-mNC"; */
+"heG-o6-mNC.text" = "50%";
+
+/* Class = "UILabel"; text = "Enter new product price"; ObjectID = "hhE-5i-oH9"; */
+"hhE-5i-oH9.text" = "Enter new product price";
+
+/* Class = "UIButton"; normalTitle = "round"; ObjectID = "hhR-TA-PkL"; */
+"hhR-TA-PkL.normalTitle" = "round";
+
+/* Class = "UILabel"; text = "Select Payment Method"; ObjectID = "hqZ-oO-LjI"; */
+"hqZ-oO-LjI.text" = "Select Payment Method";
+
+/* Class = "UILabel"; text = "Hi Eugenio"; ObjectID = "hxM-Vn-njY"; */
+"hxM-Vn-njY.text" = "Hi Eugenio";
+
+/* Class = "UILabel"; text = "+64 210 252 0033"; ObjectID = "i2b-pM-HPq"; */
+"i2b-pM-HPq.text" = "+64 210 252 0033";
+
+/* Class = "UIButton"; normalTitle = "Add Product"; ObjectID = "iBD-cZ-s1w"; */
+"iBD-cZ-s1w.normalTitle" = "Add Product";
+
+/* Class = "UILabel"; text = "Suggested retal price per item"; ObjectID = "iQe-6W-yAa"; */
+"iQe-6W-yAa.text" = "Suggested retal price per item";
+
+/* Class = "UILabel"; text = "tagline goes here"; ObjectID = "iR1-9L-XCx"; */
+"iR1-9L-XCx.text" = "tagline goes here";
+
+/* Class = "UIViewController"; title = "Insights"; ObjectID = "iZX-2c-vkF"; */
+"iZX-2c-vkF.title" = "Insights";
+
+/* Class = "UILabel"; text = "Select quantity"; ObjectID = "ib7-N3-lMr"; */
+"ib7-N3-lMr.text" = "Select quantity";
+
+/* Class = "UIBarButtonItem"; title = " "; ObjectID = "iqO-ZW-Tj4"; */
+"iqO-ZW-Tj4.title" = " ";
+
+/* Class = "UILabel"; text = "Saturday"; ObjectID = "is2-FR-MDX"; */
+"is2-FR-MDX.text" = "Saturday";
+
+/* Class = "UILabel"; text = "Rp 0.000"; ObjectID = "ivr-A0-htX"; */
+"ivr-A0-htX.text" = "Rp 0.000";
+
+/* Class = "UILabel"; text = "Product Name"; ObjectID = "j0X-Bs-o2k"; */
+"j0X-Bs-o2k.text" = "Product Name";
+
+/* Class = "UILabel"; text = "Friday"; ObjectID = "j26-cq-n34"; */
+"j26-cq-n34.text" = "Friday";
+
+/* Class = "UILabel"; text = "Success"; ObjectID = "j2e-Fn-el2"; */
+"j2e-Fn-el2.text" = "Success";
+
+/* Class = "UILabel"; text = "Friday"; ObjectID = "j6S-F1-Dlc"; */
+"j6S-F1-Dlc.text" = "Friday";
+
+/* Class = "UILabel"; text = "Description"; ObjectID = "j7m-Mb-ZRI"; */
+"j7m-Mb-ZRI.text" = "Description";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "jIb-7K-mJL"; */
+"jIb-7K-mJL.text" = "Label";
+
+/* Class = "UILabel"; text = "Apply discount"; ObjectID = "jS4-zF-1EW"; */
+"jS4-zF-1EW.text" = "Apply discount";
+
+/* Class = "UILabel"; text = "Rp 9,400"; ObjectID = "jTr-hu-EiG"; */
+"jTr-hu-EiG.text" = "Rp 9,400";
+
+/* Class = "UIButton"; normalTitle = "Update Cart"; ObjectID = "jWv-CE-3Ru"; */
+"jWv-CE-3Ru.normalTitle" = "Update Cart";
+
+/* Class = "UILabel"; text = "20%"; ObjectID = "jcj-PA-uEV"; */
+"jcj-PA-uEV.text" = "20%";
+
+/* Class = "UILabel"; text = "Inventory"; ObjectID = "jeK-tq-JwA"; */
+"jeK-tq-JwA.text" = "Inventory";
+
+/* Class = "UILabel"; text = "Cash out"; ObjectID = "jhK-DG-3f9"; */
+"jhK-DG-3f9.text" = "Cash out";
+
+/* Class = "UIViewController"; title = "Add Product"; ObjectID = "jqx-ws-R8I"; */
+"jqx-ws-R8I.title" = "Add Product";
+
+/* Class = "UILabel"; text = "Calculate change (optional) "; ObjectID = "jr4-ee-lhr"; */
+"jr4-ee-lhr.text" = "Calculate change (optional) ";
+
+/* Class = "UILabel"; text = "Type:"; ObjectID = "jv8-x8-2wG"; */
+"jv8-x8-2wG.text" = "Type:";
+
+/* Class = "UIViewController"; title = "Order Product"; ObjectID = "k00-sT-yK5"; */
+"k00-sT-yK5.title" = "Order Product";
+
+/* Class = "UILabel"; text = "ID: 64220771549"; ObjectID = "k7s-Gr-LHZ"; */
+"k7s-Gr-LHZ.text" = "ID: 64220771549";
+
+/* Class = "UILabel"; text = "Rp 45,000"; ObjectID = "kEl-lF-0f3"; */
+"kEl-lF-0f3.text" = "Rp 45,000";
+
+/* Class = "UILabel"; text = "Rp 0.000"; ObjectID = "kMq-ne-lXf"; */
+"kMq-ne-lXf.text" = "Rp 0.000";
+
+/* Class = "UILabel"; text = "tagline goes here"; ObjectID = "kYm-nL-xxX"; */
+"kYm-nL-xxX.text" = "tagline goes here";
+
+/* Class = "UIViewController"; title = "Terms & Conditions"; ObjectID = "kbc-cy-az9"; */
+"kbc-cy-az9.title" = "Terms & Conditions";
+
+/* Class = "UIViewController"; title = "Discount"; ObjectID = "keT-iG-9FI"; */
+"keT-iG-9FI.title" = "Discount";
+
+/* Class = "UILabel"; text = "Product Name"; ObjectID = "kzU-2v-NGy"; */
+"kzU-2v-NGy.text" = "Product Name";
+
+/* Class = "UILabel"; text = "Category"; ObjectID = "l4R-iu-utx"; */
+"l4R-iu-utx.text" = "Category";
+
+/* Class = "UIBarButtonItem"; title = " "; ObjectID = "l8K-71-c9J"; */
+"l8K-71-c9J.title" = " ";
+
+/* Class = "UILabel"; text = "Quantity"; ObjectID = "lJY-W6-X7S"; */
+"lJY-W6-X7S.text" = "Quantity";
+
+/* Class = "UILabel"; text = "Your saver is 87% complete"; ObjectID = "lLC-LD-g3s"; */
+"lLC-LD-g3s.text" = "Your saver is 87% complete";
+
+/* Class = "UILabel"; text = "Address"; ObjectID = "lMf-AV-aZt"; */
+"lMf-AV-aZt.text" = "Address";
+
+/* Class = "UIViewController"; title = "Add Product"; ObjectID = "lQt-nc-PKp"; */
+"lQt-nc-PKp.title" = "Add Product";
+
+/* Class = "UILabel"; text = "06/07/2018"; ObjectID = "m1o-Gk-2Od"; */
+"m1o-Gk-2Od.text" = "06/07/2018";
+
+/* Class = "UITextField"; placeholder = "Enter new price"; ObjectID = "m2V-Ey-rem"; */
+"m2V-Ey-rem.placeholder" = "Enter new price";
+
+/* Class = "UILabel"; text = "Username"; ObjectID = "m4h-IB-bKw"; */
+"m4h-IB-bKw.text" = "Username";
+
+/* Class = "UILabel"; text = "Product name"; ObjectID = "mIW-tS-Adq"; */
+"mIW-tS-Adq.text" = "Product name";
+
+/* Class = "UILabel"; text = "Tab Title"; ObjectID = "mZm-o4-4gD"; */
+"mZm-o4-4gD.text" = "Tab Title";
+
+/* Class = "UIButton"; normalTitle = "other"; ObjectID = "mat-gT-zuY"; */
+"mat-gT-zuY.normalTitle" = "other";
+
+/* Class = "UITextField"; placeholder = "Category"; ObjectID = "miJ-6M-aXv"; */
+"miJ-6M-aXv.placeholder" = "Category";
+
+/* Class = "UITextField"; text = "You can borrow up to IDR 8,000,000"; ObjectID = "moQ-Kw-vKt"; */
+"moQ-Kw-vKt.text" = "You can borrow up to IDR 8,000,000";
+
+/* Class = "UILabel"; text = "Product Name"; ObjectID = "nCw-me-gFu"; */
+"nCw-me-gFu.text" = "Product Name";
+
+/* Class = "UILabel"; text = "ID: 210881630"; ObjectID = "nEe-Jk-zoQ"; */
+"nEe-Jk-zoQ.text" = "ID: 210881630";
+
+/* Class = "UILabel"; text = "Duh! We want to know everything about you so we can sell the info to multinationals and conquer the world. Don't worry tho, you're not important."; ObjectID = "nZa-EM-Os4"; */
+"nZa-EM-Os4.text" = "Duh! We want to know everything about you so we can sell the info to multinationals and conquer the world. Don't worry tho, you're not important.";
+
+/* Class = "UILabel"; text = "Description"; ObjectID = "ne9-Ge-kZ5"; */
+"ne9-Ge-kZ5.text" = "Description";
+
+/* Class = "UIBarButtonItem"; title = " "; ObjectID = "nj0-ac-bXc"; */
+"nj0-ac-bXc.title" = " ";
+
+/* Class = "UILabel"; text = "Is the app free?"; ObjectID = "njS-sg-xDh"; */
+"njS-sg-xDh.text" = "Is the app free?";
+
+/* Class = "UIButton"; normalTitle = "Ok"; ObjectID = "nmO-vA-AWB"; */
+"nmO-vA-AWB.normalTitle" = "Ok";
+
+/* Class = "UILabel"; text = "Inventory"; ObjectID = "o0D-bd-FFs"; */
+"o0D-bd-FFs.text" = "Inventory";
+
+/* Class = "UILabel"; text = "Success"; ObjectID = "o25-0d-OVY"; */
+"o25-0d-OVY.text" = "Success";
+
+/* Class = "UILabel"; text = "Product name"; ObjectID = "o6F-aa-2e7"; */
+"o6F-aa-2e7.text" = "Product name";
+
+/* Class = "UILabel"; text = "tagline goes here"; ObjectID = "oNs-HT-6zJ"; */
+"oNs-HT-6zJ.text" = "tagline goes here";
+
+/* Class = "UITableViewSection"; headerTitle = "    "; ObjectID = "oOy-a2-rWh"; */
+"oOy-a2-rWh.headerTitle" = "    ";
+
+/* Class = "UILabel"; text = "Merchant Name"; ObjectID = "oW7-Od-odl"; */
+"oW7-Od-odl.text" = "Merchant Name";
+
+/* Class = "UILabel"; text = "Are you going to steal my data?"; ObjectID = "oWA-ZS-Ran"; */
+"oWA-ZS-Ran.text" = "Are you going to steal my data?";
+
+/* Class = "UILabel"; text = "Inventory"; ObjectID = "oWu-ky-wLe"; */
+"oWu-ky-wLe.text" = "Inventory";
+
+/* Class = "UIBarButtonItem"; title = " "; ObjectID = "oXb-W4-RqE"; */
+"oXb-W4-RqE.title" = " ";
+
+/* Class = "UIButton"; normalTitle = "Cancel"; ObjectID = "oZy-Ls-hE8"; */
+"oZy-Ls-hE8.normalTitle" = "Cancel";
+
+/* Class = "UILabel"; text = "55"; ObjectID = "oad-d3-zaB"; */
+"oad-d3-zaB.text" = "55";
+
+/* Class = "UIButton"; normalTitle = "Checkout"; ObjectID = "ohP-H4-2RF"; */
+"ohP-H4-2RF.normalTitle" = "Checkout";
+
+/* Class = "UILabel"; text = "25%"; ObjectID = "okJ-mQ-7p2"; */
+"okJ-mQ-7p2.text" = "25%";
+
+/* Class = "UILabel"; text = "Address"; ObjectID = "olU-mm-awT"; */
+"olU-mm-awT.text" = "Address";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "olp-An-da3"; */
+"olp-An-da3.text" = "Label";
+
+/* Class = "UINavigationItem"; title = "Add Product"; ObjectID = "osB-Os-2u5"; */
+"osB-Os-2u5.title" = "Add Product";
+
+/* Class = "UITableViewSection"; headerTitle = "  "; ObjectID = "oy1-EP-wUt"; */
+"oy1-EP-wUt.headerTitle" = "  ";
+
+/* Class = "UIButton"; normalTitle = "Take payment"; ObjectID = "oy6-C9-dbH"; */
+"oy6-C9-dbH.normalTitle" = "Take payment";
+
+/* Class = "UILabel"; text = "Available balance"; ObjectID = "p6P-XV-2Sb"; */
+"p6P-XV-2Sb.text" = "Available balance";
+
+/* Class = "UILabel"; text = "100.000"; ObjectID = "p6w-vS-ZrP"; */
+"p6w-vS-ZrP.text" = "100.000";
+
+/* Class = "UIBarButtonItem"; title = "Cancel"; ObjectID = "pFA-1j-PaH"; */
+"pFA-1j-PaH.title" = "Cancel";
+
+/* Class = "UITextField"; text = "My credit score"; ObjectID = "pTW-FB-Rt8"; */
+"pTW-FB-Rt8.text" = "My credit score";
+
+/* Class = "UIBarButtonItem"; title = " "; ObjectID = "pVz-iV-vNd"; */
+"pVz-iV-vNd.title" = " ";
+
+/* Class = "UILabel"; text = "10% discount"; ObjectID = "pbn-ge-DtD"; */
+"pbn-ge-DtD.text" = "10% discount";
+
+/* Class = "UILabel"; text = "Email address"; ObjectID = "pbs-f6-uRb"; */
+"pbs-f6-uRb.text" = "Email address";
+
+/* Class = "UIButton"; normalTitle = "Add to cart"; ObjectID = "pdE-lh-UA3"; */
+"pdE-lh-UA3.normalTitle" = "Add to cart";
+
+/* Class = "UITableViewController"; title = "Suppliers"; ObjectID = "pyd-LI-BeH"; */
+"pyd-LI-BeH.title" = "Suppliers";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "q3n-eP-VSg"; */
+"q3n-eP-VSg.text" = "Label";
+
+/* Class = "UILabel"; text = "14:47:06"; ObjectID = "qfZ-fU-mr6"; */
+"qfZ-fU-mr6.text" = "14:47:06";
+
+/* Class = "UILabel"; text = "times"; ObjectID = "qsN-OJ-Lsa"; */
+"qsN-OJ-Lsa.text" = "times";
+
+/* Class = "UILabel"; text = "Rp 0.000"; ObjectID = "qtw-tL-NDo"; */
+"qtw-tL-NDo.text" = "Rp 0.000";
+
+/* Class = "UITextField"; text = "My sales insights"; ObjectID = "qvg-nn-HnA"; */
+"qvg-nn-HnA.text" = "My sales insights";
+
+/* Class = "UILabel"; text = "01 July 2019"; ObjectID = "qwJ-I6-Fhz"; */
+"qwJ-I6-Fhz.text" = "01 July 2019";
+
+/* Class = "UILabel"; text = "Description"; ObjectID = "rCh-US-rle"; */
+"rCh-US-rle.text" = "Description";
+
+/* Class = "UILabel"; text = "Pay on delivery"; ObjectID = "rH3-QG-77d"; */
+"rH3-QG-77d.text" = "Pay on delivery";
+
+/* Class = "UILabel"; text = "Product's name"; ObjectID = "rTr-FQ-OSc"; */
+"rTr-FQ-OSc.text" = "Product's name";
+
+/* Class = "UILabel"; text = "Suppliers name"; ObjectID = "rUk-HL-9yP"; */
+"rUk-HL-9yP.text" = "Suppliers name";
+
+/* Class = "UILabel"; text = "Wallet payment"; ObjectID = "rZ6-E8-tnO"; */
+"rZ6-E8-tnO.text" = "Wallet payment";
+
+/* Class = "UIButton"; normalTitle = "-"; ObjectID = "rag-OZ-k7f"; */
+"rag-OZ-k7f.normalTitle" = "-";
+
+/* Class = "UIViewController"; title = "Order Product"; ObjectID = "rbn-HW-ud8"; */
+"rbn-HW-ud8.title" = "Order Product";
+
+/* Class = "UILabel"; text = "Saturday"; ObjectID = "reT-kx-QtL"; */
+"reT-kx-QtL.text" = "Saturday";
+
+/* Class = "UILabel"; text = "Water"; ObjectID = "reh-0f-joa"; */
+"reh-0f-joa.text" = "Water";
+
+/* Class = "UITextField"; text = "Latest transactions"; ObjectID = "rfu-uV-F1x"; */
+"rfu-uV-F1x.text" = "Latest transactions";
+
+/* Class = "UILabel"; text = "Suppliers name"; ObjectID = "s8l-bd-4XX"; */
+"s8l-bd-4XX.text" = "Suppliers name";
+
+/* Class = "UILabel"; text = "Description"; ObjectID = "sHE-0z-VEt"; */
+"sHE-0z-VEt.text" = "Description";
+
+/* Class = "UIButton"; normalTitle = "="; ObjectID = "sHe-RL-qNu"; */
+"sHe-RL-qNu.normalTitle" = "=";
+
+/* Class = "UITextField"; text = "Receive email and Push notificaitons"; ObjectID = "sIK-QG-mmQ"; */
+"sIK-QG-mmQ.text" = "Receive email and Push notificaitons";
+
+/* Class = "UIBarButtonItem"; title = "Item"; ObjectID = "sSk-9y-did"; */
+"sSk-9y-did.title" = "Item";
+
+/* Class = "UILabel"; text = "Description"; ObjectID = "sWq-CK-v1d"; */
+"sWq-CK-v1d.text" = "Description";
+
+/* Class = "UIButton"; normalTitle = "5"; ObjectID = "soD-vK-ztF"; */
+"soD-vK-ztF.normalTitle" = "5";
+
+/* Class = "UILabel"; text = "0"; ObjectID = "swq-EA-kML"; */
+"swq-EA-kML.text" = "0";
+
+/* Class = "UIButton"; normalTitle = "000"; ObjectID = "syD-5f-m36"; */
+"syD-5f-m36.normalTitle" = "000";
+
+/* Class = "UILabel"; text = "Payment Accepted"; ObjectID = "sz1-Zg-Tci"; */
+"sz1-Zg-Tci.text" = "Payment Accepted";
+
+/* Class = "UIBarButtonItem"; title = " "; ObjectID = "sz2-5U-43v"; */
+"sz2-5U-43v.title" = " ";
+
+/* Class = "UILabel"; text = "Rp 150.000"; ObjectID = "szr-hV-glb"; */
+"szr-hV-glb.text" = "Rp 150.000";
+
+/* Class = "UITabBarItem"; title = "My Sales"; ObjectID = "t0a-U2-UGR"; */
+"t0a-U2-UGR.title" = "My Sales";
+
+/* Class = "UILabel"; text = "Product name"; ObjectID = "t5B-NG-dXh"; */
+"t5B-NG-dXh.text" = "Product name";
+
+/* Class = "UIButton"; normalTitle = "Manual Product Entry"; ObjectID = "t7b-q0-ZQQ"; */
+"t7b-q0-ZQQ.normalTitle" = "Manual Product Entry";
+
+/* Class = "UILabel"; text = "Size"; ObjectID = "tFg-ky-Jkm"; */
+"tFg-ky-Jkm.text" = "Size";
+
+/* Class = "UITextField"; text = "About"; ObjectID = "tYk-dX-mxb"; */
+"tYk-dX-mxb.text" = "About";
+
+/* Class = "UIBarButtonItem"; title = "Cancel"; ObjectID = "taI-We-6p6"; */
+"taI-We-6p6.title" = "Cancel";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "tbe-xg-euA"; */
+"tbe-xg-euA.text" = "Label";
+
+/* Class = "UILabel"; text = "Price"; ObjectID = "tbg-6B-pFJ"; */
+"tbg-6B-pFJ.text" = "Price";
+
+/* Class = "UIBarButtonItem"; title = "Item"; ObjectID = "tx7-8w-P9g"; */
+"tx7-8w-P9g.title" = "Item";
+
+/* Class = "UIButton"; normalTitle = "7"; ObjectID = "txE-j2-4Rx"; */
+"txE-j2-4Rx.normalTitle" = "7";
+
+/* Class = "UILabel"; text = "Payment due"; ObjectID = "u1a-Ky-eR6"; */
+"u1a-Ky-eR6.text" = "Payment due";
+
+/* Class = "UINavigationItem"; title = "Add Product"; ObjectID = "u7P-Lq-XIm"; */
+"u7P-Lq-XIm.title" = "Add Product";
+
+/* Class = "UIBarButtonItem"; title = " "; ObjectID = "u9v-hp-DXa"; */
+"u9v-hp-DXa.title" = " ";
+
+/* Class = "UIBarButtonItem"; title = " "; ObjectID = "uIZ-BC-XXr"; */
+"uIZ-BC-XXr.title" = " ";
+
+/* Class = "UILabel"; text = "Product name"; ObjectID = "uPR-oc-zpm"; */
+"uPR-oc-zpm.text" = "Product name";
+
+/* Class = "UILabel"; text = "IDR 6,138,000"; ObjectID = "uZR-f2-xSr"; */
+"uZR-f2-xSr.text" = "IDR 6,138,000";
+
+/* Class = "UILabel"; text = "0"; ObjectID = "uxF-XI-r4w"; */
+"uxF-XI-r4w.text" = "0";
+
+/* Class = "UITextField"; text = "Current account"; ObjectID = "uxi-La-9aj"; */
+"uxi-La-9aj.text" = "Current account";
+
+/* Class = "UILabel"; text = "15"; ObjectID = "uyn-Fu-VUG"; */
+"uyn-Fu-VUG.text" = "15";
+
+/* Class = "UILabel"; text = "Inventory"; ObjectID = "v29-GP-Plm"; */
+"v29-GP-Plm.text" = "Inventory";
+
+/* Class = "UILabel"; text = "Rp 45,000"; ObjectID = "v2u-4F-3MD"; */
+"v2u-4F-3MD.text" = "Rp 45,000";
+
+/* Class = "UIButton"; normalTitle = "Payment received"; ObjectID = "v5G-9I-EJa"; */
+"v5G-9I-EJa.normalTitle" = "Payment received";
+
+/* Class = "UIViewController"; title = "Supplier name"; ObjectID = "vKa-NF-yuW"; */
+"vKa-NF-yuW.title" = "Supplier name";
+
+/* Class = "UILabel"; text = "Product name"; ObjectID = "veM-4F-CP8"; */
+"veM-4F-CP8.text" = "Product name";
+
+/* Class = "UITextField"; text = "Frequent questions"; ObjectID = "vgg-dW-YIV"; */
+"vgg-dW-YIV.text" = "Frequent questions";
+
+/* Class = "UILabel"; text = "Merchant Name"; ObjectID = "wAC-7v-HSe"; */
+"wAC-7v-HSe.text" = "Merchant Name";
+
+/* Class = "UIButton"; normalTitle = "1"; ObjectID = "wHV-EH-CXM"; */
+"wHV-EH-CXM.normalTitle" = "1";
+
+/* Class = "UILabel"; text = "Clear"; ObjectID = "wKR-U1-GDG"; */
+"wKR-U1-GDG.text" = "Clear";
+
+/* Class = "UITabBarItem"; title = "Suppliers"; ObjectID = "wb4-cR-bGW"; */
+"wb4-cR-bGW.title" = "Suppliers";
+
+/* Class = "UINavigationItem"; title = "Scanner"; ObjectID = "wh8-HO-uLE"; */
+"wh8-HO-uLE.title" = "Scanner";
+
+/* Class = "UIButton"; normalTitle = "50K"; ObjectID = "woB-6p-sC7"; */
+"woB-6p-sC7.normalTitle" = "50K";
+
+/* Class = "UILabel"; text = "100.000"; ObjectID = "wos-Kx-y1f"; */
+"wos-Kx-y1f.text" = "100.000";
+
+/* Class = "UILabel"; text = "Obviously, we don't want your dirty money all we want is to bring the beauty of a cashless world to your door step"; ObjectID = "xDn-0k-zhz"; */
+"xDn-0k-zhz.text" = "Obviously, we don't want your dirty money all we want is to bring the beauty of a cashless world to your door step";
+
+/* Class = "UILabel"; text = "Size"; ObjectID = "xL8-MH-ywN"; */
+"xL8-MH-ywN.text" = "Size";
+
+/* Class = "UINavigationItem"; title = "Tabs"; ObjectID = "xTf-Fs-0or"; */
+"xTf-Fs-0or.title" = "Tabs";
+
+/* Class = "UIViewController"; title = "Add Product"; ObjectID = "xTg-TY-wfW"; */
+"xTg-TY-wfW.title" = "Add Product";
+
+/* Class = "UITextField"; text = "Current account"; ObjectID = "xUj-FN-jag"; */
+"xUj-FN-jag.text" = "Current account";
+
+/* Class = "UILabel"; text = "0"; ObjectID = "xWI-5X-Ly0"; */
+"xWI-5X-Ly0.text" = "0";
+
+/* Class = "UILabel"; text = "40%"; ObjectID = "xXJ-m5-iHV"; */
+"xXJ-m5-iHV.text" = "40%";
+
+/* Class = "UILabel"; text = "Honcho McManners"; ObjectID = "yBB-SP-8MD"; */
+"yBB-SP-8MD.text" = "Honcho McManners";
+
+/* Class = "UIButton"; normalTitle = "2"; ObjectID = "yEJ-1o-E9k"; */
+"yEJ-1o-E9k.normalTitle" = "2";
+
+/* Class = "UILabel"; text = "Select quantity"; ObjectID = "yHF-Ig-eND"; */
+"yHF-Ig-eND.text" = "Select quantity";
+
+/* Class = "UIViewController"; title = "Take Payment"; ObjectID = "yie-HS-qHb"; */
+"yie-HS-qHb.title" = "Take Payment";
+
+/* Class = "UIButton"; normalTitle = "Cash in"; ObjectID = "yq9-LO-53g"; */
+"yq9-LO-53g.normalTitle" = "Cash in";
+
+/* Class = "UILabel"; text = "68,000"; ObjectID = "z60-tN-u6m"; */
+"z60-tN-u6m.text" = "68,000";
+
+/* Class = "UILabel"; text = "30%"; ObjectID = "z9i-gb-2Pq"; */
+"z9i-gb-2Pq.text" = "30%";
+
+/* Class = "UILabel"; text = "Merchant ID:"; ObjectID = "zTo-vM-iCg"; */
+"zTo-vM-iCg.text" = "Merchant ID:";
+
+/* Class = "UILabel"; text = "Category"; ObjectID = "zXI-fo-25i"; */
+"zXI-fo-25i.text" = "Category";
+
+/* Class = "UITableViewSection"; headerTitle = " "; ObjectID = "zd0-SY-nuQ"; */
+"zd0-SY-nuQ.headerTitle" = " ";
+
+/* Class = "UILabel"; text = "IDR 150,000"; ObjectID = "zjC-c1-Gw4"; */
+"zjC-c1-Gw4.text" = "IDR 150,000";
+
+/* Class = "UILabel"; text = "0"; ObjectID = "zmk-vg-LNw"; */
+"zmk-vg-LNw.text" = "0";
+
+/* Class = "UILabel"; text = "times"; ObjectID = "zxE-8h-WST"; */
+"zxE-8h-WST.text" = "times";

@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="M4Y-Lb-cyx">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Ubuntu-Bold.ttf">
+            <string>Ubuntu-Bold</string>
+        </array>
+        <array key="Ubuntu-Light.ttf">
+            <string>Ubuntu-Light</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--Today View Controller-->
+        <scene sceneID="cwh-vc-ff4">
+            <objects>
+                <viewController id="M4Y-Lb-cyx" customClass="TodayViewController" customModule="Honcho_Lite" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" simulatedAppContext="notificationCenter" id="S3S-Oj-5AN">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="150"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Today's sales" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="N3i-iw-uT9">
+                                <rect key="frame" x="16" y="16" width="75" height="20"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="75" id="0WP-vc-MLk"/>
+                                    <constraint firstAttribute="height" constant="20" id="SWC-VZ-i6z"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Ubuntu-Light" family="Ubuntu Light" pointSize="13"/>
+                                <color key="textColor" red="0.1176470588" green="0.2470588235" blue="0.30980392159999998" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="IDR 1,680,000" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eOd-FA-QuY">
+                                <rect key="frame" x="16" y="36" width="90" height="16"/>
+                                <fontDescription key="fontDescription" name="Ubuntu-Bold" family="Ubuntu" pointSize="14"/>
+                                <color key="textColor" red="0.1176470588" green="0.2470588235" blue="0.30980392159999998" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Sales-t-y" translatesAutoresizingMaskIntoConstraints="NO" id="R0g-yB-2yh">
+                                <rect key="frame" x="16" y="117" width="288" height="17"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="17" id="09m-cy-Kkt"/>
+                                    <constraint firstAttribute="width" constant="288" id="Lbe-Bd-Yak"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Still got 5 hours until closing" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GHY-FL-hSQ">
+                                <rect key="frame" x="16" y="88" width="246" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="Fby-fy-ErZ"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Ubuntu-Bold" family="Ubuntu" pointSize="18"/>
+                                <color key="textColor" red="0.1176470588" green="0.2470588235" blue="0.30980392159999998" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Current account" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YA0-zQ-WeB">
+                                <rect key="frame" x="210" y="16" width="94" height="20"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="20" id="A6G-pE-f93"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Ubuntu-Light" family="Ubuntu Light" pointSize="13"/>
+                                <color key="textColor" red="0.1176470588" green="0.2470588235" blue="0.30980392159999998" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="IDR 6,123,300" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CPV-lf-cg2">
+                                <rect key="frame" x="214" y="36" width="90" height="16"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="90" id="CbG-hF-aXT"/>
+                                    <constraint firstAttribute="height" constant="16" id="ROL-PW-ZEf"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Ubuntu-Bold" family="Ubuntu" pointSize="14"/>
+                                <color key="textColor" red="0.1176470588" green="0.2470588235" blue="0.30980392159999998" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="eOd-FA-QuY" firstAttribute="leading" secondItem="ssy-KU-ocm" secondAttribute="leading" constant="16" id="1RW-Xc-zJI"/>
+                            <constraint firstItem="ssy-KU-ocm" firstAttribute="trailing" secondItem="CPV-lf-cg2" secondAttribute="trailing" constant="16" id="3jL-fa-AFR"/>
+                            <constraint firstItem="YA0-zQ-WeB" firstAttribute="top" secondItem="ssy-KU-ocm" secondAttribute="top" constant="16" id="4Ge-F0-zS7"/>
+                            <constraint firstItem="ssy-KU-ocm" firstAttribute="trailing" secondItem="YA0-zQ-WeB" secondAttribute="trailing" constant="16" id="M4A-le-WbE"/>
+                            <constraint firstItem="R0g-yB-2yh" firstAttribute="leading" secondItem="ssy-KU-ocm" secondAttribute="leading" constant="16" id="Oc8-Co-fY6"/>
+                            <constraint firstItem="GHY-FL-hSQ" firstAttribute="leading" secondItem="ssy-KU-ocm" secondAttribute="leading" constant="16" id="Odn-jZ-Nf5"/>
+                            <constraint firstItem="eOd-FA-QuY" firstAttribute="top" secondItem="N3i-iw-uT9" secondAttribute="bottom" id="Y9D-6x-GvS"/>
+                            <constraint firstItem="CPV-lf-cg2" firstAttribute="top" secondItem="YA0-zQ-WeB" secondAttribute="bottom" id="lgx-aH-nar"/>
+                            <constraint firstItem="N3i-iw-uT9" firstAttribute="leading" secondItem="ssy-KU-ocm" secondAttribute="leading" constant="16" id="vKo-Fd-CST"/>
+                            <constraint firstItem="N3i-iw-uT9" firstAttribute="top" secondItem="ssy-KU-ocm" secondAttribute="top" constant="16" id="wMK-W6-CeK"/>
+                            <constraint firstItem="GHY-FL-hSQ" firstAttribute="top" secondItem="eOd-FA-QuY" secondAttribute="bottom" constant="36" id="xRb-cU-KUT"/>
+                            <constraint firstItem="R0g-yB-2yh" firstAttribute="top" secondItem="GHY-FL-hSQ" secondAttribute="bottom" constant="8" id="zXv-3z-kni"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="ssy-KU-ocm"/>
+                    </view>
+                    <extendedEdge key="edgesForExtendedLayout"/>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="320" height="150"/>
+                    <connections>
+                        <outlet property="balanceLabel" destination="eOd-FA-QuY" id="Adn-Li-j66"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="vXp-U4-Rya" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="102.40000000000001" y="32.383808095952027"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Sales-t-y" width="362" height="19"/>
+    </resources>
+</document>

@@ -7,19 +7,37 @@
 //
 
 import UIKit
+import Firebase
+import XLPagerTabStrip
 
 class SecondViewController: UIViewController {
 
+    @IBOutlet weak var bottomConstraint: NSLayoutConstraint!
+    @IBOutlet weak var uiView: UIView!
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        navigationController?.isNavigationBarHidden = true
     }
-
+    
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+      
     }
-
-
+    
+    // Status bar colour
+    override var preferredStatusBarStyle: UIStatusBarStyle {
+        get {
+            //return .lightContent
+            return .default
+        }
+    }
+    
 }
+
+
+    
+
 

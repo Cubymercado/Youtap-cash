@@ -5,6 +5,7 @@
 //  Created by Eugenio Mercado on 13/06/18.
 //  Copyright © 2018 Eugenio Mercado. All rights reserved.
 //
+/*
 
 import XCTest
 @testable import merchant
@@ -33,4 +34,4 @@ class merchantTests: XCTestCase {
         }
     }
     
-}
+}*/
