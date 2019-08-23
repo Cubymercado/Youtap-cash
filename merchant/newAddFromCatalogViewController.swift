@@ -22,6 +22,9 @@ class newAddFromCatalogViewController: UIViewController, UIPickerViewDataSource,
     var size: String = ""
     var cat: String = ""
     
+    let global = appCurrencies()
+    var currency: String = ""
+    
     // UI Picker
     var categories = ["Coffee","Drinks","Food","Household Items","Stationary"]
     
@@ -84,9 +87,10 @@ class newAddFromCatalogViewController: UIViewController, UIPickerViewDataSource,
     
     // Show data function
     func whatYaSellingUz() {
+        currency = global.appMainCurrency ?? "NZD"
         let url = URL(string: (product?.productImageRectangle)!)
         let price = product!.suggestedPrice
-        let pricePrice = "IDR \(String(describing: price))"
+        let pricePrice = "\(currency) \(String(describing: price))"
         
         let sku = product!.unitSKU
         SKU = sku

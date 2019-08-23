@@ -14,18 +14,18 @@ class TodayViewController: UIViewController, NCWidgetProviding {
         
     @IBOutlet weak var balanceLabel: UILabel!
 
+
     // Variables
     var transferredAmount: String = ""
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.extensionContext?.widgetLargestAvailableDisplayMode = .expanded
 
+        self.extensionContext?.widgetLargestAvailableDisplayMode = .expanded
     }
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
     }
     
     func widgetActiveDisplayModeDidChange(_ activeDisplayMode: NCWidgetDisplayMode, withMaximumSize maxSize: CGSize) {
@@ -39,7 +39,7 @@ class TodayViewController: UIViewController, NCWidgetProviding {
     // Data transfer from transactions   <-----
     func dataFromContainer(containerData : String){
         transferredAmount = containerData
-        balanceLabel.text = "IDR \(transferredAmount)"
+        balanceLabel.text = "\(transferredAmount)"
     }
 
     

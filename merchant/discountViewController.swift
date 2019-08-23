@@ -56,14 +56,14 @@ class discountViewController: UIViewController, UITextFieldDelegate {
     var myCart = [Cart]()
     var myCartUz: [Cart] = []
     var percentageAmounts = [".10",".15",".20","0.25",".30",".40",".50", "0"]
-    
     var selectedIndex: Int!
     let context = (UIApplication.shared.delegate as! AppDelegate).persistentContainer.viewContext
-    
     var priceItem: String = ""
     var amount: String = ""
     var realAmount: String = ""
     var skinnyPete = NSMutableAttributedString()
+    let global = appCurrencies()
+    var currency: String = ""
     
     
     @IBOutlet weak var topView: UIView!
@@ -84,9 +84,7 @@ class discountViewController: UIViewController, UITextFieldDelegate {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
         // Get data
-        //amountLabel.text = amount
         skinnyAndFat()
         
         // Design parameters
@@ -131,7 +129,7 @@ class discountViewController: UIViewController, UITextFieldDelegate {
     // Ok button function
     @IBAction func okButton(_ sender: Any) {
         popUpView.isHidden = true
-        let money = "IDR \(newAmountText.text!)"
+        let money = "\(currency) \(newAmountText.text!)"
         amountLabel.text = money
     }
     
@@ -150,31 +148,26 @@ class discountViewController: UIViewController, UITextFieldDelegate {
     func skinnyAndFat() {
         skinnyPete = NSMutableAttributedString(string: amount, attributes: [NSAttributedStringKey.font: UIFont (name: "Ubuntu-Bold", size: 40)!])
         skinnyPete.addAttribute(NSAttributedStringKey.font, value: UIFont(name: "Ubuntu-Light", size: 20.0)!, range: NSRange(location:0, length:3))
-        
         amountLabel.attributedText = skinnyPete
         amountLabel.text = amount
-        
+        currency = global.appMainCurrency ?? "NZD"
     }
     
     
     // Design parameters function
     func crazyCottonEyedJoe() {
-        wgiteView.layer.cornerRadius = 20
+        wgiteView.cards()
         newAmountText.layer.masksToBounds = true
         newAmountText.layer.cornerRadius = 7
         newAmountText.setLeftPaddingPoints(15)
         okButton.backgroundColor = UIColor.actionBlue
-        blueView.layer.cornerRadius = 20
-        payButton.layer.cornerRadius = 10
-     
+        blueView.cards()
+        payButton.buttonCornersFour()
         UINavigationBar.appearance().barStyle = .blackTranslucent
-        
-        // Circle parameters
         topView.layer.cornerRadius = topView.frame.size.width/2
         topView.clipsToBounds = true
         circleImageView.layer.cornerRadius = circleImageView.frame.size.width/2
         circleImageView.clipsToBounds = true
-        
         popUpView.isHidden = true
         navigationController?.isNavigationBarHidden = true
         
@@ -223,12 +216,12 @@ class discountViewController: UIViewController, UITextFieldDelegate {
     func moveTextField(_ textField: UITextField, moveDistance: Int, up: Bool) {
         let moveDuration = 0.3
         let movement: CGFloat = CGFloat(up ? moveDistance : -moveDistance)
-        
         UIView.beginAnimations("animateTextField", context: nil)
         UIView.setAnimationBeginsFromCurrentState(true)
         UIView.setAnimationDuration(moveDuration)
         self.view.frame = self.view.frame.offsetBy(dx: 0, dy: movement)
         UIView.commitAnimations()
+        
     }
     
     // Unwind segue
@@ -275,8 +268,8 @@ extension discountViewController: UICollectionViewDelegate, UICollectionViewData
         let result = priceInt * percentageInt
         let possumMoney = priceInt - Double(result )
         let resultString = possumMoney as NSNumber
-        
-        amountLabel.text = "IDR \(resultString.stringValue)"
+
+        amountLabel.text = "\(currency) \(resultString.stringValue)"
     }
     
     
@@ -295,7 +288,7 @@ extension discountViewController: UITableViewDataSource, UITableViewDelegate {
         let xNSNumber = price as NSNumber
         
         cell.productName?.text = myCartUz[indexPath.row].product
-        cell.amountLabel?.text = "IDR \(xNSNumber.stringValue)"
+        cell.amountLabel?.text = "\(currency) \(xNSNumber.stringValue)"
         
         return cell
     }

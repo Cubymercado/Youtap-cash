@@ -13,7 +13,6 @@ import Lottie
 
 class scannerConfirmationViewController: UIViewController,  UITextFieldDelegate, CLLocationManagerDelegate {
     
-    @IBOutlet weak var firstView: UIView!
     @IBOutlet weak var confirmButton: UIButton!
     @IBOutlet weak var pinTextField: UITextField!
     @IBOutlet weak var merchantNameLabel: UILabel!
@@ -24,21 +23,17 @@ class scannerConfirmationViewController: UIViewController,  UITextFieldDelegate,
     var merchantName: String = ""
     var merchantID: String = ""
     var amounts: String = ""
-    
-       var skinnyPete = NSMutableAttributedString()
+    var skinnyPete = NSMutableAttributedString()
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        // Design parameters
-        roundCorners()
+        adelitaSeJueConOtro()
         
         // Data placement
         merchantNameLabel!.text = merchantName
         merchantIDLabel!.text = merchantID
         skinnyAndFat()
-        
-       //amountLabel!.text = "IDR \(amount)"
 
         // Hide keyboard
         hideKeyboardOrangutan()
@@ -113,46 +108,13 @@ class scannerConfirmationViewController: UIViewController,  UITextFieldDelegate,
     }
     
     
-    // Round corners functions
-    func roundCorners () {
-        firstView.cards()
+    // Design patameters
+    func adelitaSeJueConOtro () {
         confirmButton.layer.cornerRadius = 10
-        pinTextField.layer.cornerRadius = 10
+        pinTextField.addBottomBorder()
+        pinTextField?.becomeFirstResponder()
     }
     
-    
-    // Keyboard hiding functions
-    func textFieldDidBeginEditing(_ textField: UITextField) {
-        moveTextField(textField, moveDistance: -135, up: true)
-        
-    }
-    
-    
-    
-    // Finish Editing The Text Field
-    func textFieldDidEndEditing(_ textField: UITextField) {
-        moveTextField(textField, moveDistance: -165, up: false)
-    }
-    
-    
-    // Hide the keyboard when the return key pressed
-    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
-        textField.resignFirstResponder()
-        return true
-    }
-    
-    
-    // Move the text field in a pretty animation!
-    func moveTextField(_ textField: UITextField, moveDistance: Int, up: Bool) {
-        let moveDuration = 0.3
-        let movement: CGFloat = CGFloat(up ? moveDistance : -moveDistance)
-        
-        UIView.beginAnimations("animateTextField", context: nil)
-        UIView.setAnimationBeginsFromCurrentState(true)
-        UIView.setAnimationDuration(moveDuration)
-        self.view.frame = self.view.frame.offsetBy(dx: 0, dy: movement)
-        UIView.commitAnimations()
-    }
     
 }
 

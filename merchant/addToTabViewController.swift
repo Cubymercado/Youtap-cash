@@ -33,6 +33,9 @@ class addToTabViewController: UIViewController {
     
     var transactionDate = NSDate()
     
+    let global = appCurrencies()
+    var currency: String = ""
+    
     @IBOutlet weak var profilePicture: UIImageView!
     @IBOutlet weak var customerName: UILabel!
     @IBOutlet weak var phoneNumber: UILabel!
@@ -128,6 +131,7 @@ class addToTabViewController: UIViewController {
         profilePicture!.image =  UIImage(data: image!)
         customerProfile!.image = UIImage(data: image!)
         
+        currency = global.appMainCurrency ?? "NZD"
     }
     
     
@@ -189,7 +193,7 @@ class addToTabViewController: UIViewController {
 extension addToTabViewController: UITableViewDataSource, UITableViewDelegate {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         if productsTab.isEmpty {
-            totalAmount.text = "IDR 0"
+            totalAmount.text = "\(currency) 0"
             
             return productsTab.count
             
@@ -202,7 +206,7 @@ extension addToTabViewController: UITableViewDataSource, UITableViewDelegate {
                 sum += Double(item.price)
             }
             let total = Int(sum)
-            totalAmount.text = "IDR \(total)"
+            totalAmount.text = "\(currency) \(total)"
             
             return productsTab.count
             //return customer?.productTabClass?.count ?? 0
@@ -217,7 +221,7 @@ extension addToTabViewController: UITableViewDataSource, UITableViewDelegate {
         let xNSNumber = price as NSNumber
         
         cell.productName?.text = productsTab[indexPath.row].name
-        cell.amountLabel?.text = "IDR \(xNSNumber.stringValue)"
+        cell.amountLabel?.text = "\(currency) \(xNSNumber.stringValue)"
         
         for item in productsTab {
             productName = item.name!

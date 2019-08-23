@@ -1,0 +1,6 @@
+framework module SMDiagramViewSwift {
+  umbrella header "SMDiagramViewSwift-umbrella.h"
+
+  export *
+  module * { export * }
+}

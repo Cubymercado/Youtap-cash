@@ -27,6 +27,8 @@ class calculatorViewController: UIViewController, IndicatorInfoProvider,UITextFi
     var operationDescription = ""
     var multiplyNumber = ""
     var currentOperation: Operation = .NULL
+    var currency: String = ""
+    let global = appCurrencies()
     
     @IBOutlet weak var amountText: UILabel!
     @IBOutlet weak var payButton: UIButton!
@@ -35,14 +37,10 @@ class calculatorViewController: UIViewController, IndicatorInfoProvider,UITextFi
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Design parameters
         yawahoo()
-        
-        // Hide Keyboard
         hideKeyboardOrangutan()
-        
-      
+        currency = global.appMainCurrency ?? "NZD"
+ 
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -50,10 +48,8 @@ class calculatorViewController: UIViewController, IndicatorInfoProvider,UITextFi
         
     }
     
-    
     // Button function
     func notActiveMyBruh() {
-        
     }
     
     
@@ -64,12 +60,12 @@ class calculatorViewController: UIViewController, IndicatorInfoProvider,UITextFi
         if runningNumber.count <= 8 {
             runningNumber += "\(sender.tag)"
             amountText.text = runningNumber
-            amountButton.text = "IDR \(result)"
+            amountButton.text = "\(currency) \(result)"
             multiplyNumber = "\(sender.tag)"
         }
         
         if runningNumber.count <= 1 {
-            amountButton.text =  "IDR \(result)"
+            amountButton.text =  "\(currency) \(result)"
             multiplyNumber = "\(sender.tag)"
         }
         
@@ -90,11 +86,11 @@ class calculatorViewController: UIViewController, IndicatorInfoProvider,UITextFi
         if runningNumber.count <= 8 {
             runningNumber = "\(zeroNumbers)"
             amountText.text = runningNumber
-            amountButton.text = "IDR \(result)"
+            amountButton.text = "\(currency) \(result)"
         }
         
         if runningNumber.count <= 1 {
-            amountButton.text =  "IDR \(result)"
+            amountButton.text =  "\(currency) \(result)"
         }
         
         if operationDescription.count <= 4 {
@@ -114,11 +110,11 @@ class calculatorViewController: UIViewController, IndicatorInfoProvider,UITextFi
             
             runningNumber = "\(zeroNumbers)"
             amountText.text = runningNumber
-            amountButton.text = "IDR \(result)"
+            amountButton.text = "\(currency) \(result)"
         }
         
         if runningNumber.count <= 1 {
-            amountButton.text =  "IDR \(result)"
+            amountButton.text =  "\(currency) \(result)"
         }
         
         if operationDescription.count <= 4 {
@@ -136,7 +132,7 @@ class calculatorViewController: UIViewController, IndicatorInfoProvider,UITextFi
         currentOperation = .NULL
         amountText.text = "0"
         descriptionLabel.text = "Enter amount to take payment"
-        amountButton.text = "IDR 0"
+        amountButton.text = "\(currency) 0"
         
         shakingBunny()
     }
@@ -186,7 +182,7 @@ class calculatorViewController: UIViewController, IndicatorInfoProvider,UITextFi
                 }
                 
                 amountText.text = result
-               amountButton.text = "IDR \(result)"
+               amountButton.text = "\(currency) \(result)"
                 
             }
             
@@ -222,7 +218,7 @@ class calculatorViewController: UIViewController, IndicatorInfoProvider,UITextFi
         {
             
             let vc = segue.destination as? smallChangeViewController
-            vc?.amount = "IDR \(amountText.text!)"
+            vc?.amount = "\(currency) \(amountText.text!)"
             vc?.type = "Product Payment"
             
         }

@@ -1310,8 +1310,8 @@
 /* Class = "UILabel"; text = "Amount Received"; ObjectID = "gWc-e2-6pI"; */
 "gWc-e2-6pI.text" = "Amount Received";
 
-/* Class = "UITextField"; text = "My ads"; ObjectID = "gbB-wr-7YZ"; */
-"gbB-wr-7YZ.text" = "My ads";
+/* Class = "UITextField"; text = "Current ads showing"; ObjectID = "gbB-wr-7YZ"; */
+"gbB-wr-7YZ.text" = "Current ads showing";
 
 /* Class = "UILabel"; text = "Merchant ID: 210881630"; ObjectID = "gbF-WH-UVM"; */
 "gbF-WH-UVM.text" = "Merchant ID: 210881630";

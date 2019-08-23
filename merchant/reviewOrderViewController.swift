@@ -38,6 +38,8 @@ class reviewOrderViewController: UIViewController {
     var filteredData: [Cart] = []
     let context = (UIApplication.shared.delegate as! AppDelegate).persistentContainer.viewContext
     var selectedIndex: Int!
+    let global = appCurrencies()
+    var currency: String = ""
     
     let paymentsArray = ["cellA", "cellB"]
     
@@ -63,7 +65,6 @@ class reviewOrderViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
         // Design patameters
         lakePupukiIsFullOfPooPooKi()
         
@@ -89,19 +90,14 @@ class reviewOrderViewController: UIViewController {
     // Cancel button function
     @IBAction func cancelButton(_ sender: Any) {
         let fetchRequest = NSFetchRequest<NSFetchRequestResult>(entityName: "Cart")
-        
-        // Create Batch Delete Request
         let batchDeleteRequest = NSBatchDeleteRequest(fetchRequest: fetchRequest)
         
         do {
             try context.execute(batchDeleteRequest)
             print("the squirrels are ready")
             
-        } catch {
-            
-            
-        }
-    
+                } catch {
+            }
         self.dismiss(animated: false, completion: nil)
     }
     
@@ -117,7 +113,6 @@ class reviewOrderViewController: UIViewController {
             print("the squirrels are ready")
             
         } catch {
-    
     }
 
         // Animation shenanigans
@@ -125,16 +120,12 @@ class reviewOrderViewController: UIViewController {
         blurredBackground.blurImage()
         self.view.addSubview(self.blurredBackground)
         blurredBackground.isHidden = false
-        
         popUpView.frame = self.view.bounds
         self.view.addSubview(self.popUpView)
         popUpView.isHidden = false
-        
         self.view.addSubview(self.successAnimation)
         successAnimation.isHidden = false
-        
         tickTockTickTock()
-        
         self.view.addSubview(self.orderPlacedLabel)
         orderPlacedLabel.isHidden = false
         

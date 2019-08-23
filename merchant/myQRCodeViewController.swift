@@ -78,8 +78,8 @@ class myQRCodeViewController: UIViewController, IndicatorInfoProvider {
     
     // Design parameters
     func happyAsLarry() {
-        whiteView.layer.cornerRadius = 15
-
+        whiteView.cards()
+        
     }
     
     

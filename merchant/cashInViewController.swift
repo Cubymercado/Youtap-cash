@@ -27,7 +27,8 @@ class cashInViewController: UIViewController, UITextFieldDelegate {
     func makeMePretty() {
         whiteCard.cards()
         amountField.addBottomBorder()
-        cashInButton.layer.cornerRadius = 10
+        cashInButton.buttonCornersFour()
+        amountField.becomeFirstResponder()
         self.navigationController?.navigationBar.barTintColor = UIColor(red:0.94, green:0.94, blue:0.96, alpha:1.0)
     }
     

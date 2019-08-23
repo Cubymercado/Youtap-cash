@@ -25,7 +25,6 @@ class supplierPromoProducts: UITableViewCell {
         super.layoutSubviews()
         supplierDescription.sizeToFit()
     }
-    
 }
 
 class onSaleProductsTableViewController: UITableViewController, IndicatorInfoProvider {
@@ -34,20 +33,20 @@ class onSaleProductsTableViewController: UITableViewController, IndicatorInfoPro
     var products: [suppliersPromos] = []
     var filteredSupplier: [suppliersPromos] = []
     var selectedIndex: Int!
+    var currency: String = ""
+    let global = appCurrencies()
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        // Hide keyboard
         hideKeyboardOrangutan()
-        
-        
+
         // Data sources
         tableView.dataSource = self
         tableView.delegate = self
         
         query = baseQuery()
+        currency = global.appMainCurrency ?? "NZD"
         print(Firestore.firestore().collection("supplierOneProducts").limit(to: 50))
 
     }
@@ -144,8 +143,8 @@ class onSaleProductsTableViewController: UITableViewController, IndicatorInfoPro
         
         cell.supplierName?.text = product.name
         cell.supplierDescription?.text = product.description
-        cell.supplierPrice?.text = "IDR \(result)"
-        cell.supplierPromoPrice?.text = "IDR \(resultPromo)"
+        cell.supplierPrice?.text = "\(currency) \(result)"
+        cell.supplierPromoPrice?.text = "\(currency) \(resultPromo)"
      
         DispatchQueue.main.async{
             cell.supplierImage?.kf.setImage(with: url)

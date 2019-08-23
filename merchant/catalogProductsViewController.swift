@@ -115,7 +115,7 @@ class catalogProductsViewController: UIViewController, IndicatorInfoProvider {
     
     // Firestore database
     fileprivate func baseQuery() -> Query {
-        return Firestore.firestore().collection("suySingCatalogue").limit(to: 300)
+        return Firestore.firestore().collection("warungsStock").limit(to: 300)
     }
     
     
@@ -157,7 +157,9 @@ extension catalogProductsViewController: UITableViewDelegate, UITableViewDataSou
     
     // Firestore data
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        
             let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as! catalogProductCell
+            
             let product = products[indexPath.row]
             let url = URL(string: product.productImageSquare)
             

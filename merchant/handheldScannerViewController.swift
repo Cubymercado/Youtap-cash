@@ -37,6 +37,8 @@ class handheldScannerViewController: UIViewController, UITextFieldDelegate {
     var skinnyPete = NSMutableAttributedString()
     var amount: String = ""
     var totalSend: String = ""
+    var currency: String = ""
+    let global = appCurrencies()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -46,11 +48,9 @@ class handheldScannerViewController: UIViewController, UITextFieldDelegate {
         //skinnyAndFat()
     }
     
-    
     override func viewDidAppear(_ animated: Bool) {
         tableView.reloadData()
-       ahoi()
-       
+        ahoi()
         super.viewDidAppear(animated)
         DispatchQueue.main.async {
             self.barcodeText.becomeFirstResponder()
@@ -61,7 +61,6 @@ class handheldScannerViewController: UIViewController, UITextFieldDelegate {
     override func viewWillAppear(_ animated: Bool) {
      ahoi()
     }
-    
     
     // Reload cart data
     func reloadCart() {
@@ -74,6 +73,7 @@ class handheldScannerViewController: UIViewController, UITextFieldDelegate {
     
     // Handheld scannerfunction
     func ahoi() {
+        currency = global.appMainCurrency ?? "NZD"
         barcodeText.addTarget(self, action: #selector(testText(textField:)), for: .editingChanged)
     }
     
@@ -84,12 +84,11 @@ class handheldScannerViewController: UIViewController, UITextFieldDelegate {
         print (laserNumber)
         laserTagIsLaserLife()
         barcodeText.text  = ""
-    } else {
-      
-        
+        } else {
+
         }
     }
-    
+
     
     // Scanner function
     func scanScanLaser(){
@@ -102,7 +101,6 @@ class handheldScannerViewController: UIViewController, UITextFieldDelegate {
             laserTagIsLaserLife()
             barcodeText.text = ""
             self.barcodeText.becomeFirstResponder()
-            
         }
     }
 
@@ -127,7 +125,7 @@ class handheldScannerViewController: UIViewController, UITextFieldDelegate {
                 // Add firebase
                 let db = Firestore.firestore()
                 var docRef: DocumentReference? = nil
-                docRef = db.collection("tillProducts").addDocument (data: ["product": name, "description":  "scanned", "price": "IDR \(price.stringValue)",
+                docRef = db.collection("tillProducts").addDocument (data: ["product": name, "description":  "scanned", "price": "\(currency) \(price.stringValue)",
                     
                 ]) { err in
                     if let err = err {
@@ -278,12 +276,9 @@ class handheldScannerViewController: UIViewController, UITextFieldDelegate {
     func skinnyAndFat() {
         skinnyPete = NSMutableAttributedString(string: amount, attributes: [NSAttributedStringKey.font: UIFont (name: "Ubuntu-Regular", size: 40)!])
         skinnyPete.addAttribute(NSAttributedStringKey.font, value: UIFont(name: "Ubuntu-Light", size: 20.0)!, range: NSRange(location:0, length:3))
-        
         totalAmount.attributedText = skinnyPete
         totalAmount.text = amount
-        
     }
-    
 
 }
 
@@ -313,10 +308,7 @@ extension handheldScannerViewController: UITableViewDelegate, UITableViewDataSou
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         if myCartUz.isEmpty {
             totalAmount.text = ""
-            checkoutButton.setTitle("IDR 0,000", for: .normal)
-           // checkoutButton.content.c
-
-            
+            checkoutButton.setTitle("\(currency) 0", for: .normal)
             return myCartUz.count
             
         } else {
@@ -328,10 +320,8 @@ extension handheldScannerViewController: UITableViewDelegate, UITableViewDataSou
             }
             
             let total = Int(sum)
-            
-            amount = "IDR \(total)"
+            amount = "\(currency) \(total)"
             totalSend = String(total)
-           // totalAmount.text = "IDR \(total)"
             checkoutButton.setTitle(amount, for: .normal)
             checkoutButton.contentEdgeInsets.left = 20
 
@@ -349,8 +339,7 @@ extension handheldScannerViewController: UITableViewDelegate, UITableViewDataSou
         let price = myCartUz[indexPath.row].price
         let xNSNumber = price as NSNumber
         cell.descriptionLabel?.text = myCartUz[indexPath.row].productDescription
-        cell.productPrice?.text = "IDR \(xNSNumber.stringValue)"
-        
+        cell.productPrice?.text = "\(currency) \(xNSNumber.stringValue)"
         let dataS = myCartUz[indexPath.row].productImage as Data?
         cell.productImage.image = UIImage(data: dataS!)
         

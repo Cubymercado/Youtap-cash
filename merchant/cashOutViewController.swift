@@ -21,16 +21,13 @@ class cashOutViewController: UIViewController, UITextFieldDelegate {
         makeMePretty()
        
     }
-    
- 
-    
-    
+
     // Design parameters
     func makeMePretty() {
         whiteCard.cards()
-        //cashOutButton.isHidden = true
         amountField.addBottomBorder()
-        cashOutButton.layer.cornerRadius = 10
+        cashOutButton.buttonCornersFour()
+        amountField.becomeFirstResponder()
         self.navigationController?.navigationBar.barTintColor = UIColor(red:0.94, green:0.94, blue:0.96, alpha:1.0)
     }
     

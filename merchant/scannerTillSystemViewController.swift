@@ -19,7 +19,6 @@ class scannerTillCell: UITableViewCell {
 
 
 class scannerTillSystemViewController: UIViewController, AVCaptureMetadataOutputObjectsDelegate  {
-
     @IBOutlet weak var cameraScannerView: UIView!
     @IBOutlet weak var tableView: UITableView!
     @IBOutlet weak var payButton: UIButton!
@@ -31,7 +30,6 @@ class scannerTillSystemViewController: UIViewController, AVCaptureMetadataOutput
     var videoPreviewLayer: AVCaptureVideoPreviewLayer?
     var barCodeFrameView: UIView? // for Extra credit section 3
     var initialized = false
-
     let barCodeTypes = [AVMetadataObject.ObjectType.upce,
                         AVMetadataObject.ObjectType.code39,
                         AVMetadataObject.ObjectType.code39Mod43,
@@ -46,7 +44,6 @@ class scannerTillSystemViewController: UIViewController, AVCaptureMetadataOutput
                         AVMetadataObject.ObjectType.interleaved2of5]
     
     var crosshairView: CrosshairView? = nil
-    
     var lastCapturedCode: String?
     var laserNumber = readLine()
     
@@ -62,18 +59,17 @@ class scannerTillSystemViewController: UIViewController, AVCaptureMetadataOutput
     let context = (UIApplication.shared.delegate as! AppDelegate).persistentContainer.viewContext
     var productPicture: UIImage!
     var cartDocumentID: String = ""
+    var currency: String = ""
+    let global = appCurrencies()
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Design parameters
         peterPanIsNotPeterPunk()
-        self.navigationController?.navigationBar.tintColor = UIColor(red:0.11, green:0.68, blue:0.83, alpha:1.0)
-        self.navigationController?.navigationBar.barTintColor = UIColor.white
-        
-        // Fresh table view
         killTheVietCongs()
+        
+        currency = global.appMainCurrency ?? "NZD"
         
         self.view.addSubview(self.tableView)
         self.view.addSubview(self.payButton)
@@ -95,7 +91,6 @@ class scannerTillSystemViewController: UIViewController, AVCaptureMetadataOutput
             
         }
         setupCapture()
-
         self.view.addSubview(self.tableView)
         self.view.addSubview(self.payButton)
         self.view.bringSubview(toFront: self.tableView!)
@@ -221,7 +216,6 @@ class scannerTillSystemViewController: UIViewController, AVCaptureMetadataOutput
                 
                 // Initialize Frame to highlight the Bar Code
                 DispatchQueue.main.async {
-                    
                     if self.cameraScannerView == nil {
                         self.cameraScannerView = UIView()
                         if let barCodeFrameView = self.cameraScannerView {
@@ -236,7 +230,6 @@ class scannerTillSystemViewController: UIViewController, AVCaptureMetadataOutput
                 }
                 
                 if metadataObject.stringValue != nil {
-                    
                     lastCapturedCode = metadataObject.stringValue
                     captureSession.stopRunning()
                     letsCookSomeNoodles()
@@ -261,20 +254,16 @@ class scannerTillSystemViewController: UIViewController, AVCaptureMetadataOutput
                 let price = (result[0] as AnyObject).value(forKey: "price") as! NSNumber
                 let picture: NSData = UIImagePNGRepresentation(#imageLiteral(resourceName: "Random-product"))! as NSData
                 let kfPicture = (result[0] as AnyObject).value(forKey: "image") as! NSData
-        
-                // self.productName.text = name
-    
                 products.append(lastCapturedCode!)
                 self.tableView.reloadData()
 
         // Add firebase
         let db = Firestore.firestore()
         var docRef: DocumentReference? = nil
-        docRef = db.collection("tillProducts").addDocument (data: ["product": name, "description":  "scanned", "price": "IDR \(price.stringValue)",
+        docRef = db.collection("tillProducts").addDocument (data: ["product": name, "description":  "scanned", "price": "\(currency) \(price.stringValue)",
             // "image": products[indexPath.row].image!
                 ]) { err in
                     if let err = err {
-                
                 print("Error adding document: \(err)")
             } else {
                 print("Document added with ID: \(docRef!.documentID)")
@@ -285,14 +274,11 @@ class scannerTillSystemViewController: UIViewController, AVCaptureMetadataOutput
     // Save data to table view till
     if (name != nil) && price.stringValue != "" {
         if constantCart.saveObject(product: name, price: Int(truncating: price), inventory: 1, productImage: kfPicture, productDescription: "scanned", documentID: docRef!.documentID) {
-            
     }
             if constantCart.fetchObject() != nil {
             myCartUz = constantCart.fetchObject()!
-    
-            // Display data on table view
             self.tableView.reloadData()
-            }
+        }
     }
     
     // Restart scanner
@@ -308,13 +294,11 @@ class scannerTillSystemViewController: UIViewController, AVCaptureMetadataOutput
     shakingBunny()
 }
 
-
     // Scanner value search
     func laserTagIsLaserLife() {
         let request = NSFetchRequest<NSFetchRequestResult>(entityName: "Products1")
         let searchString = laserNumber
         request.predicate = NSPredicate(format: "barcode == %@", searchString!)
-        
         do {
             let result = try dataProduct.fetch(request)
             if result.count > 0{
@@ -329,11 +313,9 @@ class scannerTillSystemViewController: UIViewController, AVCaptureMetadataOutput
                 // Add firebase
                 let db = Firestore.firestore()
                 var docRef: DocumentReference? = nil
-                docRef = db.collection("tillProducts").addDocument (data: ["product": name, "description":  "scanned", "price": "IDR \(price.stringValue)",
-                    
+                docRef = db.collection("tillProducts").addDocument (data: ["product": name, "description":  "scanned", "price": "\(currency) \(price.stringValue)",
                 ]) { err in
                     if let err = err {
-                        
                         print("Error adding document: \(err)")
                     } else {
                         print("Document added with ID: \(docRef!.documentID)")
@@ -343,12 +325,9 @@ class scannerTillSystemViewController: UIViewController, AVCaptureMetadataOutput
                 // Save data to table view till
                 if (name != nil) && price.stringValue != "" {
                     if constantCart.saveObject(product: name, price: Int(truncating: price), inventory: 1, productImage: kfPicture, productDescription: "scanned", documentID: docRef!.documentID) {
-                        
                     }
                     if constantCart.fetchObject() != nil {
                         myCartUz = constantCart.fetchObject()!
-                        
-                        // Display data on table view
                         self.tableView.reloadData()
                     }
                 }
@@ -371,11 +350,9 @@ class scannerTillSystemViewController: UIViewController, AVCaptureMetadataOutput
         }
         
         let saveAction = UIAlertAction(title: "Add", style: UIAlertAction.Style.default, handler: { alert -> Void in
-            
             let firstTextField = alertController.textFields![0] as UITextField
             let secondTextField = alertController.textFields![1] as UITextField
-            
-            // Keyboard type for UITextField
+
             secondTextField.keyboardType = .numberPad
             
             let product = firstTextField.text
@@ -389,16 +366,14 @@ class scannerTillSystemViewController: UIViewController, AVCaptureMetadataOutput
             
             // Save product to suggested products
             if constantSuggestedProducts.saveObject(name: product!, price: price!, description: "Manual entry", category: "Manual entry", barcode: self.lastCapturedCode!, image: image) {
-                
             }
-            print("the kiwi bird it's browsing")
+            print("the kiwi bird is browsing")
             
             if constantCart.fetchObject() != nil {
                 self.myCartUz = constantCart.fetchObject()!
                 self.tableView.reloadData()
                 self.captureSession.startRunning()
             }
-            
         })
         
         let cancelAction = UIAlertAction(title: "Cancel", style: UIAlertAction.Style.destructive, handler: {
@@ -413,19 +388,7 @@ class scannerTillSystemViewController: UIViewController, AVCaptureMetadataOutput
         self.present(alertController, animated: true, completion: nil)
         
     }
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
+
     
     // Draw crosshair on camera view
     class CrosshairView: UIView {
@@ -482,7 +445,7 @@ class scannerTillSystemViewController: UIViewController, AVCaptureMetadataOutput
                 context.move(to: bottomLeft)
                 context.addLine(to: CGPoint(x: fWidth/2-squareWidth/2+cornerWidth, y: fHeight/2+squareWidth/2))
                 context.strokePath()
-                
+            
                 context.move(to: bottomLeft)
                 context.addLine(to: CGPoint(x: fWidth/2-squareWidth/2, y: fHeight/2+squareWidth/2-cornerWidth))
                 context.strokePath()
@@ -495,19 +458,14 @@ class scannerTillSystemViewController: UIViewController, AVCaptureMetadataOutput
     // Add amount function
     func weDontKnowDaProduct() {
         let alertController = UIAlertController(title: "Unknown Product", message: "Enter the product and a price", preferredStyle: UIAlertController.Style.alert)
-        
         alertController.addTextField { (textField : UITextField!) -> Void in
             textField.placeholder = "Product name"
         }
         
         let saveAction = UIAlertAction(title: "Add", style: UIAlertAction.Style.default, handler: { alert -> Void in
-            
             let firstTextField = alertController.textFields![0] as UITextField
             let secondTextField = alertController.textFields![1] as UITextField
-            
-            // Keyboard type for UITextField
             secondTextField.keyboardType = .numberPad
-            
             let product = firstTextField.text
             let price = Int(secondTextField.text!)
             let picture: NSData = UIImagePNGRepresentation(#imageLiteral(resourceName: "Random-product"))! as NSData
@@ -522,7 +480,6 @@ class scannerTillSystemViewController: UIViewController, AVCaptureMetadataOutput
             if constantSuggestedProducts.saveObject(name: product!, price: price!, description: "Manual entry", category: "Manual entry", barcode: self.lastCapturedCode!, image: image) {
                 
             }
-            
             print("the kiwi bird it's browsing")
             
             if constantCart.fetchObject() != nil {
@@ -530,9 +487,7 @@ class scannerTillSystemViewController: UIViewController, AVCaptureMetadataOutput
                 self.tableView.reloadData()
                 self.captureSession.startRunning()
             }
-            
         })
-        
         
         let cancelAction = UIAlertAction(title: "Cancel", style: UIAlertAction.Style.destructive, handler: {
             (action : UIAlertAction!) -> Void in })
@@ -541,15 +496,11 @@ class scannerTillSystemViewController: UIViewController, AVCaptureMetadataOutput
             textField.placeholder = "Product price"
             textField.keyboardType = .decimalPad
         }
-        
         alertController.addAction(saveAction)
         alertController.addAction(cancelAction)
-        
         self.present(alertController, animated: true, completion: nil)
-        
-        
-        
     }
+    
     
     // Back Button
     @IBAction func backButton(_ sender: Any) {
@@ -559,33 +510,24 @@ class scannerTillSystemViewController: UIViewController, AVCaptureMetadataOutput
     // Cancel button
     @IBAction func cancelButton(_ sender: Any) {
         let fetchRequest = NSFetchRequest<NSFetchRequestResult>(entityName: "Cart")
-        
-        // Create Batch Delete Request
         let batchDeleteRequest = NSBatchDeleteRequest(fetchRequest: fetchRequest)
-        
         do {
             try context.execute(batchDeleteRequest)
             
         } catch {
             
         }
-        
     }
     
     
     // Ok button action
     @IBAction func okButton(_ sender: Any) {
         self.performSegue(withIdentifier: "paySegue", sender: self)
-        
         let fetchRequest = NSFetchRequest<NSFetchRequestResult>(entityName: "Cart")
-
-        // Create Batch Delete Request
         let batchDeleteRequest = NSBatchDeleteRequest(fetchRequest: fetchRequest)
-        
         do {
             try context.execute(batchDeleteRequest)
             print("the squirrels are ready")
-            
         } catch {
             
         }
@@ -598,8 +540,6 @@ class scannerTillSystemViewController: UIViewController, AVCaptureMetadataOutput
     // Delete everything when starting up
     func killTheVietCongs(){
         let fetchRequest = NSFetchRequest<NSFetchRequestResult>(entityName: "Cart")
-        
-        // Create Batch Delete Request
         let batchDeleteRequest = NSBatchDeleteRequest(fetchRequest: fetchRequest)
         
         do {
@@ -612,16 +552,12 @@ class scannerTillSystemViewController: UIViewController, AVCaptureMetadataOutput
     
     
     // Data transfer to payments (send)
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?)
-    {
-        if segue.destination is discountViewController
-        {
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.destination is discountViewController {
             let vc = segue.destination as? discountViewController
             vc?.amount = totalAmountLabel.text!
             //vc?.type = "Product Payment"
         } else {
-            
-            
             if segue.identifier == "quantitySegue" {
                 let editVC = segue.destination as! productQuantityViewController
                 editVC.myCart = cart
@@ -632,7 +568,7 @@ class scannerTillSystemViewController: UIViewController, AVCaptureMetadataOutput
     }
     
     
-    // Heptic feel
+    // Haptic feel
     func shakingBunny() {
         let impact = UIImpactFeedbackGenerator()
         impact.impactOccurred()
@@ -642,8 +578,9 @@ class scannerTillSystemViewController: UIViewController, AVCaptureMetadataOutput
     // Design parameters function
     func peterPanIsNotPeterPunk(){
         payButton.contentEdgeInsets.left = 20
-        payButton.layer.cornerRadius = 10
-        //navigationController?.isNavigationBarHidden = true
+        payButton.buttonCornersFour()
+        self.navigationController?.navigationBar.tintColor = UIColor(red:0.11, green:0.68, blue:0.83, alpha:1.0)
+        self.navigationController?.navigationBar.barTintColor = UIColor.white
     }
 }
 
@@ -652,17 +589,15 @@ extension scannerTillSystemViewController: UITableViewDelegate, UITableViewDataS
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath) as! scannerTillCell
         cell.productName?.text = myCartUz[indexPath.row].product
-        
         let price = myCartUz[indexPath.row].price
         let xNSNumber = price as NSNumber
-        cell.productPrice?.text = "IDR \(xNSNumber.stringValue)"
+        cell.productPrice?.text = "\(currency) \(xNSNumber.stringValue)"
         
         return cell
     }
     
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-      
         if myCartUz.isEmpty {
             return myCartUz.count
             
@@ -673,20 +608,16 @@ extension scannerTillSystemViewController: UITableViewDelegate, UITableViewDataS
             for item in myCartUz {
                 sum += Double(item.price)
             }
-            
-            totalAmountLabel.text = "IDR \(sum)"
+            totalAmountLabel.text = "\(currency) \(sum)"
             
             return myCartUz.count
         }
     }
     
+    
     func tableView(_ tableView: UITableView, editActionsForRowAt indexPath: IndexPath) -> [UITableViewRowAction]? {
-        
         let delete = UITableViewRowAction(style: .default, title: "Delete") { (action, indexPath) in
-            
             let db = Firestore.firestore()
-            
-            // Delete from Firestore
             db.collection("tillProducts").document("\(self.myCartUz[indexPath.row].documentID!)").delete() { err in
                 if let err = err {
                     print ("ooops")
@@ -701,14 +632,11 @@ extension scannerTillSystemViewController: UITableViewDelegate, UITableViewDataS
             (UIApplication.shared.delegate as! AppDelegate).saveContext()
             self.myCartUz.remove(at: indexPath.row)
             self.tableView.deleteRows(at: [indexPath], with: .fade)
-            
         }
         
         delete.backgroundColor = UIColor(red: 246/255, green: 104/255, blue: 37/255, alpha: 1.0)
         return [delete]
-        
     }
-    
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         cart = myCartUz[indexPath.row]

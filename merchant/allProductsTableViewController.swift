@@ -20,7 +20,6 @@ class supplierProductsCellOne: UITableViewCell {
     @IBOutlet weak var supplierName: UILabel!
     @IBOutlet weak var supplierPrice: UILabel!
     @IBOutlet weak var supplierDescription: UILabel!
-    
 }
 
 class allProductsTableViewController: UITableViewController, IndicatorInfoProvider {
@@ -29,19 +28,20 @@ class allProductsTableViewController: UITableViewController, IndicatorInfoProvid
     var products: [suppliersProducts] = []
     var filteredSupplier: [suppliersProducts] = []
     var selectedIndex: Int!
+    var currency: String = ""
+    let global = appCurrencies()
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Hide keyboard
         hideKeyboardOrangutan()
         
         // Data sources
         tableView.dataSource = self
         tableView.delegate = self
-        
         query = baseQuery()
+        currency = global.appMainCurrency ?? "NZD"
+        
         print(Firestore.firestore().collection("supplierOneSingle").limit(to: 150))
         
     }
@@ -71,7 +71,6 @@ class allProductsTableViewController: UITableViewController, IndicatorInfoProvid
     
 
     private var listener: ListenerRegistration?
-    
     fileprivate func observeQuery() {
         guard let query = query else { return }
         stopObserving()
@@ -119,27 +118,19 @@ class allProductsTableViewController: UITableViewController, IndicatorInfoProvid
     
     // Firestore data
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        
         let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as! supplierProductsCellOne
-        
         let product = products[indexPath.row]
         let url = URL(string: product.productImageSquare)
-        
         let price = product.unitPrice
         let priceString = price as NSNumber
         let result = priceString.stringValue
-        
         cell.supplierName?.text = product.name
         cell.supplierDescription?.text = product.description
-        cell.supplierPrice?.text = "IDR \(result)"
-        
+        cell.supplierPrice?.text = "\(currency) \(result)"
         DispatchQueue.main.async{
             cell.supplierImage?.kf.setImage(with: url)
-            
         }
-        
-        return cell 
-        
+        return cell
     }
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {

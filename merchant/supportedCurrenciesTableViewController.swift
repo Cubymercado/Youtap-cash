@@ -11,17 +11,18 @@ import Firebase
 import FirebaseFirestore
 import Kingfisher
 
+
 class supportedCurrencyCell: UITableViewCell {
     
     @IBOutlet weak var currencyName: UITextField!
     @IBOutlet weak var currencyCode: UITextField!
     @IBOutlet weak var currencyFlag: UIImageView!
-    @IBOutlet weak var whiteCard: UIView!
+    @IBOutlet weak var card: UIView!
+    
     
     override func layoutSubviews() {
         super.layoutSubviews()
-        self.whiteCard.cards()
-        
+        self.card.cards()
     }
     
 }
@@ -38,7 +39,11 @@ class supportedCurrenciesTableViewController: UITableViewController {
 
         query = baseQuery()
         observeQuery()
+       
         newStyle()
+        
+        self.tableView.dataSource = self
+        self.tableView.delegate = self
     }
     
     override func viewDidAppear(_ animated: Bool) {
@@ -67,6 +72,7 @@ class supportedCurrenciesTableViewController: UITableViewController {
         guard let query = query else { return }
         stopObserving()
         
+        
         // Display data from Firestore, part one
         listener = query.addSnapshotListener { [unowned self] (snapshot, error) in
             guard let snapshot = snapshot else {
@@ -82,12 +88,12 @@ class supportedCurrenciesTableViewController: UITableViewController {
                 }
             }
             self.currencies = models
-            self.tableView.reloadData()
+           self.tableView.reloadData()
         }
     }
     
     fileprivate func stopObserving() {
-        listener?.remove()
+        listener?.remove()  
     }
     
     
@@ -99,35 +105,46 @@ class supportedCurrenciesTableViewController: UITableViewController {
     
     // Navbar style
     func newStyle() {
-        navigationController?.navigationBar.prefersLargeTitles = false
+        navigationController?.navigationBar.prefersLargeTitles = true
         navigationItem.largeTitleDisplayMode = .always
-        self.navigationController?.navigationBar.barTintColor = UIColor(red:0.98, green:0.98, blue:0.98, alpha:1.0)
+        self.navigationController?.navigationBar.barTintColor = UIColor.groupTableViewBackground
+       
     }
-
     
     override func numberOfSections(in tableView: UITableView) -> Int {
-        
         return 1
     }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        
         return currencies.count
     }
 
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as! supportedCurrencyCell
-        let currency = currencies[indexPath.row]
-        let url = URL(string: currency.image)
+            let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as! supportedCurrencyCell
+            let currency = currencies[indexPath.row]
+            let url = URL(string: currency.image)
         
-        cell.currencyName?.text = currency.name
-        cell.currencyCode?.text = currency.code
+            cell.currencyName?.text = currency.name
+            cell.currencyCode?.text = currency.currency
    
-        DispatchQueue.main.async{
+            DispatchQueue.main.async {
             cell.currencyFlag?.kf.setImage(with: url)
+            
         }
         
         return cell
+    }
+    
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as! supportedCurrencyCell
+        let currency = currencies[indexPath.row]
+        let flag = currency.image
+        let currencyName = currency.currency
+        
+        UserDefaults.standard.set("\(currencyName)", forKey: "mainCurrency")
+        UserDefaults.standard.set("\(flag)", forKey:  "mainCurrencyImage")
+        
+        self.navigationController?.popViewController(animated: true)
     }
 
 }

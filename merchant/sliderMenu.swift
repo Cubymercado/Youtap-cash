@@ -27,7 +27,7 @@ class sliderMenu: ButtonBarPagerTabStripViewController {
         
         changeCurrentIndexProgressive = { [weak self] (oldCell: ButtonBarViewCell?, newCell: ButtonBarViewCell?, progressPercentage: CGFloat, changeCurrentIndex: Bool, animated: Bool) -> Void in
             guard changeCurrentIndex == true else { return }
-            oldCell?.label.textColor = UIColor(red:0.11, green:0.68, blue:0.83, alpha:1.0)
+            oldCell?.label.textColor = UIColor(red:0.00, green:0.14, blue:0.22, alpha:1.0)
             //oldCell?.label.textColor = UIColor(red:0.16, green:0.28, blue:0.34, alpha:1.0)
             newCell?.label.textColor = UIColor(red:0.97, green:0.33, blue:0.20, alpha:1.0)
         }

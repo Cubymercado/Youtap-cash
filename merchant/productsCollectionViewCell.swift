@@ -22,9 +22,7 @@ protocol cartCellDelegate: class {
 
 // My Cart tableView class
 class cartTableViewCell: UITableViewCell {
-    
     weak var cellDelegate: cartCellDelegate?
-    
     @IBOutlet weak var productName: UILabel!
     @IBOutlet weak var productPrice: UILabel!
     @IBOutlet weak var productImage: UIImageView!
@@ -44,7 +42,6 @@ class cartTableViewCell: UITableViewCell {
 
 // Products tableView class
 class productTableViewTwoCell: UITableViewCell {
-    
     @IBOutlet weak var imageProduct: UIImageView!
     @IBOutlet weak var productLabel: UILabel!
     @IBOutlet weak var detailsLabel: UILabel!
@@ -52,7 +49,6 @@ class productTableViewTwoCell: UITableViewCell {
     
     override func layoutSubviews() {
         super.layoutSubviews()
-        
         self.imageProduct.threeCorners()
     }
 }
@@ -60,16 +56,13 @@ class productTableViewTwoCell: UITableViewCell {
 
 // Add Product collectionView class
 class addProductCell: UICollectionViewCell {
-    
     @IBAction func addNewButton(_ sender: Any) {
     }
-    
 }
 
 
 // Products collectionView class
 class productsCollectionViewCell: UICollectionViewCell {
-    
     @IBOutlet weak var imageProduct: UIImageView!
     @IBOutlet weak var productLabel: UILabel!
     @IBOutlet weak var descriptionLabel: UILabel!
@@ -78,7 +71,6 @@ class productsCollectionViewCell: UICollectionViewCell {
     
     override func layoutSubviews() {
         super.layoutSubviews()
-        
         priceView.threeCornersSmall()
         self.contentView.threeCorners()
         self.threeCorners()
@@ -122,6 +114,8 @@ class productsCollectionViewController: UIViewController, UITextFieldDelegate, I
     var selectedIndex: Int!
     var selectedIndex2: Int!
     let context = (UIApplication.shared.delegate as! AppDelegate).persistentContainer.viewContext
+    var currency: String = ""
+    let global = appCurrencies()
     
     var tillProducts: [tillProducts] = []
     var cartDocumentID: String = ""
@@ -137,35 +131,19 @@ class productsCollectionViewController: UIViewController, UITextFieldDelegate, I
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        // Design parameters
         ladiesAndGentsThisMamboNrFive()
-      
-        // Reload data
         reloadCart()
-        
-        // Profile data
         let profileNameGoogle = GIDSignIn.sharedInstance().currentUser.profile.givenName
         profileName?.text = "Hi \(profileNameGoogle!)"
-        
-        
-        
-        
+        currency = global.appMainCurrency ?? "NZD"
     }
+    
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(true)
-  
-        // Get data from Products
         getMeSomeData()
-        
-        //Hide keyboard
         hideKeyboardOrangutan()
-        
-        // Show navigation bar
         navigationController?.isNavigationBarHidden = true
-        
-     
     }
     
     
@@ -175,20 +153,19 @@ class productsCollectionViewController: UIViewController, UITextFieldDelegate, I
         if constantProducts.fetchObject() != nil {
             products = constantProducts.fetchObject()!
             collectionView.reloadData()
-            grayView.isHidden = true //here
-            
+            grayView.isHidden = true
             tableViewTwo.dataSource = self
             tableViewTwo.delegate = self
             tableView.reloadData()
         }
     }
     
+    
     // Colours from HEX
     func UIColorFromHex(rgbValue:UInt32, alpha:Double=1.0)->UIColor {
         let red = CGFloat((rgbValue & 0xFF0000) >> 16)/256.0
         let green = CGFloat((rgbValue & 0xFF00) >> 8)/256.0
         let blue = CGFloat(rgbValue & 0xFF)/256.0
-        
         return UIColor(red:red, green:green, blue:blue, alpha:CGFloat(alpha))
     }
     
@@ -211,7 +188,6 @@ class productsCollectionViewController: UIViewController, UITextFieldDelegate, I
     
     // Get data from Core Data for tableViewTwo
     func fetchData() {
-        
         do {
             products = try context.fetch(Products1.fetchRequest())
             filteredData = products
@@ -274,7 +250,6 @@ class productsCollectionViewController: UIViewController, UITextFieldDelegate, I
     @IBAction func listButton(_ sender: Any) {
         collectionView.isHidden = !collectionView.isHidden
         tableViewTwo.isHidden = !tableViewTwo.isHidden
-       
         fetchData()
     }
     
@@ -315,23 +290,19 @@ class productsCollectionViewController: UIViewController, UITextFieldDelegate, I
     
     // Cancel button
     @IBAction func cancelButton(_ sender: Any) {
-        
         let fetchRequest = NSFetchRequest<NSFetchRequestResult>(entityName: "Cart")
         
         // Create Batch Delete Request
         let batchDeleteRequest = NSBatchDeleteRequest(fetchRequest: fetchRequest)
-        
         do {
             try context.execute(batchDeleteRequest)
             print("the squirrels are ready")
-            
         } catch {
-            
+    
         }
         grayView.isHidden = true
         redCircleView.isHidden = true
         amountText.text = ""
-       
         if constantCart.fetchObject() != nil {
             myCartUz = constantCart.fetchObject()!
             self.tableView.reloadData()
@@ -362,13 +333,11 @@ class productsCollectionViewController: UIViewController, UITextFieldDelegate, I
         }
         
         let saveAction = UIAlertAction(title: "Add", style: UIAlertAction.Style.default, handler: { alert -> Void in
-            
             let firstTextField = alertController.textFields![0] as UITextField
             let secondTextField = alertController.textFields![1] as UITextField
             
             // Keyboard type for UITextField
             secondTextField.keyboardType = .numberPad
-            
             let product = firstTextField.text
             let price = Int(secondTextField.text!)
             let picture: NSData = UIImagePNGRepresentation(#imageLiteral(resourceName: "Random-product"))! as NSData
@@ -543,7 +512,7 @@ extension productsCollectionViewController: UICollectionViewDataSource {
     let price = products[indexPath.row].price
     let xNSNumber = price as NSNumber
  
-    cell.priceLabel.text = "IDR \(xNSNumber.stringValue)"
+    cell.priceLabel.text = "\(currency) \(xNSNumber.stringValue)"
     
         if let data = products[indexPath.row].image as Data? {
             cell.imageProduct.image = UIImage(data:data)
@@ -584,7 +553,6 @@ extension productsCollectionViewController: UICollectionViewDataSource {
     
     // Delete functions
     func deleteEverything() {
-        
         let fetchRequest = NSFetchRequest<NSFetchRequestResult>(entityName: "Cart")
         let batchDeleteRequest = NSBatchDeleteRequest(fetchRequest: fetchRequest)
         
@@ -606,9 +574,7 @@ extension productsCollectionViewController: UICollectionViewDataSource {
 
 // Collection view favourite products
 extension productsCollectionViewController: UICollectionViewDelegate {
-   
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-    
         selectedIndex = indexPath.row
         let price = products[indexPath.row].price
         let xNSNumber = price as NSNumber
@@ -619,7 +585,7 @@ extension productsCollectionViewController: UICollectionViewDelegate {
         var docRef: DocumentReference? = nil
         docRef = db.collection("tillProducts").addDocument (data: ["product": products[indexPath.row].name!,
                                                                    "description":  products[indexPath.row].size!,
-                                                                   "price": "IDR \(xNSNumber.stringValue)",
+                                                                   "price": "\(currency) \(xNSNumber.stringValue)",
         ]) { err in
             if let err = err {
                 
@@ -690,7 +656,6 @@ extension productsCollectionViewController: UITableViewDelegate, UITableViewData
     func didPressbutton(_ sender: UIButton) {
         let buttonPosition = sender.convert(CGPoint.zero, to: tableView)
         if let indexPath: IndexPath = tableView.indexPathForRow(at: buttonPosition) {
-            
             let db = Firestore.firestore()
             db.collection("tillProducts").document("\(self.myCartUz[indexPath.row].documentID!)").delete() { err in if let err = err {
                     print ("ooops")
@@ -717,7 +682,6 @@ extension productsCollectionViewController: UITableViewDelegate, UITableViewData
     // Delete Slider
     func tableView(_ tableView: UITableView, editActionsForRowAt indexPath: IndexPath) -> [UITableViewRowAction]? {
         let delete = UITableViewRowAction(style: .default, title: "Delete") { (action, indexPath) in
-    
             let db = Firestore.firestore()
             db.collection("tillProducts").document("\(self.myCartUz[indexPath.row].documentID!)").delete() { err in
                 if let err = err {
@@ -763,7 +727,6 @@ extension productsCollectionViewController: UITableViewDelegate, UITableViewData
     
     
      func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-
         if tableView == tableViewTwo {
             
             let cell2 = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath) as! productTableViewTwoCell
@@ -772,7 +735,7 @@ extension productsCollectionViewController: UITableViewDelegate, UITableViewData
             
             cell2.productLabel?.text = filteredData[indexPath.row].name
             cell2.detailsLabel?.text = filteredData[indexPath.row].size
-            cell2.priceLabel?.text = "IDR \(xNSNumber.stringValue)"
+            cell2.priceLabel?.text = "\(currency) \(xNSNumber.stringValue)"
             
             if let data = filteredData[indexPath.row].image as Data? {
                 cell2.imageProduct.image = UIImage(data:data)
@@ -782,7 +745,6 @@ extension productsCollectionViewController: UITableViewDelegate, UITableViewData
             let backgroundView = UIView()
             backgroundView.backgroundColor = UIColor(red:0.97, green:0.93, blue:0.89, alpha:1.0)
             cell2.selectedBackgroundView = backgroundView
-            
             return cell2
             
         } else {
@@ -794,7 +756,7 @@ extension productsCollectionViewController: UITableViewDelegate, UITableViewData
         let price = myCartUz[indexPath.row].price
         let xNSNumber = price as NSNumber
         cell.descriptionLabel?.text = myCartUz[indexPath.row].productDescription
-        cell.productPrice?.text = "IDR \(xNSNumber.stringValue)"
+        cell.productPrice?.text = "\(currency) \(xNSNumber.stringValue)"
             
         let dataS = myCartUz[indexPath.row].productImage as Data?
         cell.productImage.image = UIImage(data: dataS!)
@@ -817,18 +779,16 @@ extension productsCollectionViewController: UITableViewDelegate, UITableViewData
     // My cart row function 
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
          if tableView == tableViewTwo {
-            
             return filteredData.count
             
          } else {
 
         if myCartUz.isEmpty {
-    
             amountText.text = ""
             grayView.isHidden = true
             redCircleView.isHidden = true
             okButton.isEnabled = false
-            okButton.setTitle("IDR 0,000", for: .normal)
+            okButton.setTitle("\(currency) 0", for: .normal)
             okButton.contentEdgeInsets.left = 85
             bottomRect.isHidden = true
             okButton.isHidden = true
@@ -845,8 +805,7 @@ extension productsCollectionViewController: UITableViewDelegate, UITableViewData
                 sum += Double(item.price)
             }
             let total = Int(sum)
-            
-            amountText.text = "IDR \(total)"
+            amountText.text = "\(currency) \(total)"
             redCircleView.isHidden = false
             okButton.isEnabled = true
             okButton.setTitle("Checkout", for: .normal)
@@ -858,7 +817,6 @@ extension productsCollectionViewController: UITableViewDelegate, UITableViewData
             return myCartUz.count
     
             }
-       
         }
 }
     
@@ -875,12 +833,10 @@ extension productsCollectionViewController: UITableViewDelegate, UITableViewData
         var docRef: DocumentReference? = nil
         docRef = db.collection("tillProducts").addDocument (data: ["product": products[indexPath.row].name!,
                                                                    "description":  products[indexPath.row].size!,
-                                                                   "price": "IDR \(xNSNumber.stringValue)",
+                                                                   "price": "\(currency) \(xNSNumber.stringValue)",
             // "image": products[indexPath.row].image!
-            
         ]) { err in
             if let err = err {
-                
                 print("Error adding document: \(err)")
             } else {
                 print("Document added with ID: \(docRef!.documentID)")
@@ -892,9 +848,8 @@ extension productsCollectionViewController: UITableViewDelegate, UITableViewData
     if (products[selectedIndex].name != nil) && xNSNumber.stringValue != "" {
         if constantCart.saveObject(product: products[selectedIndex].name!,  price: Int(products[selectedIndex].price), inventory: 1, productImage: picture as NSData, productDescription: products[selectedIndex].size!, documentID: docRef!.documentID) {
         }
-  
-        cartDocumentID = docRef!.documentID
         
+        cartDocumentID = docRef!.documentID
         if constantCart.fetchObject() != nil {
             myCartUz = constantCart.fetchObject()!
             self.tableView.reloadData()
@@ -902,13 +857,11 @@ extension productsCollectionViewController: UITableViewDelegate, UITableViewData
         
         // System sound and vibrations
         let systemSoundId: SystemSoundID = 1103
-        
         AudioServicesAddSystemSoundCompletion(systemSoundId, nil, nil, { (customSoundId, _) -> Void in
             AudioServicesDisposeSystemSoundID(customSoundId)
         }, nil)
         AudioServicesPlayAlertSound(systemSoundId)
     }
-        
         
         func confettiPoom(){
             let confetti = AnimationView(name: "cart2")
@@ -916,10 +869,9 @@ extension productsCollectionViewController: UITableViewDelegate, UITableViewData
             confetti.frame = animationCart.bounds
             animationCart.addSubview(confetti)
             animationCart.imageTint(color: UIColor(red:1.00, green:1.00, blue:1.00, alpha:0.0))
-            
             confetti.play()
-            
         }
+        
         counterLabel.isHidden = false
         confettiPoom()
     
@@ -930,6 +882,7 @@ extension productsCollectionViewController: UITableViewDelegate, UITableViewData
     counterLabel.text = cartItemsString
 
     } else if tableView == tableVIewThree {
+      
         cart = myCartUz[indexPath.row]
         self.performSegue(withIdentifier: "quantitySegue", sender: self)
        // tableView.deselectRow(at: indexPath, animated: true)
@@ -937,10 +890,8 @@ extension productsCollectionViewController: UITableViewDelegate, UITableViewData
 }
     
    func numberOfSections(in tableView: UITableView) -> Int {
-        
         return 1
     }
-
 }
 
 

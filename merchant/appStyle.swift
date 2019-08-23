@@ -143,6 +143,31 @@ extension UIView {
     
 }
 
+class singleCard: UIView {
+    override func layoutSubviews() {
+    self.layer.cornerRadius = 10
+        
+    }
+}
+
+class singleCardTop: UIView {
+    override func layoutSubviews() {
+        self.clipsToBounds = true
+        self.layer.cornerRadius = 10
+        self.layer.maskedCorners = [.layerMinXMinYCorner, . layerMaxXMinYCorner]
+        
+    }
+}
+
+class singleCardBottom: UIView {
+    override func layoutSubviews() {
+        self.clipsToBounds = true
+        self.layer.cornerRadius = 10
+        self.layer.maskedCorners = [.layerMaxXMaxYCorner, .layerMinXMaxYCorner]
+        
+    }
+}
+
 
 // Bottom left corner
 extension UIView {
@@ -434,5 +459,14 @@ extension UIViewController {
     
     @objc func dismissKeyboard() {
         view.endEditing(true)
+    }
+}
+
+// Cross text
+extension String {
+    func strikeThrough() -> NSAttributedString {
+        let attributeString =  NSMutableAttributedString(string: self)
+        attributeString.addAttribute(NSAttributedStringKey.strikethroughStyle, value: NSUnderlineStyle.styleSingle.rawValue, range: NSMakeRange(0,attributeString.length))
+        return attributeString
     }
 }

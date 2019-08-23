@@ -39,12 +39,7 @@ class dashboardCollectionViewCell: UICollectionViewCell {
 
 class dashboardViewController: UITableViewController {
 
-    @IBOutlet weak var cardOne: UIView!
-    @IBOutlet weak var cardTwo: UIView!
-    @IBOutlet weak var cardThree: UIView!
-    @IBOutlet weak var cardFour: UIView!
-    @IBOutlet weak var cardFive: UIView!
-    @IBOutlet weak var cardSix: UIView!
+    @IBOutlet weak var availableBalance: UILabel!
     @IBOutlet weak var revenueView: UIView!
     @IBOutlet weak var revenueRightView: UIView!
     @IBOutlet weak var insightsView: PieChartView!
@@ -64,6 +59,8 @@ class dashboardViewController: UITableViewController {
     
     var totalDataEntry = [PieChartDataEntry]()
     
+    let global = appCurrencies()
+    var currency: String = ""
     
     // Date and Time variables
     let formatter = DateFormatter()
@@ -79,33 +76,45 @@ class dashboardViewController: UITableViewController {
     var numberOfItems: String = ""
     
     // Text variables
-    var currency = "IDR"
     var totalAmount: String = ""
     var transferredAmount: String = ""
     var skinnyPete = NSMutableAttributedString()
         
     override func viewDidLoad() {
         super.viewDidLoad()
+        globalCurrencies()
+        
         cardDesigns()
         newStyle()
         insightsView.chartDescription?.text = "Payments"
-        //coreDataModel()
         getMeSomeData()
    
         
     }
     
     override func viewWillAppear(_ animated: Bool) {
+        globalCurrencies()
         getMeSomeData()
         countWithAttribute()
         updateChartData()
     }
     
+    override func viewDidAppear(_ animated: Bool) {
+        globalCurrencies()
+    }
+    
+    // App global currencies functions
+    func globalCurrencies() {
+        currency = global.appMainCurrency ?? "NZD"
+        
+    }
+    
     // Data transfer from transactions   <-----
     func dataFromContainer(containerData : String){
         transferredAmount = containerData
-        totalSalesLabel.text = "IDR \(containerData)"
+        totalSalesLabel.text = "\(currency) \(containerData)"
         skinnyAndFat()
+        yourFatBalance()
     }
 
     
@@ -145,28 +154,32 @@ class dashboardViewController: UITableViewController {
     // Text parameters
     func skinnyAndFat() {
         let moneyTotal = "\(currency) \(transferredAmount)"
-        skinnyPete = NSMutableAttributedString(string: moneyTotal, attributes: [NSAttributedStringKey.font: UIFont (name: "Ubuntu-Bold", size: 30)!])
-        skinnyPete.addAttribute(NSAttributedStringKey.font, value: UIFont(name: "Ubuntu-Light", size: 20.0)!, range: NSRange(location:0, length:3))
+        skinnyPete = NSMutableAttributedString(string: moneyTotal, attributes: [NSAttributedStringKey.font: UIFont (name: "Ubuntu", size: 21)!])
+        skinnyPete.addAttribute(NSAttributedStringKey.font, value: UIFont(name: "Ubuntu-Light", size: 13.0)!, range: NSRange(location:0, length:3))
         todaySalesLabel.attributedText = skinnyPete
         todaySalesLabel.text = moneyTotal
+        
     }
+    
+    func yourFatBalance() {
+        let moneyTotal = "\(currency) 4,545,400"
+        skinnyPete = NSMutableAttributedString(string: moneyTotal, attributes: [NSAttributedStringKey.font: UIFont (name: "Ubuntu", size: 21)!])
+        skinnyPete.addAttribute(NSAttributedStringKey.font, value: UIFont(name: "Ubuntu-Light", size: 13.0)!, range: NSRange(location:0, length:3))
+        availableBalance.attributedText = skinnyPete
+        availableBalance.text = moneyTotal
+        
+    }
+    
+    
     
     // Scan button function
     @IBAction func scannerButton(_ sender: Any) {
         self.performSegue(withIdentifier: "scanSegue", sender: self)
     }
-    
-    
-    
+
     
     // Design parameters
     func cardDesigns(){
-        cardOne.cards()
-        cardTwo.cards()
-        cardThree.cards()
-        cardFour.cards()
-        cardFive.cards()
-        cardSix.cards()
         collectionView.cards()
         embededView.cards()
         revenueView.bottomLeftie()

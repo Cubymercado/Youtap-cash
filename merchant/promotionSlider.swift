@@ -15,7 +15,7 @@ class promotionSlider: ButtonBarPagerTabStripViewController {
     override func viewDidLoad() {
         // change selected bar color
         settings.style.buttonBarBackgroundColor = .white
-        settings.style.buttonBarItemBackgroundColor = .white
+        settings.style.buttonBarItemBackgroundColor = UIColor(red:0.94, green:0.94, blue:0.96, alpha:1.0)
         settings.style.selectedBarBackgroundColor = UIColor(red:0.04, green:0.64, blue:0.80, alpha:1.0)
         settings.style.buttonBarItemFont = .systemFont(ofSize: 14)
         settings.style.selectedBarHeight = 2.0
@@ -28,7 +28,7 @@ class promotionSlider: ButtonBarPagerTabStripViewController {
         
         changeCurrentIndexProgressive = { [weak self] (oldCell: ButtonBarViewCell?, newCell: ButtonBarViewCell?, progressPercentage: CGFloat, changeCurrentIndex: Bool, animated: Bool) -> Void in
             guard changeCurrentIndex == true else { return }
-            oldCell?.label.textColor = UIColor(red:0.12, green:0.25, blue:0.31, alpha:1.0)
+            oldCell?.label.textColor = UIColor(red:0.00, green:0.14, blue:0.22, alpha:1.0)
             newCell?.label.textColor = UIColor(red:0.04, green:0.64, blue:0.80, alpha:1.0)
         }
         super.viewDidLoad()

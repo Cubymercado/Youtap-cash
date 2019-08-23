@@ -26,6 +26,9 @@ class qrScannerViewController: UIViewController,  AVCaptureMetadataOutputObjects
     @IBOutlet weak var mapView: MKMapView!
     @IBOutlet weak var controlVurrency: UIView!
     
+    let global = appCurrencies()
+    var currency: String = ""
+    
     // Date & Time variables
     let date = Date()
     let formatter = DateFormatter()
@@ -70,7 +73,6 @@ class qrScannerViewController: UIViewController,  AVCaptureMetadataOutputObjects
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
         hideKeyboardOrangutan()
         locateThisYouBloodyKoon()
         startTheDonkey()
@@ -83,7 +85,6 @@ class qrScannerViewController: UIViewController,  AVCaptureMetadataOutputObjects
     func locateThisYouBloodyKoon() {
         self.locationManager.requestAlwaysAuthorization()
         self.locationManager.requestWhenInUseAuthorization()
-        
         if CLLocationManager.locationServicesEnabled() {
             locationManager.delegate = self
             locationManager.desiredAccuracy = kCLLocationAccuracyNearestTenMeters
@@ -94,11 +95,8 @@ class qrScannerViewController: UIViewController,  AVCaptureMetadataOutputObjects
     
     public override func viewWillLayoutSubviews() {
         super.viewDidLayoutSubviews()
-        
         videoPreviewLayer?.frame = self.videoView.layer.bounds
-        
         let orientation = UIApplication.shared.statusBarOrientation
-        
         switch(orientation) {
         case UIInterfaceOrientation.landscapeLeft:
             videoPreviewLayer?.connection?.videoOrientation = AVCaptureVideoOrientation.landscapeLeft
@@ -173,14 +171,12 @@ class qrScannerViewController: UIViewController,  AVCaptureMetadataOutputObjects
     
     // Pop Up function
     func displayBarCodeResult(code: String) {
-        
         let systemSoundId: SystemSoundID = 1016
         
         // System sound and vibrations
         AudioServicesAddSystemSoundCompletion(systemSoundId, nil, nil, { (customSoundId, _) -> Void in
             AudioServicesDisposeSystemSoundID(customSoundId)
         }, nil)
-        
         AudioServicesPlayAlertSound(systemSoundId)
         
         self.whiteBgView.isHidden = false
@@ -195,13 +191,10 @@ class qrScannerViewController: UIViewController,  AVCaptureMetadataOutputObjects
         }
     }
     
+    
     // Start the camera function
     func startTheDonkey(){
-        
-        // Retrieve the default capturing device for using the camera
         self.captureDevice = AVCaptureDevice.default(for: .video)
-        
-        // Get an instance of the AVCaptureDeviceInput class using the previous device object.
         var error:NSError?
         let input: AnyObject!
         do {
@@ -210,9 +203,7 @@ class qrScannerViewController: UIViewController,  AVCaptureMetadataOutputObjects
             error = error1
             input = nil
         }
-        
         if (error != nil) {
-            // If any error occurs, simply log the description of it and don't continue any more.
             print("\(String(describing: error?.localizedDescription))")
             return
         }
@@ -254,23 +245,17 @@ class qrScannerViewController: UIViewController,  AVCaptureMetadataOutputObjects
     
     // Date & Time function
     func whatsTheTimeMrWolf() {
-        
         formatter.dateFormat = "dd.MM.yyyy"
         formatterTime.timeStyle = .medium
-        
         let whatsTheDate = formatter.string(from: date)
         let whatsTheTime = formatterTime.string(from: date)
-        
         dateLabel.text = whatsTheDate
         timeLabel.text = whatsTheTime
-        
     }
     
     
     // Amount transfer function
     func fuckingAyeMateWhatAreYouOnAboutIaintGotNoGrassFFSYouDossCunt() {
-      
-        
     }
     
     
@@ -302,14 +287,13 @@ class qrScannerViewController: UIViewController,  AVCaptureMetadataOutputObjects
             self.locationName = locationName
             self.discipline = discipline
             self.coordinate = coordinate
-            
             super.init()
         }
-        
         var subtitle: String? {
             return locationName
         }
     }
+    
     
     // Button function
     @IBAction func okButton(_ sender: Any) {
@@ -317,6 +301,7 @@ class qrScannerViewController: UIViewController,  AVCaptureMetadataOutputObjects
         self.captureSession?.stopRunning()
         
     }
+    
     
     // Data transfer function (send)
     override func prepare(for segue: UIStoryboardSegue, sender: Any?)
@@ -328,14 +313,13 @@ class qrScannerViewController: UIViewController,  AVCaptureMetadataOutputObjects
             vc?.merchantName = "Honcho McManners"
             
             if amountText.text == "" {
-                vc?.amounts = "IDR 0"
+                vc?.amounts = "    0"
             } else {
             
-            vc?.amounts = "IDR \(amountText.text!)"
+            vc?.amounts = "\(currency) \(amountText.text!)"
             }
         }
     }
-    
     
     
     // Keyboard hiding functions
@@ -375,12 +359,13 @@ class qrScannerViewController: UIViewController,  AVCaptureMetadataOutputObjects
     
     // Design parameters
     func heyPiPiLangstrumpf(){
-        whiteBgView.layer.cornerRadius = 25
+        currency = global.appMainCurrency ?? "NZD"
+        whiteBgView.cards()
         amountText.addBottomBorder()
         self.whiteBgView.isHidden = true
-        okButton.layer.cornerRadius = 10
-        controlVurrency.layer.cornerRadius = 10
-        mapView.layer.cornerRadius = 10
+        okButton.buttonCornersFour()
+        controlVurrency.cards()
+        mapView.cards()
     }
      
 }

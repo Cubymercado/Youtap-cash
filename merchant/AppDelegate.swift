@@ -49,7 +49,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         // Core data URL
         let container = NSPersistentContainer(name: "transactionsData")
-        print(container.persistentStoreDescriptions.first?.url)
+   //     print(container.persistentStoreDescriptions.first?.url)
         
         // Stripe API
         STPPaymentConfiguration.shared().publishableKey = "pk_live_8JbHy2InoW6uXM6YsVuMCiuv"

@@ -16,7 +16,7 @@ protocol DocumentSerializableSupportedCurrencies {
 struct supportedCurrencies {
     
     var name: String
-    var code: String
+    var currency: String
     var symbol: String
     var decimals: Int
     var image: String
@@ -24,7 +24,7 @@ struct supportedCurrencies {
     
     var dictionary: [String: Any] {
         return [
-            "currency": code,
+            "currency": currency,
             "name": name,
             "symbol": symbol,
             "decimals": decimals,
@@ -38,16 +38,24 @@ struct supportedCurrencies {
 extension supportedCurrencies: DocumentSerializableSupportedCurrencies {
     init?(dictionary: [String : Any]) {
         guard let name = dictionary["name"] as? String,
-            let code = dictionary["code"] as? String,
-            let symbol = dictionary["symbol"] as? String,
-            let decimals = dictionary["code"] as? Int,
-            let locale = dictionary["locale"] as? String
+        let currency = dictionary["currency"] as? String
+        
         
             else {return nil}
+       
         let image = dictionary["image"] as? String
-        let defaultImage: String = image ?? "https://www.countryflags.io/nz/flat/16.png"
+        let locale = dictionary["locale"] as? String
+        let symbol = dictionary["symbol"] as? String
+        let decimals = dictionary["decimals"] as? Int
         
-        self.init(name: name, code: code, symbol: symbol, decimals: decimals, image: defaultImage, locale: locale)
+        
+        let defaultImage: String = image ?? "https://www.countryflags.io/nz/flat/16.png"
+        let defaultSymbol: String = symbol ?? "  $"
+        let defaultLocale: String = locale ?? " en"
+        let defaultDecimals: Int = decimals ?? 2
+       // let defaultCurrency: String = currency ?? "  $"
+        
+        self.init(name: name, currency: currency, symbol: defaultSymbol, decimals: defaultDecimals, image: defaultImage, locale: defaultLocale)
     }
     
     

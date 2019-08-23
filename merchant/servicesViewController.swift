@@ -15,13 +15,13 @@ class servicesViewController: UIViewController, IndicatorInfoProvider  {
     @IBOutlet weak var viewBg: UIView!
     
     // Variables
-    let services = ["Cash in", "Cash out", "Airtime", "Data", "Ecommerce", "Water", "Electricity", "Loans", "Insurance"]
+    let services = ["Cash in", "Cash out", "Fx", "Airtime", "Data", "Ecommerce", "Water", "Electricity", "Loans", "Insurance"]
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
        lifeIsBeautiful()
+        
     }
     
     
@@ -33,8 +33,8 @@ class servicesViewController: UIViewController, IndicatorInfoProvider  {
    
     // Design parameters
     func lifeIsBeautiful(){
-        viewBg.layer.cornerRadius = 10
-        collectionView.layer.cornerRadius = 10
+        viewBg.cards()
+        collectionView.cards()
         
     }
     
@@ -48,7 +48,7 @@ class servicesViewController: UIViewController, IndicatorInfoProvider  {
 
 extension servicesViewController: UICollectionViewDelegate, UICollectionViewDataSource {
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 9
+        return 10
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
@@ -65,6 +65,9 @@ extension servicesViewController: UICollectionViewDelegate, UICollectionViewData
             
         case 1:
             self.performSegue(withIdentifier: "cashOutSegue", sender: self)
+            
+        case 2:
+            self.performSegue(withIdentifier: "fxSegue", sender: self)
      
         default:
             break

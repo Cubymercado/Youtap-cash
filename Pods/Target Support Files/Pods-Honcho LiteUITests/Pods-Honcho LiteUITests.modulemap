@@ -1,0 +1,6 @@
+framework module Pods_Honcho_LiteUITests {
+  umbrella header "Pods-Honcho LiteUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}

@@ -40,6 +40,8 @@ class addFromCatalogViewController: UIViewController, UIPickerViewDataSource, UI
     var nameProduct: String = ""
     var size: String = ""
     var cat: String = ""
+    var currency: String = ""
+    let global = appCurrencies()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -85,10 +87,10 @@ class addFromCatalogViewController: UIViewController, UIPickerViewDataSource, UI
     
     // Show data function
     func whatYaSellingUz() {
+        currency = global.appMainCurrency ?? "NZD"
         let url = URL(string: (product?.productImageRectangle)!)
         let price = product!.suggestedPrice
-        let pricePrice = "IDR \(String(describing: price))"
-        
+        let pricePrice = "\(currency) \(String(describing: price))"
         let sku = product!.unitSKU
         SKU = sku
         

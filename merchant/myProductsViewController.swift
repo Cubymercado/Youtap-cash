@@ -19,40 +19,35 @@ class ProductsCell: UITableViewCell {
     @IBOutlet weak var productCategory: UILabel!
     @IBOutlet weak var productInventory: UILabel!
     
-    
     override func layoutSubviews() {
         super.layoutSubviews()
-        
         self.productImage.threeCorners()
     }
-    
 }
 
 
 class myProductsViewController: UIViewController, IndicatorInfoProvider {
 
-    // References to my products data
     var myProducts: [Products1] = []
     var product: Products1?
     var filteredData: [Products1] = []
     let context = (UIApplication.shared.delegate as! AppDelegate).persistentContainer.viewContext
     var selectedIndex: Int!
+    let global = appCurrencies()
+    var currency: String = ""
     
     @IBOutlet weak var tableView: UITableView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Data sources
         tableView.dataSource = self
         tableView.delegate = self
         fetchData()
         self.tableView.reloadData()
+        currency = global.appMainCurrency ?? "NZD"
         //collectionView.dataSource = self
         //collectionView.delegate = self
-        
     }
-    
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
@@ -74,33 +69,30 @@ class myProductsViewController: UIViewController, IndicatorInfoProvider {
         }
         
     }
+    
 
+    
     // Slider menu indicator
     func indicatorInfo(for pagerTabStripController: PagerTabStripViewController) -> IndicatorInfo {
         return IndicatorInfo(title: "MY PRODUCTS")
-        
     }
-    
 }
 
 // IPhone Table View Datasource and Delegate
 extension myProductsViewController: UITableViewDelegate, UITableViewDataSource {
-    
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
             return myProducts.count
     }
     
-    
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
             let cell = tableView.dequeueReusableCell(withIdentifier: "editCell", for: indexPath) as! ProductsCell
-        
             cell.productName?.text = myProducts[indexPath.row].name
             cell.productCategory?.text = myProducts[indexPath.row].category
             cell.productSize?.text = myProducts[indexPath.row].size
         
             let price = myProducts[indexPath.row].price
             let xNSNumber = price as NSNumber
-            cell.productPrice?.text = "IDR \(xNSNumber.stringValue)" 
+            cell.productPrice?.text = "\(currency) \(xNSNumber.stringValue)" 
         
             let inventory =  myProducts[indexPath.row].inventory
             let inventoryNumber = inventory as NSNumber
@@ -128,15 +120,12 @@ extension myProductsViewController: UITableViewDelegate, UITableViewDataSource {
             product = myProducts[indexPath.row]
             performSegue(withIdentifier: "editSegue", sender: self)
             tableView.deselectRow(at: indexPath, animated: true)
-        
             print("I'll see you in the next life when we both become cats")
     }
-    
     
     func numberOfSections(in tableView: UITableView) -> Int {
         return 1
     }
-    
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
             if segue.identifier == "editSegue" {
@@ -144,7 +133,6 @@ extension myProductsViewController: UITableViewDelegate, UITableViewDataSource {
                 editVC.product = product
         }
     }
-    
 }
 
 
@@ -153,25 +141,18 @@ extension myProductsViewController {
     
     func tableView(_ tableView: UITableView, editActionsForRowAt indexPath: IndexPath) -> [UITableViewRowAction]? {
         let delete = UITableViewRowAction(style: .default, title: "Delete") { (action, indexPath) in
-            
-            // delete item at indexPath
             let item = self.myProducts[indexPath.row]
             self.context.delete(item)
             (UIApplication.shared.delegate as! AppDelegate).saveContext()
-            
             self.myProducts.remove(at: indexPath.row)
             self.tableView.deleteRows(at: [indexPath], with: .fade)
-            
         }
         
         delete.backgroundColor = UIColor(red: 246/255, green: 104/255, blue: 37/255, alpha: 1.0)
         
         return [delete]
-        
     }
-    
-    
-    
+ 
 }
 
 

@@ -87,6 +87,9 @@
 		DF12006C210EBE1F00D46FC6 /* FirebaseFirestore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DF12006B210EBE1F00D46FC6 /* FirebaseFirestore.framework */; };
 		DF120070210EDAF000D46FC6 /* addFromCatalogViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF12006F210EDAF000D46FC6 /* addFromCatalogViewController.swift */; };
 		DF181BED21A62B3D008DFE36 /* suppliersProducts.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF181BEC21A62B3D008DFE36 /* suppliersProducts.swift */; };
+		DF18F0C12302804200BEF452 /* thisIsBullshitViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF18F0C02302804200BEF452 /* thisIsBullshitViewController.swift */; };
+		DF18F0C32303A99E00BEF452 /* touristFeeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF18F0C22303A99E00BEF452 /* touristFeeViewController.swift */; };
+		DF18F0C52303E82A00BEF452 /* fxViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF18F0C42303E82A00BEF452 /* fxViewController.swift */; };
 		DF1DBBA7216453CB00B23806 /* Lottie.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DF1DBBA6216453CB00B23806 /* Lottie.framework */; };
 		DF1E455021AB5F0B005B56E2 /* orderPromoProductViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF1E454F21AB5F0B005B56E2 /* orderPromoProductViewController.swift */; };
 		DF1E455321AB6D17005B56E2 /* reviewOrderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF1E455221AB6D17005B56E2 /* reviewOrderViewController.swift */; };
@@ -136,6 +139,8 @@
 		DF491D3221057B35000B104E /* CoreDataStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF491D3121057B35000B104E /* CoreDataStack.swift */; };
 		DF550E1120DC5C3E00ACF8DB /* LocalAuthentication.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DF550E1020DC5C3E00ACF8DB /* LocalAuthentication.framework */; };
 		DF56973120E2E59E00ED3A7C /* transactionsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF56973020E2E59E00ED3A7C /* transactionsModel.swift */; };
+		DF56BCEC22FAC1B40066CDE9 /* globalVariables.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF56BCEB22FAC1B30066CDE9 /* globalVariables.swift */; };
+		DF56BCEE23024EA90066CDE9 /* currencyTwoTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF56BCED23024EA90066CDE9 /* currencyTwoTableViewController.swift */; };
 		DF56DAFF20D8B07D0003B7C2 /* FirebaseAuth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DF56DAFE20D8B07D0003B7C2 /* FirebaseAuth.framework */; };
 		DF58269820D613340002955A /* SelectViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF58269720D613340002955A /* SelectViewController.swift */; };
 		DF58BCA721CB0A700081C00B /* tillProducts.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF58BCA621CB0A700081C00B /* tillProducts.swift */; };
@@ -198,6 +203,8 @@
 		DFF45ED12174365B0088AB0A /* NotificationCenter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DF65BF8C20D731D9001EE87C /* NotificationCenter.framework */; };
 		DFF45ED42174365B0088AB0A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DF0CEC1620D0DC6B0070EA3A /* Assets.xcassets */; };
 		DFF45ED52174365B0088AB0A /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DF65BF9120D731D9001EE87C /* MainInterface.storyboard */; };
+		DFF5E00B230D298A00BD77C4 /* paymentSliderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFF5E00A230D298A00BD77C4 /* paymentSliderViewController.swift */; };
+		DFF5E00D230E66A000BD77C4 /* exportedQRcodeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFF5E00C230E66A000BD77C4 /* exportedQRcodeViewController.swift */; };
 		DFFF85262136460000D54E62 /* transactionReceiptViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFFF85252136460000D54E62 /* transactionReceiptViewController.swift */; };
 /* End PBXBuildFile section */
 
@@ -336,6 +343,9 @@
 		DF12006B210EBE1F00D46FC6 /* FirebaseFirestore.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = FirebaseFirestore.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DF12006F210EDAF000D46FC6 /* addFromCatalogViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = addFromCatalogViewController.swift; sourceTree = "<group>"; };
 		DF181BEC21A62B3D008DFE36 /* suppliersProducts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = suppliersProducts.swift; sourceTree = "<group>"; };
+		DF18F0C02302804200BEF452 /* thisIsBullshitViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = thisIsBullshitViewController.swift; sourceTree = "<group>"; };
+		DF18F0C22303A99E00BEF452 /* touristFeeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = touristFeeViewController.swift; sourceTree = "<group>"; };
+		DF18F0C42303E82A00BEF452 /* fxViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = fxViewController.swift; sourceTree = "<group>"; };
 		DF1DBBA6216453CB00B23806 /* Lottie.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Lottie.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DF1E454F21AB5F0B005B56E2 /* orderPromoProductViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = orderPromoProductViewController.swift; sourceTree = "<group>"; };
 		DF1E455221AB6D17005B56E2 /* reviewOrderViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = reviewOrderViewController.swift; sourceTree = "<group>"; };
@@ -398,6 +408,8 @@
 		DF56972920E19D8E00ED3A7C /* FBSDKCoreKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = FBSDKCoreKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DF56972B20E1A3B500ED3A7C /* merchant.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = merchant.entitlements; sourceTree = "<group>"; };
 		DF56973020E2E59E00ED3A7C /* transactionsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = transactionsModel.swift; sourceTree = "<group>"; };
+		DF56BCEB22FAC1B30066CDE9 /* globalVariables.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = globalVariables.swift; sourceTree = "<group>"; };
+		DF56BCED23024EA90066CDE9 /* currencyTwoTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = currencyTwoTableViewController.swift; path = merchant/currencyTwoTableViewController.swift; sourceTree = "<group>"; };
 		DF56DAFE20D8B07D0003B7C2 /* FirebaseAuth.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = FirebaseAuth.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DF58269720D613340002955A /* SelectViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectViewController.swift; sourceTree = "<group>"; };
 		DF58BCA621CB0A700081C00B /* tillProducts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = tillProducts.swift; path = merchant/tillProducts.swift; sourceTree = "<group>"; };
@@ -464,6 +476,8 @@
 		DFD2F5CA20D9C5170005140A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		DFF2C5B321A60EDB00CDA65D /* supplierInfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = supplierInfoViewController.swift; sourceTree = "<group>"; };
 		DFF45ED92174365B0088AB0A /* Honcho Lite Widget.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "Honcho Lite Widget.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		DFF5E00A230D298A00BD77C4 /* paymentSliderViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = paymentSliderViewController.swift; sourceTree = "<group>"; };
+		DFF5E00C230E66A000BD77C4 /* exportedQRcodeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = exportedQRcodeViewController.swift; sourceTree = "<group>"; };
 		DFFF85252136460000D54E62 /* transactionReceiptViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = transactionReceiptViewController.swift; sourceTree = "<group>"; };
 		F12CE68FC8BC7391510B2135 /* Pods_Honcho_LiteTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Honcho_LiteTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -557,6 +571,12 @@
 		DF0CEC0120D0DC650070EA3A = {
 			isa = PBXGroup;
 			children = (
+				DFF5E00C230E66A000BD77C4 /* exportedQRcodeViewController.swift */,
+				DFF5E00A230D298A00BD77C4 /* paymentSliderViewController.swift */,
+				DF18F0C22303A99E00BEF452 /* touristFeeViewController.swift */,
+				DF18F0C02302804200BEF452 /* thisIsBullshitViewController.swift */,
+				DF56BCED23024EA90066CDE9 /* currencyTwoTableViewController.swift */,
+				DF56BCEB22FAC1B30066CDE9 /* globalVariables.swift */,
 				DF74795822F18FFA002B867D /* addToTabTableViewController.swift */,
 				DF74795422F14415002B867D /* tabManagerPaymentViewController.swift */,
 				DF72F11422DC757D0047D002 /* cashInViewController.swift */,
@@ -693,6 +713,7 @@
 				DF05BF3D22B093B300F14729 /* dashboardTransactionsTableViewController.swift */,
 				4424BE54221D289800956165 /* Launch Screen.storyboard */,
 				DF0CEC1620D0DC6B0070EA3A /* Assets.xcassets */,
+				DF18F0C42303E82A00BEF452 /* fxViewController.swift */,
 				DF2EB3C720F2CFE100E40464 /* transactionsData.xcdatamodeld */,
 				DF56972B20E1A3B500ED3A7C /* merchant.entitlements */,
 				DF0CEC1B20D0DC6B0070EA3A /* GoogleService-Info.plist */,
@@ -1165,6 +1186,7 @@
 				DF2BEE4822895FC000929C87 /* mySalesViewController.swift in Sources */,
 				DF491D3221057B35000B104E /* CoreDataStack.swift in Sources */,
 				440839442207D23000901105 /* discountViewController.swift in Sources */,
+				DF18F0C52303E82A00BEF452 /* fxViewController.swift in Sources */,
 				DF58BCA721CB0A700081C00B /* tillProducts.swift in Sources */,
 				44418FD622C231A40020EDDA /* Constants.swift in Sources */,
 				DF87DCF72161D9E3000744BD /* constantSuggestedProducts.swift in Sources */,
@@ -1223,12 +1245,14 @@
 				DFC909DE228BE89E00D846F4 /* newEditProductViewController.swift in Sources */,
 				DF87DCF32161CD57000744BD /* suggestedProductDetailsViewController.swift in Sources */,
 				DF1E455321AB6D17005B56E2 /* reviewOrderViewController.swift in Sources */,
+				DFF5E00D230E66A000BD77C4 /* exportedQRcodeViewController.swift in Sources */,
 				DFB98193216E90DD0015F2FF /* appStyle.swift in Sources */,
 				DF0806E8212BCB91004C14D3 /* menuTableViewController.swift in Sources */,
 				4429859222CAFF5300836645 /* bankingTableViewController.swift in Sources */,
 				DF74795922F18FFA002B867D /* addToTabTableViewController.swift in Sources */,
 				DF2D043B2187999700A923E6 /* addProductSlider.swift in Sources */,
 				DF8316D92110053700FB4251 /* sliderMenu.swift in Sources */,
+				DF18F0C32303A99E00BEF452 /* touristFeeViewController.swift in Sources */,
 				DF9B44DC210842750055EF14 /* Configuring.swift in Sources */,
 				DF0CEC0E20D0DC650070EA3A /* AppDelegate.swift in Sources */,
 				DF1E753122B8CAE400A4B19F /* adsManagerViewController.swift in Sources */,
@@ -1242,6 +1266,7 @@
 				DF9B44C921083EC00055EF14 /* constantImages.swift in Sources */,
 				DFFF85262136460000D54E62 /* transactionReceiptViewController.swift in Sources */,
 				DFC909D8228AA8B200D846F4 /* newProductScanViewController.swift in Sources */,
+				DF56BCEE23024EA90066CDE9 /* currencyTwoTableViewController.swift in Sources */,
 				DF9EBFF021A7849E003F9385 /* orderProductViewController.swift in Sources */,
 				DF01332822EAB05500C4A4B5 /* scannerConfirmationViewController.swift in Sources */,
 				DF74795B22F904E8002B867D /* supportedCurrenciesTableViewController.swift in Sources */,
@@ -1258,6 +1283,7 @@
 				DF9B44DD210842750055EF14 /* ConstraintsHelper.swift in Sources */,
 				444484A821AFA8D100CDA3DE /* scannerTillSystemViewController.swift in Sources */,
 				445E92E422080773007EEAC3 /* addToTabViewController.swift in Sources */,
+				DF18F0C12302804200BEF452 /* thisIsBullshitViewController.swift in Sources */,
 				DF1EEEE2213765130004E054 /* promotionsMenuViewController.swift in Sources */,
 				443117EF2203E3D400E3BF00 /* logInViewController.swift in Sources */,
 				DF1E753422B8DE8E00A4B19F /* constantAdverts.swift in Sources */,
@@ -1275,7 +1301,9 @@
 				DF01331F22EAA26C00C4A4B5 /* myQRCodeViewController.swift in Sources */,
 				DFB98195216E97430015F2FF /* walletViewController.swift in Sources */,
 				4424BE58221D37BF00956165 /* logInGIDViewController.swift in Sources */,
+				DFF5E00B230D298A00BD77C4 /* paymentSliderViewController.swift in Sources */,
 				DF1E752F22B88FA100A4B19F /* advertImages.swift in Sources */,
+				DF56BCEC22FAC1B40066CDE9 /* globalVariables.swift in Sources */,
 				4414A7DC22BC654A00A50F12 /* handheldScannerViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
